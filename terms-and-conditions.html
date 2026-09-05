@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms &amp; Conditions — Botfit</title>
+  <meta name="description" content="Terms and Conditions for Botfit Entertainment Pvt. Ltd. — bookings, payments, venue rules, and liability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --green: #1DB954;
+      --green-dark: #14a345;
+      --green-light: #E8F8EE;
+      --black: #0A0A0A;
+      --white: #FFFFFF;
+      --offwhite: #F7F7F5;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3A;
+      --ink-faint: #8A8A85;
+      --border: rgba(10,10,10,0.09);
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    /* ── Odoo resets ── */
+    body.o_home_menu_body, body {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    .o_content, .o_action_manager, .o_action, .o_view_controller,
+    main.o_main, #wrapwrap, #wrap, .container, .container-fluid,
+    .oe_structure, .o_editable {
+      max-width: none !important;
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    header.o_header_standard, header#top, .o_header_affix, nav.navbar {
+      display: none !important;
+    }
+    nav#navbar, nav {
+      top: 0 !important; left: 0 !important; right: 0 !important;
+      width: 100% !important; max-width: none !important;
+      z-index: 99999 !important;
+    }
+    #wrapwrap > main, #wrap > main, .o_main_content {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+    /* Sticky fix for Odoo scroll container */
+    .o_content {
+      height: 100vh !important;
+      overflow-y: auto !important;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--offwhite);
+      color: var(--ink);
+      overflow-x: hidden;
+      margin-top: -20px;
+    }
+
+    a { text-decoration: none; color: var(--green-dark); }
+    a:hover { color: var(--green); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 52px;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .logo-link {
+      display: flex; align-items: center;
+      text-decoration: none;
+    }
+    .logo-link img {
+      display: block; height: 34px; width: auto;
+      filter: brightness(0) invert(1);
+    }
+    .nav-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--green); }
+
+    /* ── HERO ── */
+    .pp-hero {
+      background: var(--black);
+      padding: 152px 52px 72px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .pp-hero::before {
+      content: '';
+      position: absolute; top: -60px; right: -80px;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(29,185,84,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .pp-hero-inner {
+      max-width: 760px;
+      position: relative; z-index: 1;
+      text-align: left !important;
+    }
+    .pp-hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(29,185,84,0.1);
+      border: 1px solid rgba(29,185,84,0.25);
+      border-radius: 2px;
+      padding: 6px 14px;
+      margin-bottom: 24px;
+      margin-left: 0 !important;
+      margin-right: auto !important;
+    }
+    .pp-hero-tag-dot { width: 5px; height: 5px; background: var(--green); border-radius: 50%; }
+    .pp-hero-tag-text { font-size: 11px; font-weight: 500; color: var(--green); letter-spacing: 2px; text-transform: uppercase; }
+
+    .pp-hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4.4vw, 62px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 0.97;
+      letter-spacing: -2.5px;
+      margin-bottom: 24px;
+    }
+    .pp-hero-headline em { font-style: normal; color: var(--green); }
+
+    .pp-hero-intro {
+      font-size: clamp(14px, 1.4vw, 16px);
+      color: rgba(255,255,255,0.46);
+      line-height: 1.72;
+      max-width: 580px;
+      margin-bottom: 28px;
+    }
+
+    .pp-hero-meta {
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+    }
+    .pp-hero-updated { font-size: 13px; color: rgba(255,255,255,0.38); font-weight: 500; letter-spacing: 0.3px; }
+    .pp-hero-sep { width: 1px; height: 14px; background: rgba(255,255,255,0.12); }
+    .pp-hero-company { font-size: 13px; color: rgba(255,255,255,0.38); font-weight: 500; }
+
+    /* ── LAYOUT ── */
+    .pp-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 0;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 72px 32px 96px !important;
+      align-items: start !important;
+      box-sizing: border-box !important;
+    }
+
+    /* ── SIDEBAR ── */
+    .pp-sidebar {
+      position: sticky !important;
+      top: 96px !important;
+      align-self: start !important;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+    .pp-sidebar-label {
+      font-size: 10px; font-weight: 500;
+      color: var(--ink-faint);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      text-align: left !important;
+    }
+    .pp-toc {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-left: 1px solid var(--border);
+    }
+    .pp-toc li a {
+      display: block;
+      padding: 9px 0 9px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-faint);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+      border-left: 2px solid transparent;
+      margin-left: -1px;
+      line-height: 1.45;
+      text-align: left !important;
+    }
+    .pp-toc li a:hover { color: var(--ink); border-color: var(--border); }
+    .pp-toc li a.active { color: var(--green-dark); border-color: var(--green); }
+
+    /* ── CONTENT ── */
+    .pp-content {
+      padding-left: 64px;
+      border-left: 1px solid var(--border);
+    }
+
+    .pp-section {
+      padding-bottom: 56px;
+      margin-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 108px;
+    }
+    .pp-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .pp-section-num {
+      font-family: var(--font-display);
+      font-size: 11px; font-weight: 700;
+      color: var(--green);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .pp-section-title {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.04;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+    }
+    .pp-section-body {
+      font-size: 15px;
+      color: var(--ink-mid);
+      line-height: 1.78;
+    }
+    .pp-section-body p { margin-bottom: 16px; }
+    .pp-section-body p:last-child { margin-bottom: 0; }
+    .pp-section-body strong { font-weight: 600; color: var(--ink); }
+    .pp-section-body a {
+      color: var(--green-dark);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(20,163,69,0.3);
+    }
+    .pp-section-body a:hover { color: var(--green); }
+
+    /* Sub-headings */
+    .pp-sub {
+      font-family: var(--font-display);
+      font-size: 15px; font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.2px;
+      margin-top: 32px; margin-bottom: 12px;
+    }
+    .pp-sub:first-of-type { margin-top: 0; }
+
+    /* Lists */
+    .pp-list {
+      list-style: none;
+      display: flex; flex-direction: column;
+      gap: 8px; margin: 16px 0;
+    }
+    .pp-list li {
+      display: flex; align-items: baseline; gap: 12px;
+      font-size: 15px; color: var(--ink-mid); line-height: 1.65;
+    }
+    .pp-list li::before {
+      content: '';
+      width: 12px; height: 1px;
+      background: var(--green);
+      flex-shrink: 0; margin-top: 11px;
+    }
+
+    /* Table */
+    .pp-table-wrap {
+      overflow-x: auto; margin: 20px 0;
+      border: 1px solid var(--border);
+    }
+    .pp-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .pp-table thead { background: var(--black); }
+    .pp-table thead th {
+      font-family: var(--font-display);
+      font-size: 11px; font-weight: 700;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 14px 18px; text-align: left;
+    }
+    .pp-table tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+    .pp-table tbody tr:last-child { border-bottom: none; }
+    .pp-table tbody tr:hover { background: rgba(29,185,84,0.03); }
+    .pp-table td { padding: 14px 18px; color: var(--ink-mid); line-height: 1.55; vertical-align: top; }
+    .pp-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+    /* Highlight block */
+    .pp-highlight {
+      background: var(--green-light);
+      border-left: 2px solid var(--green);
+      padding: 20px 24px; margin: 24px 0;
+      font-size: 14.5px; color: var(--ink-mid); line-height: 1.7;
+    }
+    .pp-highlight strong { color: var(--ink); }
+
+    /* Warning block */
+    .pp-warn {
+      background: rgba(10,10,10,0.04);
+      border-left: 2px solid var(--ink-faint);
+      padding: 18px 22px; margin: 20px 0;
+      font-size: 14px; color: var(--ink-mid); line-height: 1.7;
+    }
+    .pp-warn strong { color: var(--ink); }
+
+    /* Dark block */
+    .pp-dark-block {
+      background: var(--black);
+      padding: 24px 28px; margin: 24px 0;
+      font-size: 14.5px; color: rgba(255,255,255,0.6); line-height: 1.72;
+    }
+    .pp-dark-block strong { color: var(--white); }
+
+    /* Payment grid */
+    .pp-pay-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px; margin: 20px 0;
+    }
+    .pp-pay-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 22px 20px;
+    }
+    .pp-pay-label {
+      font-size: 10px; font-weight: 600;
+      color: var(--green-dark);
+      letter-spacing: 1.8px; text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .pp-pay-title {
+      font-family: var(--font-display);
+      font-size: 15px; font-weight: 800;
+      color: var(--ink); letter-spacing: -0.3px;
+      margin-bottom: 8px;
+    }
+    .pp-pay-desc { font-size: 13px; color: var(--ink-faint); line-height: 1.6; }
+
+    /* Rules grid */
+    .pp-rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px; margin: 20px 0;
+    }
+    .pp-rule-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 12px; align-items: start;
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 18px 16px;
+    }
+    .pp-rule-num {
+      font-family: var(--font-display);
+      font-size: 11px; font-weight: 700;
+      color: var(--green); letter-spacing: 0.5px;
+      padding-top: 2px;
+    }
+    .pp-rule-text { font-size: 13.5px; color: var(--ink-mid); line-height: 1.6; }
+
+    /* Contact card */
+    .pp-contact-card {
+      background: var(--black);
+      padding: 32px 36px; margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 48px;
+    }
+    .pp-contact-row { display: flex; flex-direction: column; gap: 4px; }
+    .pp-contact-label {
+      font-size: 10px; font-weight: 600;
+      color: rgba(255,255,255,0.32);
+      letter-spacing: 1.8px; text-transform: uppercase;
+    }
+    .pp-contact-val { font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.84); }
+    .pp-contact-val a { color: var(--green); text-decoration: none; }
+    .pp-contact-val a:hover { color: var(--green-dark); }
+
+    /* Footer */
+    .pp-footer {
+      background: var(--black);
+      padding: 40px 52px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .pp-footer-copy { font-size: 13px; color: rgba(255,255,255,0.35); }
+    .pp-footer-links { display: flex; gap: 20px; }
+    .pp-footer-links a {
+      font-size: 13px; color: rgba(255,255,255,0.42);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .pp-footer-links a:hover { color: var(--green); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      nav { padding: 18px 32px; }
+      .pp-hero { padding: 140px 32px 60px; }
+      .pp-layout { padding: 56px 32px 80px !important; grid-template-columns: 220px 1fr; }
+      .pp-content { padding-left: 48px; }
+      .pp-pay-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .pp-hero { padding: 110px 20px 48px; }
+      .pp-hero-headline { font-size: clamp(28px, 8vw, 44px); letter-spacing: -1.5px; }
+      .pp-layout { grid-template-columns: 1fr !important; padding: 40px 20px 72px !important; }
+      .pp-sidebar { position: static !important; margin-bottom: 40px; max-height: none; overflow-y: visible; }
+      .pp-content { padding-left: 0; border-left: none; border-top: 1px solid var(--border); padding-top: 40px; }
+      .pp-toc { display: none; }
+      .pp-pay-grid { grid-template-columns: 1fr; }
+      .pp-rules-grid { grid-template-columns: 1fr; }
+      .pp-contact-card { grid-template-columns: 1fr; gap: 16px; padding: 24px 20px; }
+      .pp-table td:first-child { white-space: normal; }
+      .pp-footer { flex-direction: column; align-items: flex-start; padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo-link" aria-label="Botfit home">
+      <img src="images/Botfit-logo.webp" width="95" height="40" alt="Botfit" loading="lazy">
+    </a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pp-hero">
+    <div class="pp-hero-inner">
+      <div class="pp-hero-tag">
+        <span class="pp-hero-tag-dot"></span>
+        <span class="pp-hero-tag-text">Legal</span>
+      </div>
+      <h1 class="pp-hero-headline">Terms &amp; <em>Conditions.</em></h1>
+      <p class="pp-hero-intro">By making a booking, paying the advance, or entering the Botfit venue, you confirm that you have read, understood, and agreed to these Terms.</p>
+      <div class="pp-hero-meta">
+        <span class="pp-hero-updated">Last updated: 9 May 2026</span>
+        <span class="pp-hero-sep"></span>
+        <span class="pp-hero-company">Botfit Entertainment Pvt. Ltd.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYOUT -->
+  <div class="pp-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="pp-sidebar" aria-label="Table of contents">
+      <div class="pp-sidebar-label">Contents</div>
+      <ul class="pp-toc" id="ppToc">
+        <li><a href="#s1">About Us</a></li>
+        <li><a href="#s2">Bookings &amp; Eligibility</a></li>
+        <li><a href="#s3">Services Offered</a></li>
+        <li><a href="#s4">Pricing &amp; Payment</a></li>
+        <li><a href="#s5">Cancellations &amp; Force Majeure</a></li>
+        <li><a href="#s6">Arrival, Time &amp; Slot Rules</a></li>
+        <li><a href="#s7">Outside Items &amp; Vendors</a></li>
+        <li><a href="#s8">Venue &amp; Play Area Rules</a></li>
+        <li><a href="#s9">Supervision &amp; Safety</a></li>
+        <li><a href="#s10">Liability &amp; Disclaimers</a></li>
+        <li><a href="#s11">Damage to Property</a></li>
+        <li><a href="#s12">Lost &amp; Found</a></li>
+        <li><a href="#s13">Right to Refuse Service</a></li>
+        <li><a href="#s14">Photography &amp; Privacy</a></li>
+        <li><a href="#s15">Website Use</a></li>
+        <li><a href="#s16">Indemnity</a></li>
+        <li><a href="#s17">Privacy</a></li>
+        <li><a href="#s18">Modifications</a></li>
+        <li><a href="#s19">Governing Law</a></li>
+        <li><a href="#s20">Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="pp-content" id="ppContent">
+
+      <section class="pp-section" id="s1">
+        <span class="pp-section-num">01</span>
+        <h2 class="pp-section-title">About Us</h2>
+        <div class="pp-section-body">
+          <p><strong>Botfit Entertainment Pvt. Ltd.</strong> operates North India's largest indoor Family Entertainment Centre, located in Sector 60, Gurugram, Haryana, India. We offer birthday parties, corporate events, school trips, and related services.</p>
+          <p>Phone: <a href="tel:+918047095095">080-4709-5095</a> &nbsp;|&nbsp; WhatsApp: <a href="https://wa.me/919310802266" target="_blank" rel="noopener">+91 93108 02266</a> &nbsp;|&nbsp; <a href="mailto:info@botfit.in">info@botfit.in</a></p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s2">
+        <span class="pp-section-num">02</span>
+        <h2 class="pp-section-title">Bookings &amp; Eligibility</h2>
+        <div class="pp-section-body">
+          <p><strong>All visits to Botfit are by prior booking only. Walk-ins are not permitted.</strong></p>
+          <p>Bookings can be made through our website, phone, WhatsApp, or at the venue. A booking is confirmed only after:</p>
+          <ul class="pp-list">
+            <li>The applicable advance payment has been received, and</li>
+            <li>Botfit issues a written confirmation (email/WhatsApp).</li>
+          </ul>
+          <p>Bookings must be made by an adult (18 years or older). The person making the booking is the <strong>"Event Host"</strong> and is responsible for the conduct of all guests, payments, and compliance with these Terms.</p>
+          <p>Botfit reserves the right to refuse any booking at its sole discretion.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s3">
+        <span class="pp-section-num">03</span>
+        <h2 class="pp-section-title">Services Offered</h2>
+        <div class="pp-section-body">
+          <ul class="pp-list">
+            <li><strong>Birthday Parties</strong> — packages including food, decoration, and celebration services as per the chosen package</li>
+            <li><strong>Corporate Events</strong> — team-building, offsites, social gatherings</li>
+            <li><strong>School Trips</strong> — supervised group visits for educational and recreational purposes</li>
+            <li><strong>BotCafe</strong> — food and beverages</li>
+          </ul>
+          <p>The exact inclusions, pricing, and deliverables for each event will be discussed and agreed in writing with our team prior to confirmation.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s4">
+        <span class="pp-section-num">04</span>
+        <h2 class="pp-section-title">Pricing &amp; Payment</h2>
+        <div class="pp-section-body">
+          <div class="pp-sub">4.1 Pricing</div>
+          <p>Charges are on a per-person basis, in line with the package selected. The <strong>minimum guest count is 20 persons</strong> — if fewer guests attend, the minimum 20-person charge still applies. All prices are exclusive of applicable taxes (GST and any other government levies).</p>
+
+          <div class="pp-sub">4.2 Payment Schedule</div>
+          <div class="pp-pay-grid">
+            <div class="pp-pay-item">
+              <div class="pp-pay-label">Birthday Parties</div>
+              <div class="pp-pay-title">₹5,000 deposit</div>
+              <div class="pp-pay-desc">Non-refundable deposit at booking. Balance payable after event ends, on actual headcount or minimum — whichever is higher.</div>
+            </div>
+            <div class="pp-pay-item">
+              <div class="pp-pay-label">Corporate Events</div>
+              <div class="pp-pay-title">50% advance</div>
+              <div class="pp-pay-desc">50% of the agreed total to confirm. Balance payable after the event slot ends.</div>
+            </div>
+            <div class="pp-pay-item">
+              <div class="pp-pay-label">School Trips</div>
+              <div class="pp-pay-title">As agreed</div>
+              <div class="pp-pay-desc">Booking and payment terms agreed with the school in writing prior to the visit.</div>
+            </div>
+          </div>
+
+          <div class="pp-sub">4.3 Payment Modes</div>
+          <ul class="pp-list">
+            <li>Online payments via Razorpay (UPI, cards, net banking, wallets)</li>
+            <li>Cash at the venue, in compliance with Indian tax laws</li>
+            <li>An additional <strong>3% surcharge</strong> applies to all card payments</li>
+          </ul>
+
+          <div class="pp-sub">4.4 Add-ons &amp; Extras</div>
+          <p>Any additional services, food, decorations, or guests confirmed during or after the event will be added to the final bill.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s5">
+        <span class="pp-section-num">05</span>
+        <h2 class="pp-section-title">Cancellations, Postponements &amp; Force Majeure</h2>
+        <div class="pp-section-body">
+          <div class="pp-sub">5.1 Cancellations</div>
+          <div class="pp-warn">
+            <strong>The ₹5,000 booking deposit is strictly non-refundable under any circumstances.</strong> For corporate events, the 50% advance is also non-refundable upon cancellation by the client. This applies regardless of when the cancellation is made — there is no cooling-off period or partial refund.
+          </div>
+
+          <div class="pp-sub">5.2 Postponements</div>
+          <p>Bookings may be postponed and the deposit/advance adjusted toward a future event, subject to:</p>
+          <ul class="pp-list">
+            <li>Availability of the requested new date and slot</li>
+            <li>The new event taking place within 6 months of the original date</li>
+            <li>No additional postponement after one rescheduled date has been confirmed</li>
+          </ul>
+
+          <div class="pp-sub">5.3 Force Majeure</div>
+          <p>Botfit shall not be liable for any failure or delay due to circumstances beyond reasonable control, including acts of God, natural disasters, pandemics, government orders, lockdowns, civil unrest, or utility failures. In any such case, Botfit will work in good faith to reschedule to a mutually convenient date. <strong>No refund will be issued.</strong></p>
+
+          <div class="pp-sub">5.4 Sickness or No-Show</div>
+          <p>Botfit is not responsible for guest sickness, last-minute drop-outs, or no-shows. Charges remain payable as per Section 4.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s6">
+        <span class="pp-section-num">06</span>
+        <h2 class="pp-section-title">Arrival, Time &amp; Slot Rules</h2>
+        <div class="pp-section-body">
+          <ul class="pp-list">
+            <li>Please arrive <strong>15 minutes prior</strong> to your scheduled slot — our staff will be preparing your event.</li>
+            <li>The standard play area duration is <strong>1.5 hours</strong>. Cafeteria use for cake-cutting and dining may continue beyond this.</li>
+            <li>If guests overstay in the play area beyond the allotted 1.5 hours by 30 minutes or more, an additional charge of <strong>₹5,000</strong> applies — only if Botfit permits the extension at its sole discretion. Botfit may decline based on subsequent bookings.</li>
+            <li>The Event Host is responsible for ensuring guests vacate the play area on time.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s7">
+        <span class="pp-section-num">07</span>
+        <h2 class="pp-section-title">Outside Items &amp; Vendors</h2>
+        <div class="pp-section-body">
+          <div class="pp-sub">What you may bring</div>
+          <ul class="pp-list">
+            <li>Birthday cake</li>
+            <li>Decorations and theme accessories</li>
+            <li>Return gifts</li>
+            <li>Your own photographer / videographer</li>
+          </ul>
+
+          <div class="pp-sub">What is not allowed</div>
+          <div class="pp-warn">
+            <strong>Outside food and beverages (other than the birthday cake) are strictly not permitted</strong> — in or outside the play area. All food and drinks must be ordered from BotCafe or as part of your package. Any item deemed unsafe, inappropriate, or disruptive by Botfit is also not permitted.
+          </div>
+
+          <div class="pp-sub">Decorator coordination</div>
+          <p>Outside decorators must coordinate with Botfit in advance regarding setup time, placement, and removal. Damage caused during setup or teardown will be charged to the Event Host (see Section 11).</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s8">
+        <span class="pp-section-num">08</span>
+        <h2 class="pp-section-title">Venue &amp; Play Area Rules</h2>
+        <div class="pp-section-body">
+          <p>For the safety, hygiene, and enjoyment of all guests:</p>
+          <div class="pp-rules-grid">
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.1</span>
+              <span class="pp-rule-text">No shoes in the play area. All footwear must be removed at the entrance to the activity zone.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.2</span>
+              <span class="pp-rule-text">No eatables, drinks, chewing gum, or candies inside the play area — hygiene and choking hazard prevention.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.3</span>
+              <span class="pp-rule-text">No personal items such as toys, sharp objects, jewellery, or watches in or around the play area.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.4</span>
+              <span class="pp-rule-text">Children with injuries, illness, fever, or contagious conditions are not advised to use the play area. Entry is at the parent's risk.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.5</span>
+              <span class="pp-rule-text">Age restrictions apply to certain zones. Guests must follow zone signage and staff instructions at all times.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.6</span>
+              <span class="pp-rule-text">Guests may relax in the cafeteria area for an extended time. Smoking is only permitted in the designated outdoor area.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.7</span>
+              <span class="pp-rule-text">Alcohol is permitted only with Botfit's prior written permission. Unauthorised alcohol will be confiscated.</span>
+            </div>
+            <div class="pp-rule-item">
+              <span class="pp-rule-num">8.8</span>
+              <span class="pp-rule-text">Pets are permitted (leashed at all times). Owners are fully responsible for behaviour and hygiene. Pets are not allowed in the play area or cafeteria food zones.</span>
+            </div>
+          </div>
+          <p style="margin-top:16px;">Guests must follow all instructions from Botfit staff and posted signage at all times.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s9">
+        <span class="pp-section-num">09</span>
+        <h2 class="pp-section-title">Supervision &amp; Safety</h2>
+        <div class="pp-section-body">
+          <p>The Event Host and accompanying parents/guardians are responsible for the supervision of all children for the entire duration of the visit, except as set out below.</p>
+          <p>During <strong>scheduled activity time only</strong>, our trained co-ordinator will assist with supervision. Outside scheduled activity time (cafeteria, cake-cutting, free time, before/after the slot), parents and guardians remain solely responsible.</p>
+          <p>Every guest, parent, or guardian must sign a <strong>Consent and Liability Waiver Form</strong> before entering the play area. Children are permitted only after a parent/guardian has signed on their behalf.</p>
+          <div class="pp-highlight">
+            By signing the consent form, the parent/guardian confirms the child has no medical condition that would make participation unsafe, acknowledges the inherent risks of physical play, and permits use of photographs/videos as set out in our Privacy Policy (subject to opt-out).
+          </div>
+          <p>The Event Host must promptly report any incident, injury, or concern to Botfit staff.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s10">
+        <span class="pp-section-num">10</span>
+        <h2 class="pp-section-title">Liability &amp; Disclaimers</h2>
+        <div class="pp-section-body">
+          <div class="pp-dark-block">
+            <strong>Use of the play area, equipment, and facilities is at your own risk.</strong> Botfit is not liable for any injury, accident, harm, or loss suffered by any guest or child during their visit.
+          </div>
+          <p>Botfit is also not liable for:</p>
+          <ul class="pp-list">
+            <li>Loss, theft, damage, or exchange of any personal items including bags, phones, jewellery, gifts, or clothing</li>
+            <li>Allergic reactions arising from food, decoration materials, or any items at the venue (guests are responsible for disclosing allergies in advance)</li>
+            <li>Any indirect, consequential, or special damages</li>
+          </ul>
+          <p>Botfit's maximum total liability under any booking shall not exceed the amount paid by the Event Host for that specific booking, to the extent permitted by law.</p>
+          <p>Nothing in these Terms excludes or limits liability that cannot lawfully be excluded under applicable Indian law.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s11">
+        <span class="pp-section-num">11</span>
+        <h2 class="pp-section-title">Damage to Property</h2>
+        <div class="pp-section-body">
+          <p>Any damage caused to Botfit's property, equipment, fixtures, decoration items, or third-party items by the Event Host, guests, or invitees will be charged to and paid by the Event Host.</p>
+          <p>Botfit will assess damages reasonably and provide a written summary. Charges may be deducted from any pending balance or invoiced separately.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s12">
+        <span class="pp-section-num">12</span>
+        <h2 class="pp-section-title">Lost &amp; Found</h2>
+        <div class="pp-section-body">
+          <ul class="pp-list">
+            <li>Items found at the venue will be held for <strong>one week</strong> from the date of discovery.</li>
+            <li>Unclaimed items after this period may be disposed of, donated, or discarded at Botfit's discretion, with no further liability.</li>
+            <li>Guests are encouraged to check all belongings before leaving the venue.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s13">
+        <span class="pp-section-num">13</span>
+        <h2 class="pp-section-title">Right to Refuse Service &amp; Removal</h2>
+        <div class="pp-section-body">
+          <p>Botfit reserves the right, at its sole discretion, to refuse entry, decline or cancel a booking, or eject any guest from the venue without refund, in cases including but not limited to:</p>
+          <ul class="pp-list">
+            <li>Intoxication or disruptive / aggressive behaviour</li>
+            <li>Violation of these Terms</li>
+            <li>Harm or risk to other guests, staff, or property</li>
+            <li>Non-compliance with staff instructions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s14">
+        <span class="pp-section-num">14</span>
+        <h2 class="pp-section-title">Photography &amp; Privacy</h2>
+        <div class="pp-section-body">
+          <p>Guests may take photographs and videos of their own party and family members for personal use. Guests must respect the privacy of other visitors and must not photograph or record other guests' children or families without consent.</p>
+          <p>Botfit may capture photographs and videos at the venue for marketing and record-keeping. Use of guests' images is governed by our <a href="privacy-policy.html">Privacy Policy</a> and the signed Consent Form. You may withdraw consent for marketing use at any time.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s15">
+        <span class="pp-section-num">15</span>
+        <h2 class="pp-section-title">Website Use</h2>
+        <div class="pp-section-body">
+          <p>Use of <a href="https://www.botfit.in" target="_blank" rel="noopener">www.botfit.in</a> is for personal, non-commercial use only. You may not:</p>
+          <ul class="pp-list">
+            <li>Copy, reproduce, or republish content without written consent</li>
+            <li>Attempt to disrupt, hack, or reverse-engineer the site</li>
+            <li>Use bots, scrapers, or automated tools</li>
+            <li>Post unlawful, offensive, or infringing content</li>
+          </ul>
+          <p>All content on the website — including logos, images, text, branding, packages, and the names <strong>"Botfit," "Jevika &amp; Joy's World," "BotCafe,"</strong> and related marks — is the property of Botfit or its licensors and is protected under applicable intellectual property laws.</p>
+          <p>Information on the website is provided "as is." We do not guarantee uninterrupted access or that the site will be free from errors.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s16">
+        <span class="pp-section-num">16</span>
+        <h2 class="pp-section-title">Indemnity</h2>
+        <div class="pp-section-body">
+          <p>The Event Host agrees to indemnify and hold harmless Botfit, its directors, employees, agents, and contractors from and against any claims, damages, losses, liabilities, costs, or expenses (including reasonable legal fees) arising out of or related to:</p>
+          <ul class="pp-list">
+            <li>Breach of these Terms by the Event Host or their guests</li>
+            <li>Damage to Botfit property or third-party property</li>
+            <li>Injury to any person caused by the Event Host or their guests</li>
+            <li>Misuse of the venue, equipment, or services</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s17">
+        <span class="pp-section-num">17</span>
+        <h2 class="pp-section-title">Privacy</h2>
+        <div class="pp-section-body">
+          <p>Your personal data is handled in accordance with our <a href="privacy-policy.html">Privacy Policy</a>. By accepting these Terms, you also acknowledge our Privacy Policy.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s18">
+        <span class="pp-section-num">18</span>
+        <h2 class="pp-section-title">Modifications to Terms &amp; Services</h2>
+        <div class="pp-section-body">
+          <p>Botfit reserves the right to modify these Terms at any time. The updated version will be posted on the website with a revised "Last Updated" date.</p>
+          <p>Botfit reserves the right to modify packages, pricing, activities, or operating hours at any time without prior notice. Confirmed bookings will be honoured at the agreed terms unless otherwise mutually adjusted.</p>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s19">
+        <span class="pp-section-num">19</span>
+        <h2 class="pp-section-title">Governing Law &amp; Jurisdiction</h2>
+        <div class="pp-section-body">
+          <p>These Terms are governed by the laws of India. Any dispute arising out of or in connection with these Terms will be subject to the exclusive jurisdiction of the courts at <strong>Gurugram, Haryana</strong>.</p>
+          <p>The parties shall first attempt to resolve any dispute through good-faith discussion before initiating legal proceedings.</p>
+          <div class="pp-highlight">
+            By making a booking, paying the advance, or entering the Botfit venue, you confirm that you have read, understood, and agreed to these Terms and Conditions.
+          </div>
+        </div>
+      </section>
+
+      <section class="pp-section" id="s20">
+        <span class="pp-section-num">20</span>
+        <h2 class="pp-section-title">Contact Us</h2>
+        <div class="pp-section-body">
+          <p>For any questions, complaints, or clarifications regarding these Terms:</p>
+          <div class="pp-contact-card">
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Organisation</span>
+              <span class="pp-contact-val">Botfit Entertainment Pvt. Ltd.</span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Address</span>
+              <span class="pp-contact-val">Sector 60, Gurugram, Haryana, India</span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Phone</span>
+              <span class="pp-contact-val"><a href="tel:+918047095095">080-4709-5095</a></span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">WhatsApp</span>
+              <span class="pp-contact-val"><a href="https://wa.me/919310802266" target="_blank" rel="noopener">+91 93108 02266</a></span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Email</span>
+              <span class="pp-contact-val"><a href="mailto:info@botfit.in">info@botfit.in</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="pp-footer">
+    <span class="pp-footer-copy">&copy; <span id="fyear"></span> Botfit Entertainment Pvt. Ltd. All rights reserved.</span>
+    <div class="pp-footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="mailto:info@botfit.in">info@botfit.in</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('fyear').textContent = new Date().getFullYear();
+
+    (function () {
+      const sections = Array.from(document.querySelectorAll('.pp-section[id]'));
+      const tocLinks = document.querySelectorAll('.pp-toc a');
+
+      function setActive(id) {
+        tocLinks.forEach(l => {
+          l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+        });
+      }
+
+      function onScroll() {
+        const threshold = window.innerHeight * 0.30;
+        let current = sections[0].id;
+        sections.forEach(s => {
+          const rect = s.getBoundingClientRect();
+          if (rect.top <= threshold) current = s.id;
+        });
+        setActive(current);
+      }
+
+      // Attach to every possible scroll container incl. Odoo's
+      const scrollTargets = [
+        document.querySelector('.o_content'),
+        document.querySelector('#wrapwrap'),
+        document.querySelector('main.o_main'),
+        document.querySelector('main'),
+        window
+      ].filter(Boolean);
+
+      scrollTargets.forEach(el => {
+        el.addEventListener('scroll', onScroll, { passive: true });
+      });
+
+      // Set initial state
+      onScroll();
+    })();
+  </script>
+</body>
+</html>

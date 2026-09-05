@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Botfit</title>
+  <meta name="description" content="Privacy Policy for Botfit Entertainment Pvt. Ltd. — how we collect, use, and protect your personal data under the DPDP Act, 2023.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --green: #1DB954;
+      --green-dark: #14a345;
+      --green-light: #E8F8EE;
+      --black: #0A0A0A;
+      --white: #FFFFFF;
+      --offwhite: #F7F7F5;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3A;
+      --ink-faint: #8A8A85;
+      --border: rgba(10,10,10,0.09);
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--offwhite);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: var(--green-dark); }
+    a:hover { color: var(--green); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 52px;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo-link {
+      display: flex; align-items: center;
+      text-decoration: none;
+    }
+    .logo-link img {
+      display: block; height: 34px; width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .nav-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--green); }
+    .nav-back-arrow { font-size: 15px; }
+
+    /* ── HERO ── */
+    .pp-hero {
+      background: var(--black);
+      padding: 152px 52px 72px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .pp-hero::before {
+      content: '';
+      position: absolute; top: -60px; right: -80px;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(29,185,84,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .pp-hero-inner {
+      max-width: 760px;
+      position: relative; z-index: 1;
+    }
+    .pp-hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(29,185,84,0.1);
+      border: 1px solid rgba(29,185,84,0.25);
+      border-radius: 2px;
+      padding: 6px 14px;
+      margin-bottom: 24px;
+    }
+    .pp-hero-tag-dot { width: 5px; height: 5px; background: var(--green); border-radius: 50%; }
+    .pp-hero-tag-text { font-size: 11px; font-weight: 500; color: var(--green); letter-spacing: 2px; text-transform: uppercase; }
+
+    .pp-hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4.4vw, 62px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 0.97;
+      letter-spacing: -2.5px;
+      margin-bottom: 24px;
+    }
+    .pp-hero-headline em { font-style: normal; color: var(--green); }
+
+    .pp-hero-meta {
+      display: flex; align-items: center; gap: 20px;
+      flex-wrap: wrap;
+    }
+    .pp-hero-updated {
+      font-size: 13px; color: rgba(255,255,255,0.38);
+      font-weight: 500; letter-spacing: 0.3px;
+    }
+    .pp-hero-sep { width: 1px; height: 14px; background: rgba(255,255,255,0.12); }
+    .pp-hero-company {
+      font-size: 13px; color: rgba(255,255,255,0.38); font-weight: 500;
+    }
+
+    /* ── LAYOUT ── */
+    .pp-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 72px 52px 96px;
+      align-items: start;
+    }
+
+    /* ── SIDEBAR ── */
+    .pp-sidebar {
+      position: sticky;
+      top: 96px;
+    }
+
+    .pp-sidebar-label {
+      font-size: 10px; font-weight: 500;
+      color: var(--ink-faint);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .pp-toc {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-left: 1px solid var(--border);
+    }
+
+    .pp-toc li a {
+      display: block;
+      padding: 9px 0 9px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-faint);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+      border-left: 2px solid transparent;
+      margin-left: -1px;
+      line-height: 1.45;
+    }
+    .pp-toc li a:hover { color: var(--ink); border-color: var(--border); }
+    .pp-toc li a.active { color: var(--green-dark); border-color: var(--green); }
+
+    /* ── CONTENT ── */
+    .pp-content {
+      padding-left: 64px;
+      border-left: 1px solid var(--border);
+    }
+
+    .pp-section {
+      padding-bottom: 56px;
+      margin-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 108px;
+    }
+    .pp-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .pp-section-num {
+      font-family: var(--font-display);
+      font-size: 11px; font-weight: 700;
+      color: var(--green);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .pp-section-title {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.04;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+    }
+
+    .pp-section-body {
+      font-size: 15px;
+      color: var(--ink-mid);
+      line-height: 1.78;
+    }
+
+    .pp-section-body p { margin-bottom: 16px; }
+    .pp-section-body p:last-child { margin-bottom: 0; }
+
+    .pp-section-body strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .pp-section-body a {
+      color: var(--green-dark);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(20,163,69,0.3);
+    }
+    .pp-section-body a:hover { color: var(--green); }
+
+    /* ── Sub-headings within sections ── */
+    .pp-sub {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.2px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    .pp-sub:first-of-type { margin-top: 0; }
+
+    /* ── Lists ── */
+    .pp-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 16px 0;
+    }
+    .pp-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--ink-mid);
+      line-height: 1.65;
+    }
+    .pp-list li::before {
+      content: '';
+      width: 12px;
+      height: 1px;
+      background: var(--green);
+      flex-shrink: 0;
+      margin-top: 11px;
+    }
+
+    /* ── Table ── */
+    .pp-table-wrap {
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+    }
+    .pp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .pp-table thead {
+      background: var(--black);
+    }
+    .pp-table thead th {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 14px 18px;
+      text-align: left;
+    }
+    .pp-table tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .pp-table tbody tr:last-child { border-bottom: none; }
+    .pp-table tbody tr:hover { background: rgba(29,185,84,0.03); }
+    .pp-table td {
+      padding: 14px 18px;
+      color: var(--ink-mid);
+      line-height: 1.55;
+      vertical-align: top;
+    }
+    .pp-table td:first-child {
+      font-weight: 600;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    /* ── Highlight block ── */
+    .pp-highlight {
+      background: var(--green-light);
+      border-left: 2px solid var(--green);
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 14.5px;
+      color: var(--ink-mid);
+      line-height: 1.7;
+    }
+    .pp-highlight strong { color: var(--ink); }
+
+    /* ── Contact card ── */
+    .pp-contact-card {
+      background: var(--black);
+      padding: 32px 36px;
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 48px;
+    }
+    .pp-contact-row { display: flex; flex-direction: column; gap: 4px; }
+    .pp-contact-label {
+      font-size: 10px; font-weight: 600;
+      color: rgba(255,255,255,0.32);
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+    .pp-contact-val {
+      font-size: 14px; font-weight: 500;
+      color: rgba(255,255,255,0.84);
+    }
+    .pp-contact-val a { color: var(--green); text-decoration: none; }
+    .pp-contact-val a:hover { color: var(--green-dark); }
+
+    /* ── Rights grid ── */
+    .pp-rights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-top: 20px;
+    }
+    .pp-right-item {
+      padding: 20px 22px;
+      background: var(--white);
+      border: 1px solid var(--border);
+    }
+    .pp-right-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .pp-right-desc {
+      font-size: 13px;
+      color: var(--ink-faint);
+      line-height: 1.6;
+    }
+
+    /* ── Footer ── */
+    .pp-footer {
+      background: var(--black);
+      padding: 40px 52px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .pp-footer-copy {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+    }
+    .pp-footer-links {
+      display: flex; gap: 20px;
+    }
+    .pp-footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.42);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .pp-footer-links a:hover { color: var(--green); }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      nav { padding: 18px 32px; }
+      .pp-hero { padding: 140px 32px 60px; }
+      .pp-layout { padding: 56px 32px 80px; grid-template-columns: 220px 1fr; }
+      .pp-content { padding-left: 48px; }
+      .pp-footer { padding: 32px; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .pp-hero { padding: 110px 20px 48px; }
+      .pp-hero-headline { font-size: clamp(28px, 8vw, 44px); letter-spacing: -1.5px; }
+      .pp-layout { grid-template-columns: 1fr; padding: 40px 20px 72px; }
+      .pp-sidebar { position: static; margin-bottom: 40px; }
+      .pp-content { padding-left: 0; border-left: none; border-top: 1px solid var(--border); padding-top: 40px; }
+      .pp-toc { display: none; }
+      .pp-contact-card { grid-template-columns: 1fr; gap: 16px; padding: 24px 20px; }
+      .pp-rights { grid-template-columns: 1fr; }
+      .pp-footer { flex-direction: column; align-items: flex-start; padding: 28px 20px; }
+      .pp-table td:first-child { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo-link" aria-label="Botfit home">
+      <img src="images/Botfit-logo.webp" width="95" height="40" alt="Botfit" loading="lazy">
+    </a>
+    <a href="index.html" class="nav-back">
+      <span class="nav-back-arrow">←</span> Back to Home
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pp-hero">
+    <div class="pp-hero-inner">
+      <div class="pp-hero-tag">
+        <span class="pp-hero-tag-dot"></span>
+        <span class="pp-hero-tag-text">Legal</span>
+      </div>
+      <h1 class="pp-hero-headline">Privacy <em>Policy.</em></h1>
+      <div class="pp-hero-meta">
+        <span class="pp-hero-updated">Last updated: 9 May 2026</span>
+        <span class="pp-hero-sep"></span>
+        <span class="pp-hero-company">Botfit Entertainment Pvt. Ltd.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN LAYOUT -->
+  <div class="pp-layout">
+
+    <!-- SIDEBAR TOC -->
+    <aside class="pp-sidebar" aria-label="Table of contents">
+      <div class="pp-sidebar-label">Contents</div>
+      <ul class="pp-toc" id="ppToc">
+        <li><a href="#s1">Introduction</a></li>
+        <li><a href="#s2">Who We Are</a></li>
+        <li><a href="#s3">Information We Collect</a></li>
+        <li><a href="#s4">Children's Data</a></li>
+        <li><a href="#s5">How We Use Your Data</a></li>
+        <li><a href="#s6">Sharing Your Data</a></li>
+        <li><a href="#s7">Cookies &amp; Tracking</a></li>
+        <li><a href="#s8">Data Retention</a></li>
+        <li><a href="#s9">Data Security</a></li>
+        <li><a href="#s10">Your Rights</a></li>
+        <li><a href="#s11">Contact &amp; Grievances</a></li>
+        <li><a href="#s12">Third-Party Links</a></li>
+        <li><a href="#s13">Updates to Policy</a></li>
+        <li><a href="#s14">Governing Law</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="pp-content" id="ppContent">
+
+      <!-- S1 -->
+      <section class="pp-section" id="s1">
+        <span class="pp-section-num">01</span>
+        <h2 class="pp-section-title">Introduction</h2>
+        <div class="pp-section-body">
+          <p>Welcome to Botfit. This Privacy Policy explains how <strong>Botfit Entertainment Pvt. Ltd.</strong> collects, uses, shares, stores, and protects your personal information when you:</p>
+          <ul class="pp-list">
+            <li>Visit our website <a href="https://www.botfit.in" target="_blank" rel="noopener">www.botfit.in</a></li>
+            <li>Contact us by phone, email, or WhatsApp</li>
+            <li>Visit our family entertainment centre in Sector 60, Gurugram</li>
+            <li>Book a birthday party, corporate event, school trip, or general visit</li>
+            <li>Interact with us on social media</li>
+          </ul>
+          <p>This Privacy Policy is published in accordance with the <strong>Digital Personal Data Protection Act, 2023 ("DPDP Act")</strong>, the Information Technology Act, 2000, and rules made thereunder, and serves as an electronic record under the Information Technology Act, 2000.</p>
+          <div class="pp-highlight">
+            By using our website or services, you agree to the practices described in this Policy. If you do not agree, please do not use our services.
+          </div>
+        </div>
+      </section>
+
+      <!-- S2 -->
+      <section class="pp-section" id="s2">
+        <span class="pp-section-num">02</span>
+        <h2 class="pp-section-title">Who We Are</h2>
+        <div class="pp-section-body">
+          <p>We are the Data Fiduciary responsible for your personal data.</p>
+          <div class="pp-table-wrap">
+            <table class="pp-table">
+              <thead>
+                <tr><th>Detail</th><th>Information</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Legal Name</td><td>Botfit Entertainment Pvt. Ltd.</td></tr>
+                <tr><td>Venue</td><td>Sector 60, Gurugram, Haryana, India</td></tr>
+                <tr><td>Phone</td><td><a href="tel:+918047095095">080-4709-5095</a></td></tr>
+                <tr><td>WhatsApp</td><td><a href="https://wa.me/919310802266" target="_blank" rel="noopener">+91 93108 02266</a></td></tr>
+                <tr><td>Email</td><td><a href="mailto:info@botfit.in">info@botfit.in</a></td></tr>
+                <tr><td>Website</td><td><a href="https://www.botfit.in" target="_blank" rel="noopener">https://www.botfit.in</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- S3 -->
+      <section class="pp-section" id="s3">
+        <span class="pp-section-num">03</span>
+        <h2 class="pp-section-title">Information We Collect</h2>
+        <div class="pp-section-body">
+
+          <div class="pp-sub">3.1 Information you provide directly</div>
+          <p>Through website enquiry forms, callback requests, and WhatsApp/phone bookings:</p>
+          <ul class="pp-list">
+            <li>Full name, phone number, and email address</li>
+            <li>Type of event (birthday party, corporate, school trip, walk-in, etc.)</li>
+            <li>Event date, guest count, and special requests</li>
+          </ul>
+          <p>At the venue (mandatory entry register and consent forms):</p>
+          <ul class="pp-list">
+            <li>Parent/guardian's name and contact number</li>
+            <li>Child's name, age, and date of birth</li>
+            <li>Allergies, dietary requirements, or relevant medical information disclosed by the parent/guardian</li>
+            <li>Emergency contact details and signed parental consent form</li>
+          </ul>
+          <p>For corporate events and school trips:</p>
+          <ul class="pp-list">
+            <li>Organisation name, point of contact, billing details</li>
+            <li>Attendee lists or headcount provided by the organisation</li>
+          </ul>
+
+          <div class="pp-sub">3.2 Photographs and videos</div>
+          <p>With prior parental consent (captured through the signed consent form), we photograph and record guests — including children — during their time at the venue. These may be used for:</p>
+          <ul class="pp-list">
+            <li>Sharing with the parent/guardian after the party</li>
+            <li>Internal record-keeping</li>
+            <li>Marketing and promotional purposes on our website, Instagram (@bot_fit_), Facebook, and other social platforms</li>
+          </ul>
+          <p>You may withdraw consent for marketing use of photos at any time by writing to us. We will stop further use, though images already published may take time to be removed from third-party platforms.</p>
+
+          <div class="pp-sub">3.3 CCTV surveillance</div>
+          <p>CCTV cameras operate throughout the venue for the safety and security of children, guests, and staff. Footage is stored for a limited period, never used for marketing, and access is restricted to authorised personnel only.</p>
+
+          <div class="pp-sub">3.4 Payment information</div>
+          <p>All online payments are processed through <strong>Razorpay</strong>. We do not store your debit/credit card numbers, UPI IDs, CVV, or net banking credentials. Razorpay's own privacy policy governs payment data. We also accept cash payments at the venue in line with Section 269ST of the Income Tax Act, 1961.</p>
+
+          <div class="pp-sub">3.5 Website data collected automatically</div>
+          <p>When you visit www.botfit.in, we and our partners automatically collect IP address, approximate location, browser type, device type, pages viewed, time spent, and click activity. We use the following tools:</p>
+          <ul class="pp-list">
+            <li>Google Analytics and Google Tag Manager — website analytics</li>
+            <li>Google Ads — advertising and remarketing</li>
+            <li>Meta (Facebook/Instagram) Pixel — advertising on Facebook and Instagram</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- S4 -->
+      <section class="pp-section" id="s4">
+        <span class="pp-section-num">04</span>
+        <h2 class="pp-section-title">Children's Personal Data — Special Protections</h2>
+        <div class="pp-section-body">
+          <p>A significant part of what we do involves children. Under <strong>Section 9 of the DPDP Act, 2023</strong>, processing personal data of children (persons under 18) requires verifiable consent from a parent or lawful guardian.</p>
+          <p>We comply with this requirement by:</p>
+          <ul class="pp-list">
+            <li>Collecting children's data only through a parent or guardian — never directly from a child</li>
+            <li>Requiring a signed Parental Consent Form before children participate in activities or are photographed for marketing</li>
+            <li>Not undertaking targeted advertising directed at children</li>
+            <li>Not tracking, profiling, or monitoring children's behaviour beyond what is required for our services and their safety</li>
+            <li>Not allowing children to create user accounts on our website</li>
+          </ul>
+          <div class="pp-highlight">
+            <strong>If you are under 18,</strong> please do not submit personal information through our website. A parent or guardian must make all bookings on your behalf. Parents and guardians may contact us at any time to access, correct, or delete their child's information.
+          </div>
+        </div>
+      </section>
+
+      <!-- S5 -->
+      <section class="pp-section" id="s5">
+        <span class="pp-section-num">05</span>
+        <h2 class="pp-section-title">How We Use Your Information</h2>
+        <div class="pp-section-body">
+          <div class="pp-table-wrap">
+            <table class="pp-table">
+              <thead>
+                <tr><th>Purpose</th><th>Details</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Responding to enquiries</td><td>Callback requests, quotes, availability checks</td></tr>
+                <tr><td>Booking &amp; event delivery</td><td>Confirming, planning, and delivering parties, corporate events, school trips, and visits</td></tr>
+                <tr><td>Safety &amp; security</td><td>Verifying entry, managing emergencies, ensuring child wellbeing at the venue</td></tr>
+                <tr><td>Payment processing</td><td>Handling transactions and issuing invoices/receipts</td></tr>
+                <tr><td>Service communications</td><td>Booking confirmations, reminders, and updates</td></tr>
+                <tr><td>Marketing communications</td><td>Promotional offers, new activities, festive packages via email, SMS, WhatsApp, and phone (you can opt out at any time)</td></tr>
+                <tr><td>Photography &amp; content</td><td>Sharing event photos with you and marketing use, with your consent</td></tr>
+                <tr><td>Website analytics</td><td>Understanding how visitors use our site and improving it</td></tr>
+                <tr><td>Online advertising</td><td>Campaigns on Google, Facebook, Instagram — including remarketing</td></tr>
+                <tr><td>Legal compliance</td><td>Meeting tax, accounting, and statutory obligations</td></tr>
+                <tr><td>Defending legal rights</td><td>In the event of disputes, claims, or investigations</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- S6 -->
+      <section class="pp-section" id="s6">
+        <span class="pp-section-num">06</span>
+        <h2 class="pp-section-title">Sharing of Personal Data</h2>
+        <div class="pp-section-body">
+          <p><strong>We do not sell your personal data.</strong> We share it only in the following limited situations:</p>
+          <div class="pp-table-wrap">
+            <table class="pp-table">
+              <thead>
+                <tr><th>Recipient</th><th>Purpose</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Razorpay</td><td>Processing online payments</td></tr>
+                <tr><td>Hosting &amp; website provider (Odoo)</td><td>Operating our website</td></tr>
+                <tr><td>Google (Analytics, Tag Manager, Ads)</td><td>Website analytics and advertising</td></tr>
+                <tr><td>Meta (Facebook/Instagram)</td><td>Advertising and remarketing</td></tr>
+                <tr><td>Email, SMS &amp; WhatsApp service providers</td><td>Sending you communications</td></tr>
+                <tr><td>Botfit's affiliated brands &amp; group entities</td><td>Marketing and service purposes within the group, subject to this Policy</td></tr>
+                <tr><td>Legal/regulatory authorities</td><td>When required by law, court order, or valid government request</td></tr>
+                <tr><td>Professional advisors</td><td>Lawyers, accountants, auditors — under confidentiality</td></tr>
+                <tr><td>Acquirers in a business transfer</td><td>In case of merger, acquisition, or restructuring — under equivalent protections</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>We do not share your personal data with unrelated third parties for their own marketing.</p>
+        </div>
+      </section>
+
+      <!-- S7 -->
+      <section class="pp-section" id="s7">
+        <span class="pp-section-num">07</span>
+        <h2 class="pp-section-title">Cookies &amp; Tracking Technologies</h2>
+        <div class="pp-section-body">
+          <p>Our website uses cookies and similar technologies to make the site function properly, remember preferences, analyse traffic (Google Analytics), and show relevant ads on Google, Facebook, and Instagram (Google Ads, Meta Pixel).</p>
+          <p>You can manage or disable cookies through your browser settings. Disabling cookies may affect parts of the website. You can also opt out of personalised advertising through:</p>
+          <ul class="pp-list">
+            <li>Google Ads Settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a></li>
+            <li>Meta Ad Preferences: <a href="https://www.facebook.com/adpreferences" target="_blank" rel="noopener">facebook.com/adpreferences</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- S8 -->
+      <section class="pp-section" id="s8">
+        <span class="pp-section-num">08</span>
+        <h2 class="pp-section-title">Data Retention</h2>
+        <div class="pp-section-body">
+          <p>We keep personal data only as long as needed for the purpose it was collected, or as required by law.</p>
+          <div class="pp-table-wrap">
+            <table class="pp-table">
+              <thead>
+                <tr><th>Type of Data</th><th>Retention Period</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Website enquiry / lead data</td><td>Up to 3 years from last interaction</td></tr>
+                <tr><td>Booking and payment records</td><td>As required under Indian tax and accounting laws (typically up to 8 years)</td></tr>
+                <tr><td>Venue entry register and parental consent forms</td><td>Up to 3 years, or longer if needed for legal/safety reasons</td></tr>
+                <tr><td>CCTV footage</td><td>Typically 30–90 days, unless preserved for an investigation</td></tr>
+                <tr><td>Marketing database</td><td>Until you opt out or withdraw consent</td></tr>
+                <tr><td>Photos/videos used in marketing</td><td>Until you withdraw consent or we no longer have a business reason to keep them</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>After these periods, data is securely deleted or anonymised.</p>
+        </div>
+      </section>
+
+      <!-- S9 -->
+      <section class="pp-section" id="s9">
+        <span class="pp-section-num">09</span>
+        <h2 class="pp-section-title">Data Security</h2>
+        <div class="pp-section-body">
+          <p>We follow reasonable security practices in line with <strong>Rule 8 of the Information Technology (Reasonable Security Practices) Rules, 2011</strong>, including:</p>
+          <ul class="pp-list">
+            <li>Restricting staff access to personal data on a need-to-know basis</li>
+            <li>Secure storage of physical consent forms, entry registers, and event records</li>
+            <li>Encrypted, PCI-DSS compliant payment processing through Razorpay</li>
+            <li>HTTPS-secured website</li>
+            <li>Regular review of our processes and security practices</li>
+          </ul>
+          <p>While we take reasonable steps, no method of transmission or storage is 100% secure. Please keep your contact information confidential and notify us immediately of any unauthorised use.</p>
+        </div>
+      </section>
+
+      <!-- S10 -->
+      <section class="pp-section" id="s10">
+        <span class="pp-section-num">10</span>
+        <h2 class="pp-section-title">Your Rights Under the DPDP Act, 2023</h2>
+        <div class="pp-section-body">
+          <p>As a Data Principal, you have the following rights under Indian law:</p>
+          <div class="pp-rights">
+            <div class="pp-right-item">
+              <div class="pp-right-title">Right to Access</div>
+              <div class="pp-right-desc">Request a summary of personal data we hold about you and how we process it.</div>
+            </div>
+            <div class="pp-right-item">
+              <div class="pp-right-title">Right to Correction &amp; Erasure</div>
+              <div class="pp-right-desc">Ask us to correct inaccurate data or delete data no longer needed, subject to legal retention requirements.</div>
+            </div>
+            <div class="pp-right-item">
+              <div class="pp-right-title">Right to Withdraw Consent</div>
+              <div class="pp-right-desc">At any time; this will not affect lawful processing already completed prior to withdrawal.</div>
+            </div>
+            <div class="pp-right-item">
+              <div class="pp-right-title">Right to Opt Out of Marketing</div>
+              <div class="pp-right-desc">Through unsubscribe links, replying STOP to SMS/WhatsApp, or writing to us directly.</div>
+            </div>
+            <div class="pp-right-item">
+              <div class="pp-right-title">Right to Nominate</div>
+              <div class="pp-right-desc">Nominate another person to exercise your rights in case of death or incapacity.</div>
+            </div>
+            <div class="pp-right-item">
+              <div class="pp-right-title">Right to Grievance Redressal</div>
+              <div class="pp-right-desc">Raise concerns with our Grievance Officer, and if unresolved, escalate to the Data Protection Board of India.</div>
+            </div>
+          </div>
+          <p style="margin-top:20px;">To exercise any right, write to us using the contact details in Section 11. We will respond within the timelines required by law.</p>
+        </div>
+      </section>
+
+      <!-- S11 -->
+      <section class="pp-section" id="s11">
+        <span class="pp-section-num">11</span>
+        <h2 class="pp-section-title">Grievance Officer &amp; Contact Us</h2>
+        <div class="pp-section-body">
+          <p>If you have any questions, concerns, complaints, or requests about your personal data or this Privacy Policy, please contact our Grievance Officer:</p>
+          <div class="pp-contact-card">
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Organisation</span>
+              <span class="pp-contact-val">Botfit Entertainment Pvt. Ltd.</span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Address</span>
+              <span class="pp-contact-val">Sector 60, Gurugram, Haryana, India</span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Email</span>
+              <span class="pp-contact-val"><a href="mailto:grievance@botfit.in">grievance@botfit.in</a></span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Phone</span>
+              <span class="pp-contact-val"><a href="tel:+918047095095">080-4709-5095</a></span>
+            </div>
+            <div class="pp-contact-row">
+              <span class="pp-contact-label">Working Hours</span>
+              <span class="pp-contact-val">Monday – Sunday, 10:00 AM – 9:00 PM</span>
+            </div>
+          </div>
+          <p style="margin-top:20px;">We aim to acknowledge complaints within <strong>48 hours</strong> and resolve them within the timelines required under applicable law (typically within 30 days). If you are not satisfied with our response, you may approach the <strong>Data Protection Board of India</strong> under the DPDP Act, 2023.</p>
+        </div>
+      </section>
+
+      <!-- S12 -->
+      <section class="pp-section" id="s12">
+        <span class="pp-section-num">12</span>
+        <h2 class="pp-section-title">Third-Party Links</h2>
+        <div class="pp-section-body">
+          <p>Our website and social media may contain links to third-party websites. We are not responsible for the privacy practices of those sites. Please review their privacy policies before sharing any information with them.</p>
+        </div>
+      </section>
+
+      <!-- S13 -->
+      <section class="pp-section" id="s13">
+        <span class="pp-section-num">13</span>
+        <h2 class="pp-section-title">Updates to This Policy</h2>
+        <div class="pp-section-body">
+          <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or business operations. The updated version will be posted on this page with a revised "Last Updated" date.</p>
+          <p>We encourage you to review this Policy periodically. Significant changes may be communicated by email or through a notice on our website.</p>
+        </div>
+      </section>
+
+      <!-- S14 -->
+      <section class="pp-section" id="s14">
+        <span class="pp-section-num">14</span>
+        <h2 class="pp-section-title">Governing Law &amp; Jurisdiction</h2>
+        <div class="pp-section-body">
+          <p>This Privacy Policy is governed by the laws of India. Any dispute arising out of or in connection with this Policy will be subject to the exclusive jurisdiction of the courts at <strong>Gurugram, Haryana</strong>.</p>
+          <div class="pp-highlight">
+            By visiting our venue or using our website, you acknowledge that you have read and understood this Privacy Policy.
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="pp-footer">
+    <div class="pp-footer-copy">© <span id="fyear"></span> Botfit Entertainment Pvt. Ltd. All rights reserved.</div>
+    <div class="pp-footer-links">
+      <a href="index.html">Home</a>
+      <a href="https://www.botfit.in/terms-condition">Terms &amp; Conditions</a>
+      <a href="mailto:info@botfit.in">info@botfit.in</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('fyear').textContent = new Date().getFullYear();
+
+    /* ── Active TOC link on scroll ── */
+    const sections = document.querySelectorAll('.pp-section[id]');
+    const tocLinks = document.querySelectorAll('.pp-toc a');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(link => link.classList.remove('active'));
+          const active = document.querySelector(`.pp-toc a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>

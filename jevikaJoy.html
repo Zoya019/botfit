@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNFJF5CC');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11252558517"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11252558517');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jevika &amp; Joy | India's Own Activity Heroes | Botfit Gurugram</title>
+  <meta name="description" content="Meet Jevika and Joy — India's first physical activity heroes, live at Botfit, North India's largest indoor FEC in Sector 60, Gurugram. Book a themed birthday party today.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root{
+      --green: #1DB954;
+      --green-dark: #14a345;
+      --green-light: #E8F8EE;
+      --black: #0A0A0A;
+      --white: #FFFFFF;
+      --offwhite: #F7F7F5;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3A;
+      --ink-faint: #8A8A85;
+      --border: rgba(10,10,10,0.09);
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    html { scroll-behavior: auto; overflow-x: clip; }
+    body { font-family: var(--font-body); background: var(--offwhite); color: var(--ink); overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a, a:hover, a:focus, a:visited { text-decoration: none !important; }
+
+    /* ── NAV (shared pattern) ── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 22px 52px; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.82) 0%, transparent 100%); transition: background 0.4s, padding 0.3s; }
+    nav.scrolled { background: rgba(10, 10, 10, 0.92); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); padding: 14px 52px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .logo-link { display: flex; align-items: center; text-decoration: none; transition: opacity 0.2s; z-index: 210; position: relative; }
+    .logo-link:hover { opacity: 0.82; }
+    .logo-link img { display: block; height: 38px; width: auto; filter: brightness(0) invert(1); }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; flex-wrap: nowrap; }
+    .nav-links a { color: rgba(255, 255, 255, 0.7); font-size: 12px; font-weight: 500; transition: color 0.22s; padding-bottom: 3px; position: relative; white-space: nowrap; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 100%; height: 1px; background: var(--green); transition: right 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
+    .nav-links a:hover::after, .nav-links a.active::after { right: 0; }
+    .nav-links a.active { color: var(--green); }
+    .nav-links .nav-cta::after { display: none; }
+    .nav-cta { background: var(--green) !important; color: var(--black) !important; padding: 8px 16px !important; border-radius: 2px; font-weight: 700 !important; font-size: 11px !important; letter-spacing: 0.4px; white-space: nowrap; transition: background 0.2s, transform 0.15s !important; }
+    .nav-cta:hover { background: var(--green-dark) !important; transform: translateY(-1px); }
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 44px; height: 44px; background: none; border: none; cursor: pointer; z-index: 210; position: relative; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; transform-origin: center; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 204; opacity: 0; pointer-events: none; transition: opacity 0.3s; display: block; }
+    .nav-overlay.open { opacity: 1; pointer-events: auto; }
+    .nav-drawer { position: fixed; top: 0; right: 0; width: min(320px, 88vw); height: 100dvh; background: rgba(10,10,10,0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); z-index: 205; transform: translateX(100%); transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1); border-left: 1px solid rgba(255, 255, 255, 0.07); overflow-y: auto; padding: 100px 32px 40px; display: flex; flex-direction: column; }
+    .nav-drawer.open { transform: translateX(0); }
+    .nav-drawer-links { list-style: none; display: flex; flex-direction: column; }
+    .nav-drawer-links li { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .nav-drawer-links a { display: block; color: rgba(255, 255, 255, 0.82); font-size: 18px; font-weight: 600; padding: 18px 0; transition: color 0.2s; font-family: var(--font-display); }
+    .nav-drawer-links a:hover, .nav-drawer-links a.active { color: var(--green); }
+    .nav-drawer-cta { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .nav-drawer-contact { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.07); display: flex; flex-direction: column; gap: 10px; }
+    .nav-drawer-contact a { color: rgba(255,255,255,0.5); font-size: 13px; transition: color 0.2s; }
+    .nav-drawer-contact a:hover { color: var(--green); }
+
+    /* ── BUTTONS ── */
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--green); color: var(--black) !important; font-family: var(--font-body); font-size: 15px; font-weight: 700; padding: 15px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.25s, transform 0.18s, box-shadow 0.2s; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(29, 185, 84, 0.32); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white) !important; font-family: var(--font-body); font-size: 15px; font-weight: 500; padding: 14px 30px; border-radius: 2px; border: 1px solid rgba(255, 255, 255, 0.32); cursor: pointer; transition: border-color 0.25s, transform 0.18s; }
+    .btn-secondary:hover { border-color: var(--green); transform: translateY(-3px); }
+    .btn-secondary--ink { border-color: rgba(10,10,10,0.22) !important; color: var(--ink) !important; }
+    .btn-secondary--ink:hover { border-color: rgba(10,10,10,0.38) !important; }
+    .btn-outline-green { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 30px; border-radius: 2px; border: 1px solid rgba(29,185,84,0.55); color: var(--green) !important; background: transparent; font-weight: 600; transition: transform 0.18s, background 0.18s, border-color 0.18s; }
+    .btn-outline-green:hover { transform: translateY(-3px); background: rgba(29,185,84,0.08); border-color: rgba(29,185,84,0.75); }
+    .btn-arrow { font-size: 16px; display: inline-block; transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .btn-primary:hover .btn-arrow, .btn-secondary:hover .btn-arrow, .btn-outline-green:hover .btn-arrow { transform: translateX(5px); }
+
+    /* ── REVEALS ── */
+    .reveal { opacity:0; transform:translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.10s; }
+    .reveal-delay-2 { transition-delay: 0.20s; }
+    .reveal-delay-3 { transition-delay: 0.30s; }
+    .reveal-delay-4 { transition-delay: 0.40s; }
+    .reveal-delay-5 { transition-delay: 0.50s; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px) } to { opacity: 1; transform: translateY(0) } }
+    @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes bgzoom { from { transform: scale(1.06); } to { transform: scale(1.00); } }
+    @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(29,185,84,0.25) } 50% { box-shadow: 0 0 0 7px rgba(29,185,84,0.10) } }
+    @keyframes scrollLine { 0% { top: -100% } 100% { top: 100% } }
+
+    /* ── SHARED TAGS ── */
+    .pos-tag { display: inline-flex; align-items: center; gap: 8px; background: var(--green-light); border: 1px solid rgba(29, 185, 84, 0.2); border-radius: 2px; padding: 6px 14px; margin-bottom: 18px; }
+    .pos-tag-dot { width: 5px; height: 5px; background: var(--green); border-radius: 50%; }
+    .pos-tag-text { font-size: 11px; font-weight: 500; color: var(--green-dark); letter-spacing: 2px; text-transform: uppercase; }
+    .pos-tag--dark { background: rgba(29, 185, 84, 0.1); border-color: rgba(29, 185, 84, 0.25); }
+    .pos-tag--dark .pos-tag-text { color: var(--green); }
+
+    /* ══ CANVAS PARTICLE LAYER ══ */
+    #heroCanvas { position:absolute; inset:0; pointer-events:none; z-index:1; }
+
+    /* ══ HERO FLOAT ══ */
+    @keyframes floatA {
+      0%,100% { transform: translateY(0px) rotate(-1deg); }
+      50%      { transform: translateY(-18px) rotate(0.5deg); }
+    }
+    @keyframes floatB {
+      0%,100% { transform: translateY(-10px) rotate(1deg); }
+      50%      { transform: translateY(8px) rotate(-0.5deg); }
+    }
+    .hero-char--jevika { animation: floatA 5.8s ease-in-out infinite; }
+    .hero-char--joy    { animation: floatB 6.4s ease-in-out infinite 0.6s; }
+
+    /* ══ KINETIC BORDER CARD ══ */
+    .char-card {
+      transform-style: preserve-3d;
+      transition: box-shadow 0.35s, transform 0.12s;
+      will-change: transform;
+    }
+    .char-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1.5px solid var(--green);
+      opacity: 0;
+      transition: opacity 0.32s;
+      pointer-events: none;
+    }
+    .char-card:hover::after { opacity: 0.55; }
+    .char-card:hover {
+      box-shadow: 0 24px 60px rgba(29,185,84,0.16), 0 0 0 1px rgba(29,185,84,0.12);
+    }
+
+    /* ══ SWEEPING SHIMMER on cards ══ */
+    .char-card .char-shimmer {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(115deg, transparent 30%, rgba(29,185,84,0.10) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.0s;
+      pointer-events: none;
+      z-index: 3;
+    }
+    .char-card:hover .char-shimmer { transform: translateX(100%); transition: transform 0.55s ease; }
+
+    /* ══ UNIVERSE SECTION — stagger cards individually ══ */
+    .char-card { opacity: 0; transform: translateY(44px) scale(0.96); transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s; }
+    .char-card.card-visible { opacity: 1; transform: translateY(0) scale(1); }
+    .char-card:nth-child(1) { transition-delay: 0.05s; }
+    .char-card:nth-child(2) { transition-delay: 0.14s; }
+    .char-card:nth-child(3) { transition-delay: 0.23s; }
+    .char-card:nth-child(4) { transition-delay: 0.32s; }
+    .char-card:nth-child(5) { transition-delay: 0.41s; }
+
+    /* ══ HERO GLOW RING ══ */
+    .hero-glow-ring {
+      position: absolute;
+      bottom: -60px; left: 50%; transform: translateX(-50%);
+      width: 520px; height: 520px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(29,185,84,0.22) 0%, transparent 68%);
+      pointer-events: none; z-index: 0;
+      animation: glowPulse 3.5s ease-in-out infinite;
+    }
+    @keyframes glowPulse {
+      0%,100% { opacity: 0.7; transform: translateX(-50%) scale(1); }
+      50%      { opacity: 1;   transform: translateX(-50%) scale(1.12); }
+    }
+
+    /* ══ SECTION HEADLINE SCRAMBLE ══ */
+    .scramble-char { display: inline-block; }
+
+    /* ══ THEMED PARTY CARDS — slide-in from bottom with bounce ══ */
+    .hi-card { transition: transform 0.32s cubic-bezier(0.22,1,0.36,1), border-color 0.25s, background 0.25s; }
+    .hi-card:hover { transform: translateY(-8px); border-color: rgba(29,185,84,0.35); background: rgba(29,185,84,0.05); }
+
+    /* Magnetic cursor orb (same as activities) */
+    #cursor-orb {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(29,185,84,0.55) 0%, rgba(29,185,84,0.08) 60%, transparent 100%);
+      transform: translate(-50%, -50%);
+      transition: width 0.3s, height 0.3s, opacity 0.3s;
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    #cursor-orb.expand { width: 90px; height: 90px; }
+    #cursor-trail {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9998;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 0 12px 3px rgba(29,185,84,0.6);
+    }
+    @media (hover: none) {
+      #cursor-orb, #cursor-trail { display: none !important; }
+    }
+
+    /* ══ SPLIT SECTION — parallax character images ══ */
+    .split-right-inner img { transition: filter 0.4s; }
+    .split-right-inner:hover img { filter: drop-shadow(0 20px 64px rgba(29,185,84,0.28)) drop-shadow(0 0 40px rgba(29,185,84,0.28)); }
+
+    /* ══ REVEAL overrides for .cards-row wrapper ══ */
+    .cards-row.reveal { opacity: 1 !important; transform: none !important; }
+
+    /* ═════════════════════════════════════
+       SECTION 1 — HERO
+    ═════════════════════════════════════ */
+    .hero { position: relative; min-height: 100vh; background: #0A0A0A; overflow: hidden; display: grid; }
+    .hero::before{
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(ellipse at 50% 80%, rgba(29,185,84,0.18) 0%, #0A0A0A 70%);
+      pointer-events:none;
+    }
+    .hero-inner { position: relative; z-index: 2; width: min(1200px, 100%); margin: 0 auto; padding: 120px 52px 42px; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 12px; border-radius: 999px; background: rgba(10,10,10,0.70); border: 1px solid rgba(29,185,84,0.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); width: fit-content; margin-bottom: 18px; opacity: 0; animation: fadeUp 0.7s 0.25s ease forwards; }
+    .hero-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(29,185,84,0.25); animation: pulse 2s ease-in-out infinite; }
+    .hero-eyebrow span { color: rgba(255,255,255,0.92); font-weight: 600; font-size: 12px; letter-spacing: 0.6px; }
+    .hero h1 { font-family: var(--font-display); font-weight: 800; color: var(--white); font-size: clamp(35px, 4.58vw, 67px); line-height: 1.02; letter-spacing: -2.5px; margin-bottom: 18px; opacity: 0; animation: fadeUp 0.85s 0.40s ease forwards; }
+    .hero h1 em { font-style: normal; color: var(--green); display: inline-block; }
+    .hero-sub { color: rgba(255,255,255,0.62); font-size: clamp(15px, 1.8vw, 18px); line-height: 1.72; max-width: 560px; opacity: 0; animation: fadeUp 0.85s 0.60s ease forwards; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; opacity: 0; animation: fadeUp 0.85s 0.78s ease forwards; }
+    .trustbar { grid-column: 1 / -1; margin-top: 26px; display: flex; align-items: center; flex-wrap: wrap; gap: 0; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 18px; opacity: 0; animation: fadeUp 0.85s 0.95s ease forwards; }
+    .trust-item { display:flex; align-items: baseline; gap: 8px; padding: 0 18px; border-right: 1px solid rgba(255,255,255,0.12); }
+    .trust-item:first-child { padding-left: 0; }
+    .trust-item:last-child { border-right: 0; }
+    .trust-val { font-family: var(--font-display); font-weight: 800; color: var(--white); font-size: 16px; }
+    .trust-label { color: rgba(255,255,255,0.42); font-size: 12px; }
+
+    .hero-stage { position: relative; height: min(520px, 56vh); align-self: end; display:flex; align-items:flex-end; justify-content:center; }
+    .hero-chars { width: 100%; height: 100%; position: relative; display:flex; align-items:flex-end; justify-content:center; gap: min(28px, 2.4vw); }
+    .hero-char { max-height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 16px 48px rgba(29,185,84,0.18)) drop-shadow(0 0 36px rgba(29,185,84,0.18)); display: block; }
+    .hero-char--jevika { transform: translateX(-12px); }
+    .hero-char--joy { transform: translateX(12px); }
+
+    .scroll-cue { position: absolute; right: 52px; bottom: 32px; display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeIn 1s 1.05s ease forwards; z-index: 3; }
+    .scroll-cue-text { font-size: 10px; font-weight: 500; color: rgba(255, 255, 255, 0.28); letter-spacing: 2.5px; text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg); }
+    .scroll-line { width: 1px; height: 44px; background: rgba(255, 255, 255, 0.14); position: relative; overflow: hidden; }
+    .scroll-line::after { content: ''; position: absolute; top: -100%; left: 0; right: 0; height: 100%; background: var(--green); animation: scrollLine 2s 1.2s ease-in-out infinite; }
+
+    /* ═════════════════════════════════════
+       SECTION 2 — THE UNIVERSE
+    ═════════════════════════════════════ */
+    .universe { background: var(--black); color: var(--white); padding: 96px 52px; }
+    .universe-inner { width: min(1200px, 100%); margin: 0 auto; text-align: center; }
+    .universe h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 4.05vw, 56px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; }
+    .universe-sub { color: rgba(255,255,255,0.48); line-height: 1.75; max-width: 560px; margin: 0 auto 44px; }
+    .cards-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; align-items: stretch; }
+    .char-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); position: relative; overflow: hidden; text-align: left; }
+    .char-card::before { content:""; position:absolute; left:0; right:0; top:0; height: 3px; background: var(--green); opacity: 0.9; }
+    .char-media { height: 240px; background: rgba(255,255,255,0.02); display:flex; align-items:flex-end; justify-content:center; overflow:hidden; }
+    .char-media img { width: auto; height: 240px; object-fit: contain; }
+    .char-placeholder { width: 100%; height: 100%; background: var(--green); display:flex; align-items:center; justify-content:center; font-family: var(--font-display); font-weight: 800; font-size: 74px; color: var(--white); }
+    .char-body { padding: 18px 18px 20px; }
+    .char-name { font-family: var(--font-display); font-weight: 700; font-size: 20px; letter-spacing: -0.6px; margin-bottom: 10px; }
+    .trait { display:inline-flex; align-items:center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(29,185,84,0.14); border: 1px solid rgba(29,185,84,0.35); color: var(--green); font-weight: 700; font-size: 11px; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 12px; }
+    .char-line { color: rgba(255,255,255,0.55); line-height: 1.55; font-size: 13.5px; white-space: pre-line; }
+
+    /* ═════════════════════════════════════
+       SECTION 3 — AT BOTFIT
+    ═════════════════════════════════════ */
+    .atbotfit { background: var(--offwhite); }
+    .split { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--border); }
+    .split-left { padding: 72px 60px; }
+    .split-right { background: var(--black); position: relative; min-height: 82vh; overflow: hidden; }
+    .split-right::before{ content:""; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 85%, rgba(29,185,84,0.18) 0%, rgba(10,10,10,0.98) 68%); z-index:1; pointer-events:none; }
+    .split-right-inner{ position: absolute; inset: 0; display:flex; align-items:flex-end; justify-content:center; gap: 24px; padding: 0 24px; z-index:2; }
+    .split-right-inner img { height: 95%; width: auto; max-width: 48%; object-fit: contain; filter: drop-shadow(0 16px 48px rgba(29,185,84,0.18)) drop-shadow(0 0 36px rgba(29,185,84,0.18)); }
+    .split h3 { font-family: var(--font-display); font-weight: 800; color: var(--ink); font-size: clamp(26px, 3.34vw, 49px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 18px; }
+    .split p { color: var(--ink-mid); font-size: 15.5px; line-height: 1.75; max-width: 560px; margin-bottom: 16px; }
+    .feat-rows { margin-top: 26px; display:flex; flex-direction: column; gap: 12px; }
+    .feat-row { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 16px 18px; display:flex; gap: 14px; align-items:flex-start; }
+    .feat-ico { font-size: 18px; line-height: 1; margin-top: 1px; }
+    .feat-title { font-family: var(--font-display); font-weight: 800; color: var(--ink); font-size: 14px; margin-bottom: 4px; }
+    .feat-desc { color: var(--ink-mid); font-size: 13.2px; line-height: 1.55; }
+
+    /* ═════════════════════════════════════
+       SECTION 4 — THEMED PARTIES
+    ═════════════════════════════════════ */
+    .themed { background: var(--black); padding: 96px 52px; color: var(--white); border-top: 1px solid rgba(255,255,255,0.07); }
+    .themed-inner { width: min(1200px, 100%); margin: 0 auto; text-align: center; }
+    .themed h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 4.05vw, 56px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; }
+    .themed-sub { color: rgba(255,255,255,0.48); line-height: 1.75; max-width: 600px; margin: 0 auto 44px; }
+    .hi-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; text-align: left; }
+    .hi-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); position: relative; padding: 22px 20px; }
+    .hi-card::before { content:""; position:absolute; left:0; right:0; top:0; height: 3px; background: var(--green); opacity: 0.95; }
+    .hi-ico { font-size: 20px; margin-bottom: 10px; }
+    .hi-title { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin-bottom: 10px; }
+    .hi-body { color: rgba(255,255,255,0.52); line-height: 1.65; font-size: 13.8px; }
+    .themed-actions { margin-top: 34px; display:flex; justify-content:center; gap: 14px; flex-wrap: wrap; }
+
+    /* ═════════════════════════════════════
+       SECTION 5 — MISSION
+    ═════════════════════════════════════ */
+    .mission { background: var(--offwhite); border-top: 1px solid var(--border); }
+    .mission .split-right { background: var(--black); }
+    .mission .split-right-inner { padding: 40px 34px 0; }
+    .stat-row { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .stat { background: var(--white); border: 1px solid var(--border); padding: 18px 16px; border-left: 3px solid var(--green); }
+    .stat-num { font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.8px; color: var(--ink); }
+    .stat-lbl { color: var(--ink-mid); font-size: 12.5px; margin-top: 4px; line-height: 1.3; }
+
+    /* ═════════════════════════════════════
+       SECTION 6 — SHOP
+    ═════════════════════════════════════ */
+    .shop { background: var(--black); padding: 96px 52px; color: var(--white); border-top: 1px solid rgba(255,255,255,0.07); }
+    .shop-inner { width: min(860px, 100%); margin: 0 auto; text-align: center; }
+    .shop h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 4.05vw, 56px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; }
+    .shop-sub { color: rgba(255,255,255,0.48); line-height: 1.75; max-width: 560px; margin: 0 auto 44px; }
+    .merch-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; text-align: left; }
+    .merch { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); position: relative; overflow:hidden; }
+    .merch::before { content:""; position:absolute; left:0; right:0; top:0; height: 3px; background: var(--green); opacity: 0.95; }
+    .merch-media { height: 160px; background: rgba(29,185,84,0.16); display:flex; align-items:center; justify-content:center; }
+    .merch-icon { width: 60px; height: 60px; border: 1px solid rgba(255,255,255,0.18); display:flex; align-items:center; justify-content:center; color: var(--white); font-size: 26px; }
+    .merch-body { padding: 18px; }
+    .merch-title { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin-bottom: 8px; }
+    .merch-desc { color: rgba(255,255,255,0.52); font-size: 13.5px; line-height: 1.65; }
+    .notify { margin-top: 30px; display:flex; flex-direction: column; align-items:center; gap: 10px; }
+    .notify small { color: rgba(255,255,255,0.38); max-width: 360px; line-height: 1.45; }
+
+    /* ═════════════════════════════════════
+       SECTION 7 — VISIT / CTA
+    ═════════════════════════════════════ */
+    .visit { background: var(--offwhite); padding: 96px 52px; border-top: 1px solid var(--border); }
+    .visit-inner { width: min(900px, 100%); margin: 0 auto; text-align: center; }
+    .visit h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 4.05vw, 56px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; color: var(--ink); }
+    .visit-sub { color: var(--ink-mid); line-height: 1.75; max-width: 620px; margin: 0 auto 30px; }
+    .visit-actions { display:flex; justify-content:center; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; }
+    .info-rows { margin-top: 10px; display:flex; flex-direction: column; gap: 10px; align-items: stretch; }
+    .info-row { background: var(--white); border: 1px solid var(--border); padding: 16px 18px; display:flex; gap: 12px; align-items:flex-start; text-align:left; }
+    .info-ico { font-size: 18px; line-height: 1; margin-top: 1px; }
+    .info-label { font-size: 11px; font-weight: 800; color: var(--ink-faint); letter-spacing: 1.6px; text-transform: uppercase; }
+    .info-val { font-size: 14px; color: var(--ink); margin-top: 3px; line-height: 1.45; }
+    .info-row a { color: var(--ink) !important; }
+    .info-row a:hover { color: var(--green-dark) !important; }
+
+    /* ── FOOTER (same as homepage) ── */
+    .site-footer { background: var(--black); color: rgba(255,255,255,0.72); padding: 72px 52px 42px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 26px; align-items: start; }
+    .footer-col-title { font-family: var(--font-display); font-weight: 800; color: var(--white); letter-spacing: -0.4px; font-size: 16px; margin-bottom: 12px; }
+    .footer-logo { filter: brightness(0) invert(1); display: block; height: auto; }
+    .jj-mini-badge { margin-top: 18px; display: flex; gap: 14px; padding: 14px; border-radius: 3px; border: 1px solid rgba(29,185,84,0.28); background: rgba(29,185,84,0.10); align-items: center; }
+    .jj-mini-img { display: flex; gap: 0; align-items: center; }
+    .jj-mini-img img { width: 34px; height: 34px; object-fit: contain; background: transparent; border: none; display: block; }
+    .jj-mini-img img + img { margin-left: -10px; }
+    .jj-mini-label { font-family: var(--font-display); font-weight: 800; color: var(--white); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .jj-mini-text a { color: var(--green); font-weight: 700; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
+    .footer-contact { margin-top: 16px; display: grid; gap: 10px; }
+    .footer-contact-line { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .footer-contact-label { color: rgba(255,255,255,0.48); font-size: 12px; font-weight: 700; letter-spacing: 0.2px; }
+    .footer-link { color: rgba(255,255,255,0.86); text-decoration: none; font-weight: 700; }
+    .footer-link:hover { color: var(--green); }
+    .footer-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .site-footer .btn-primary, .site-footer .btn-secondary { padding: 12px 16px; font-size: 13px; }
+    .site-footer a.btn-secondary {
+      color: #21b179 !important;
+    }
+    .site-footer a.btn-secondary:hover {
+      color: #2dd68f !important;
+    }
+    .footer-col a { display: block; text-decoration: none; color: rgba(255,255,255,0.72); font-weight: 650; margin: 10px 0; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-address { color: rgba(255,255,255,0.74); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
+    .footer-legal { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 14px; }
+    .footer-legal a { margin: 0; font-size: 13px; }
+    .footer-bottom { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,0.55); }
+
+    @media (max-width: 1024px) {
+      .site-footer { padding: 60px 32px 42px; }
+    }
+
+    /* ── MOBILE STICKY BAR ── */
+    .mobile-sticky {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 99999;
+      background: rgba(10,10,10,0.97);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 10px 16px 14px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      will-change: transform;
+    }
+    .m-btn {
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      background: rgba(255,255,255,0.07); border: none; border-radius: 4px;
+      padding: 9px 4px; cursor: pointer; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .m-btn:hover { background: rgba(255,255,255,0.12); }
+    .m-btn.primary { background: var(--green); }
+    .m-btn.primary:hover { background: var(--green-dark); }
+    .m-icon { font-size: 17px; line-height: 1; }
+    .m-label { font-family: var(--font-body); font-size: 10px; font-weight: 500; color: rgba(255,255,255,0.68); letter-spacing: 0.3px; }
+    .m-btn.primary .m-label { color: var(--black); font-weight: 700; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 980px){
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding: 100px 24px 0;
+        gap: 0;
+      }
+      .hero-inner > div:first-child {
+        padding-bottom: 32px;
+      }
+      .hero-stage {
+        height: auto;
+        min-height: 46vw;
+        max-height: 72vw;
+        width: 100%;
+        align-self: auto;
+        overflow: visible;
+      }
+      .hero-chars {
+        height: auto;
+        min-height: 46vw;
+        max-height: 72vw;
+        gap: 12px;
+        align-items: flex-end;
+      }
+      .hero-char {
+        max-height: none;
+        height: 68vw;
+        width: auto;
+        max-width: 48%;
+        flex-shrink: 0;
+      }
+      .hero-char--jevika { transform: none; }
+      .hero-char--joy    { transform: none; }
+      .trustbar {
+        grid-column: 1 / -1;
+        margin-top: 24px;
+        flex-wrap: wrap;
+      }
+      .scroll-cue { right: 32px; }
+      nav { padding: 18px 32px; }
+      nav.scrolled { padding: 12px 32px; }
+      .split { grid-template-columns: 1fr; }
+      .split-right { min-height: 55vw; }
+      .split-right-inner img { height: 90%; max-width: 46%; }
+      .cards-row { grid-template-columns: repeat(2, 1fr); }
+      .hi-grid, .merch-grid { grid-template-columns: 1fr; }
+      .stat-row { grid-template-columns: 1fr; }
+      .site-footer { padding: 52px 20px 100px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; font-size: 12px; margin-bottom: 60px; }
+      .footer-contact-line { flex-direction: column; gap: 2px; }
+      .footer-cta .btn-primary, .footer-cta .btn-secondary { font-size: 13px; padding: 12px 18px; }
+      .universe, .themed, .shop, .visit { padding: 72px 20px; }
+      .split-left { padding: 56px 20px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .mobile-sticky { display: grid; }
+      body { padding-bottom: calc(86px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 640px){
+      .hero-inner { padding: 88px 20px 0; }
+      .hero-char {
+        height: 74vw;
+        max-width: 47%;
+      }
+      .hero-chars { min-height: 50vw; max-height: 78vw; gap: 8px; }
+      .hero h1 { font-size: clamp(28px, 7.04vw, 42px); letter-spacing: -1.5px; }
+      .hero-sub { font-size: 14px; }
+      .hero-actions { gap: 10px; }
+      .hero-actions .btn-primary,
+      .hero-actions .btn-secondary { font-size: 13px; padding: 12px 20px; }
+    }
+    @media (max-width: 520px){
+      .cards-row { grid-template-columns: 1fr; }
+      .trust-item { padding: 0 12px; }
+      .split-right { min-height: 72vw; }
+      .split-right-inner img { height: 88%; max-width: 46%; }
+      .hero-inner { padding: 80px 16px 0; }
+      .hero-char { height: 80vw; max-width: 47%; }
+      .hero-chars { min-height: 56vw; max-height: 84vw; gap: 6px; }
+      .trust-item .trust-val { font-size: 14px; }
+    }
+
+    /* ══ iOS Safari / PWA sticky bar hard overrides ══ */
+    @supports (-webkit-touch-callout: none) {
+      .mobile-sticky {
+        position: fixed !important;
+        left: 0 !important; right: 0 !important; bottom: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 8px !important;
+        z-index: 99999 !important;
+        padding: 10px 16px calc(14px + env(safe-area-inset-bottom)) !important;
+        align-items: stretch !important;
+      }
+      .mobile-sticky .m-btn {
+        display: flex !important;
+        width: 100% !important; min-width: 0 !important; min-height: 52px !important;
+        padding: 9px 4px !important; border-radius: 10px !important;
+        background: rgba(255,255,255,0.07) !important;
+        border: none !important;
+      }
+      .mobile-sticky .m-btn.primary { background: var(--green) !important; }
+      .mobile-sticky .m-btn.primary:hover { background: var(--green-dark) !important; }
+      .mobile-sticky .m-icon {
+        font-size: 17px !important; line-height: 1 !important;
+        font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif !important;
+        font-weight: 400 !important;
+      }
+      .mobile-sticky .m-label {
+        font-size: 10px !important; font-weight: 500 !important;
+        color: rgba(255,255,255,0.68) !important;
+        letter-spacing: 0.3px !important;
+      }
+      .mobile-sticky .m-btn.primary .m-label { color: var(--black) !important; font-weight: 700 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+
+    /* ══ NOISE GRAIN overlay on dark sections ══ */
+    .universe, .themed, .shop { position: relative; }
+    .universe::after, .themed::after, .shop::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 160px 160px;
+    }
+    .universe-inner, .themed-inner, .shop-inner { position: relative; z-index: 1; }
+
+    /* ══ FLOATING ORBS ══ */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      mix-blend-mode: screen;
+    }
+    @keyframes orbDrift {
+      0%,100% { transform: translate(0,0) scale(1); opacity: 0.18; }
+      33%      { transform: translate(22px,-30px) scale(1.07); opacity: 0.28; }
+      66%      { transform: translate(-18px,14px) scale(0.94); opacity: 0.16; }
+    }
+    @keyframes orbDriftB {
+      0%,100% { transform: translate(0,0) scale(1); opacity: 0.12; }
+      40%     { transform: translate(-28px,20px) scale(1.1); opacity: 0.22; }
+      70%     { transform: translate(14px,-24px) scale(0.92); opacity: 0.10; }
+    }
+
+    /* ══ GLITCH on hero em ══ */
+    @keyframes glitch1 {
+      0%,93%,100% { clip-path: none; transform: none; }
+      94% { clip-path: inset(20% 0 60% 0); transform: translate(-3px,0); }
+      95% { clip-path: inset(50% 0 20% 0); transform: translate(3px,0); }
+      96% { clip-path: inset(10% 0 80% 0); transform: translate(-2px,0); }
+      97% { clip-path: none; transform: none; }
+    }
+    @keyframes glitch2 {
+      0%,93%,100% { opacity:0; }
+      94%,96% { opacity:0.5; transform: translate(4px,-1px); color:#0ff; clip-path: inset(30% 0 55% 0); }
+      95%,97% { opacity:0; }
+    }
+    .hero h1 em { position: relative; animation: glitch1 7s step-end infinite; }
+    .hero h1 em::before {
+      content: attr(data-text);
+      position: absolute; inset: 0;
+      color: #0ff;
+      animation: glitch2 7s step-end infinite;
+      pointer-events: none;
+    }
+
+    /* ══ HERO H1 LINE REVEAL ══ */
+    .hero-line { display: block; overflow: hidden; }
+    .hero-line-inner {
+      display: block;
+      transform: translateY(110%);
+      opacity: 0;
+      animation: lineReveal 0.85s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .hero-line:nth-child(1) .hero-line-inner { animation-delay: 0.38s; }
+    .hero-line:nth-child(2) .hero-line-inner { animation-delay: 0.52s; }
+    .hero-line:nth-child(3) .hero-line-inner { animation-delay: 0.66s; }
+    @keyframes lineReveal { to { transform: translateY(0); opacity: 1; } }
+
+    /* ══ FEAT-ROW slide-in + hover feedback ══ */
+    .feat-row {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22,1,0.36,1), background 0.22s, border-left-color 0.22s, padding-left 0.22s;
+    }
+    .feat-row.feat-visible { opacity: 1; transform: translateX(0); }
+    .feat-row:hover { padding-left: 24px; background: rgba(29,185,84,0.06); border-left-color: var(--green); }
+
+    /* ══ HI-CARD bounce-in ══ */
+    .hi-card {
+      opacity: 0;
+      transform: translateY(36px) scale(0.97);
+      transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.34,1.56,0.64,1), border-color 0.25s, background 0.25s;
+    }
+    .hi-card.hi-visible { opacity: 1; transform: translateY(0) scale(1); }
+    .hi-card:hover { transform: translateY(-8px) scale(1) !important; border-color: rgba(29,185,84,0.35); background: rgba(29,185,84,0.05); }
+
+    /* ══ BUTTON ripple on click ══ */
+    .btn-primary, .btn-secondary, .btn-outline-green { position: relative; overflow: hidden; }
+    .btn-primary::before, .btn-secondary::before, .btn-outline-green::before {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(255,255,255,0.14); border-radius: inherit;
+      transform: scale(0); opacity: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .btn-primary:active::before, .btn-secondary:active::before, .btn-outline-green:active::before {
+      transform: scale(2.2); opacity: 0; transition: 0s;
+    }
+
+    /* ══ SPLIT section parallax images ══ */
+    .split-char-img { will-change: transform; transition: filter 0.4s; }
+    .split-right-inner:hover .split-char-img {
+      filter: drop-shadow(0 20px 64px rgba(29,185,84,0.32)) drop-shadow(0 0 40px rgba(29,185,84,0.28));
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNFJF5CC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- ── NAV OVERLAY ── -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ── NAV DRAWER ── -->
+  <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul class="nav-drawer-links">
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="birthdayParties.html">Birthday Parties</a></li>
+      <li><a href="corporateEvents.html">Corporate Events</a></li>
+      <li><a href="schoolTrips.html">School Trips</a></li>
+      <li><a href="jevikaJoy.html">Jevika &amp; Joy</a></li>
+      <li><a href="aboutBotfit.html">About</a></li>
+    </ul>
+    <div class="nav-drawer-cta">
+      <a href="index.html#book" class="btn-primary" style="justify-content:center;padding:16px 24px;font-size:15px;">Book a Party <span class="btn-arrow">→</span></a>
+      <a href="https://wa.me/918047095095" class="btn-secondary" target="_blank" rel="noopener">WhatsApp Us <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="nav-drawer-contact">
+      <a href="tel:+918047095095">📞 080 4709 5095</a>
+      <a href="mailto:info@botfit.in">✉ info@botfit.in</a>
+      <a href="https://www.google.com/maps?q=Paras+Trinity,+Sector+60,+Gurugram" target="_blank" rel="noopener">📍 Sector 60, Gurugram</a>
+    </div>
+  </div>
+
+  <!-- WOW: Cursor orb -->
+  <div id="cursor-orb"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="logo-link" aria-label="Botfit home">
+      <img src="images/Botfit-logo.webp" width="95" height="40" alt="Botfit" loading="lazy">
+    </a>
+    <ul class="nav-links">
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="birthdayParties.html">Birthday Parties</a></li>
+      <li><a href="corporateEvents.html">Corporate Events</a></li>
+      <li><a href="schoolTrips.html">School Trips</a></li>
+      <li><a href="jevikaJoy.html">Jevika &amp; Joy</a></li>
+      <li><a href="aboutBotfit.html">About</a></li>
+      <li><a href="index.html#book" class="nav-cta">Book a Party</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════ SECTION 1 — HERO ══════════════ -->
+  <section class="hero" id="heroes" aria-label="Jevika and Joy hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-glow-ring" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="hero-dot" aria-hidden="true"></span>
+          <span>Jevika &amp; Joy</span>
+        </div>
+        <h1>
+          <span class="hero-line"><span class="hero-line-inner">They're not just characters.</span></span>
+          <span class="hero-line"><span class="hero-line-inner">They live here.</span></span>
+          <span class="hero-line"><span class="hero-line-inner"><em data-text="India's own heroes.">India's own heroes.</em></span></span>
+        </h1>
+        <p class="hero-sub">
+          Jevika and Joy are India's first physical<br>
+          activity heroes — built for Indian children,<br>
+          rooted in Indian values, and physically<br>
+          present at Botfit every single day.
+        </p>
+        <div class="hero-actions">
+          <a href="birthdayParties.html#book" class="btn-primary">Book a Character Party <span class="btn-arrow">→</span></a>
+          <a href="#universe" class="btn-secondary">Meet All 5 Heroes <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="hero-chars">
+          <img class="hero-char hero-char--jevika" id="heroJevika" src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika — physical activity hero" loading="lazy">
+          <img class="hero-char hero-char--joy" id="heroJoy" src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy — physical activity hero" loading="lazy">
+        </div>
+      </div>
+
+      <div class="trustbar" aria-label="Trust bar">
+        <div class="trust-item"><span class="trust-val count-target" data-count="5">5</span><span class="trust-label">Heroes</span></div>
+        <div class="trust-item"><span class="trust-val">Live Every Day</span><span class="trust-label"></span></div>
+        <div class="trust-item"><span class="trust-val">Themed Parties</span><span class="trust-label"></span></div>
+        <div class="trust-item"><span class="trust-val">Made in India</span><span class="trust-label"></span></div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="scroll-cue-text">Scroll</div>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 2 — THE UNIVERSE ══════════════ -->
+  <section class="universe" id="universe" aria-label="The Universe">
+    <div class="orb" style="width:340px;height:340px;left:-80px;top:40px;background:radial-gradient(circle,rgba(29,185,84,0.14) 0%,transparent 70%);animation:orbDrift 9s ease-in-out infinite;" aria-hidden="true"></div>
+    <div class="orb" style="width:220px;height:220px;right:-40px;bottom:60px;background:radial-gradient(circle,rgba(29,185,84,0.10) 0%,transparent 70%);animation:orbDriftB 12s ease-in-out infinite 1.5s;" aria-hidden="true"></div>
+    <div class="universe-inner">
+      <div class="pos-tag pos-tag--dark reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">The Universe</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">Five heroes.<br>One mission.</h2>
+      <p class="universe-sub reveal reveal-delay-2">
+        Each character was designed to represent<br>
+        a different dimension of what it means to<br>
+        be a healthy, confident, joyful Indian child.
+      </p>
+
+      <div class="cards-row reveal reveal-delay-3" aria-label="Five character cards">
+        <article class="char-card">
+          <div class="char-shimmer" aria-hidden="true"></div>
+          <div class="char-media">
+            <img src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika character card image" loading="lazy">
+          </div>
+          <div class="char-body">
+            <div class="char-name">Jevika</div>
+            <div class="trait">The Leader</div>
+            <div class="char-line">She sets the pace and brings
+everyone along.</div>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-shimmer" aria-hidden="true"></div>
+          <div class="char-media">
+            <img src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy character card image" loading="lazy">
+          </div>
+          <div class="char-body">
+            <div class="char-name">Joy</div>
+            <div class="trait">The Energiser</div>
+            <div class="char-line">Joy turns every session into
+a reason to cheer.</div>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-shimmer" aria-hidden="true"></div>
+          <div class="char-media">
+            <img src="https://medkon.in/wp-content/uploads/2026/03/pinky.png" alt="Pinki — The Strategist character" loading="lazy">
+          </div>
+          <div class="char-body">
+            <div class="char-name">Pinki</div>
+            <div class="trait">The Strategist</div>
+            <div class="char-line">Cool under pressure, sharp
+under competition.</div>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-shimmer" aria-hidden="true"></div>
+          <div class="char-media">
+            <img src="https://medkon.in/wp-content/uploads/2026/03/minku.png" alt="Minku — The Teammate character" loading="lazy">
+          </div>
+          <div class="char-body">
+            <div class="char-name">Minku</div>
+            <div class="trait">The Teammate</div>
+            <div class="char-line">Nobody gets left behind
+when Minku's around.</div>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-shimmer" aria-hidden="true"></div>
+          <div class="char-media">
+            <img src="https://medkon.in/wp-content/uploads/2026/03/brutus.png" alt="Brutus — The Challenger character" loading="lazy">
+          </div>
+          <div class="char-body">
+            <div class="char-name">Brutus</div>
+            <div class="trait">The Challenger</div>
+            <div class="char-line">Pushes every child to discover
+what they're made of.</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 3 — AT BOTFIT ══════════════ -->
+  <section class="atbotfit" id="at-botfit" aria-label="At Botfit">
+    <div class="split">
+      <div class="split-left">
+        <div class="pos-tag reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">At Botfit</span></div>
+        <h3 class="reveal reveal-delay-1">Not on a screen.<br>In the room.</h3>
+        <p class="reveal reveal-delay-2">Most children know their heroes through<br>cartoons and merchandise. Botfit children<br>know them through high-fives, race starts,<br>and birthday crowns.</p>
+        <p class="reveal reveal-delay-2">Jevika and Joy are physically present as<br>standees, zone branding, and costumed<br>hosts at every major event. They lead<br>warm-ups, host ceremonies, and make<br>every child feel like the main character.</p>
+
+        <div class="feat-rows reveal reveal-delay-3" aria-label="At Botfit features">
+          <div class="feat-row">
+            <div class="feat-ico" aria-hidden="true">🏅</div>
+            <div>
+              <div class="feat-title">Activity Zone Hosts</div>
+              <div class="feat-desc">Jevika and Joy lead warm-up sessions and activity briefings every weekend.</div>
+            </div>
+          </div>
+          <div class="feat-row">
+            <div class="feat-ico" aria-hidden="true">🎂</div>
+            <div>
+              <div class="feat-title">Birthday Ceremony Stars</div>
+              <div class="feat-desc">Every birthday package includes a character-hosted cake ceremony.</div>
+            </div>
+          </div>
+          <div class="feat-row">
+            <div class="feat-ico" aria-hidden="true">🗺️</div>
+            <div>
+              <div class="feat-title">Venue-Wide Presence</div>
+              <div class="feat-desc">Character standees, branded zones, and decor across all 15,000 sq ft.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-right" aria-label="Jevika and Joy at Botfit image panel">
+        <div class="split-right-inner">
+          <img class="split-char-img" src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika standee style hero image" loading="lazy">
+          <img class="split-char-img" src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy standee style hero image" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 4 — THEMED BIRTHDAY PARTIES ══════════════ -->
+  <section class="themed" id="themed-parties" aria-label="Themed birthday parties">
+    <div class="orb" style="width:280px;height:280px;right:5%;top:10%;background:radial-gradient(circle,rgba(29,185,84,0.12) 0%,transparent 70%);animation:orbDriftB 10s ease-in-out infinite;" aria-hidden="true"></div>
+    <div class="themed-inner">
+      <div class="pos-tag pos-tag--dark reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">Themed Parties</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">The only birthday party<br>with India's own heroes.</h2>
+      <p class="themed-sub reveal reveal-delay-2">
+        A Jevika &amp; Joy themed birthday is not a<br>
+        generic party package with a mascot photo.<br>
+        It's a full ceremony — character hosting,<br>
+        themed decor, activity led by the heroes,<br>
+        and a moment your child will talk about<br>
+        for years.
+      </p>
+
+      <div class="hi-grid reveal reveal-delay-3" aria-label="Party package highlights">
+        <article class="hi-card">
+          <div class="hi-ico" aria-hidden="true">🎤</div>
+          <div class="hi-title">Character Hosting</div>
+          <div class="hi-body">Jevika or Joy hosts your child's birthday ceremony — from the entry to the cake cut.</div>
+        </article>
+        <article class="hi-card">
+          <div class="hi-ico" aria-hidden="true">🎈</div>
+          <div class="hi-title">Themed Decor</div>
+          <div class="hi-body">Full Jevika &amp; Joy themed decor package across your private party zone.</div>
+        </article>
+        <article class="hi-card">
+          <div class="hi-ico" aria-hidden="true">🏃</div>
+          <div class="hi-title">Activity Session</div>
+          <div class="hi-body">A hero-led activity session for all guests — designed for the birthday child's age group.</div>
+        </article>
+      </div>
+
+      <div class="themed-actions reveal reveal-delay-4">
+        <a href="birthdayParties.html#book" class="btn-primary">Book a Themed Party <span class="btn-arrow">→</span></a>
+        <a href="birthdayParties.html" class="btn-secondary">View All Party Packages <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 5 — MISSION ══════════════ -->
+  <section class="mission" id="mission" aria-label="Our Mission">
+    <div class="split">
+      <div class="split-right" aria-label="Jevika and Joy mission image panel">
+        <div class="split-right-inner">
+          <img class="split-char-img" src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika for mission section" loading="lazy">
+          <img class="split-char-img" src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy for mission section" loading="lazy">
+        </div>
+      </div>
+
+      <div class="split-left">
+        <div class="pos-tag reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">Our Mission</span></div>
+        <h3 class="reveal reveal-delay-1">India's children deserve<br>their own heroes.</h3>
+        <p class="reveal reveal-delay-2">Every culture has characters children<br>look up to. For decades, Indian children<br>grew up with heroes borrowed from other<br>markets — different values, different<br>bodies, different worlds.</p>
+        <p class="reveal reveal-delay-2">Jevika and Joy were created to change<br>that. They look like Indian kids, move<br>like Indian kids, and represent the<br>values Indian families care about —<br>teamwork, effort, courage, and joy.</p>
+        <p class="reveal reveal-delay-2">They are not a marketing gimmick. They<br>are a long-term commitment to building<br>an Indian physical activity culture from<br>the ground up.</p>
+
+        <div class="stat-row reveal reveal-delay-3" aria-label="Mission stats">
+          <div class="stat">
+            <div class="stat-num count-target" data-count="2022">2022</div>
+            <div class="stat-lbl">Characters Launched</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num count-target" data-count="5">5</div>
+            <div class="stat-lbl">Heroes in the Universe</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num count-target" data-count="1">1</div>
+            <div class="stat-lbl">Venue Where They Live</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 6 — SHOP ══════════════ -->
+  <section class="shop" id="shop" aria-label="Shop the world">
+    <div class="shop-inner">
+      <div class="pos-tag pos-tag--dark reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">Merchandise</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">Take a hero home.</h2>
+      <p class="shop-sub reveal reveal-delay-2">
+        Jevika &amp; Joy merchandise — tees, water<br>
+        bottles, activity kits, and more — coming<br>
+        soon to the Botfit venue and online.
+      </p>
+
+      <div class="merch-grid reveal reveal-delay-3" aria-label="Merchandise teaser cards">
+        <article class="merch">
+          <div class="merch-media">
+            <div class="merch-icon" aria-hidden="true">👕</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-title">Tees &amp; Apparel</div>
+            <div class="merch-desc">Venue-ready tees and everyday apparel that kids actually wear.</div>
+          </div>
+        </article>
+        <article class="merch">
+          <div class="merch-media">
+            <div class="merch-icon" aria-hidden="true">🧩</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-title">Activity Kits</div>
+            <div class="merch-desc">Simple, physical, confidence-building kits you can use at home.</div>
+          </div>
+        </article>
+        <article class="merch">
+          <div class="merch-media">
+            <div class="merch-icon" aria-hidden="true">⭐</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-title">Collectibles</div>
+            <div class="merch-desc">Small keepsakes that remind kids of the day they met their heroes.</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="notify reveal reveal-delay-4">
+        <a href="mailto:info@botfit.in?subject=Jevika%20%26%20Joy%20shop%20notify" class="btn-outline-green">Notify Me When Live <span class="btn-arrow">→</span></a>
+        <small>Be the first to know when the Jevika &amp; Joy shop opens.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 7 — CTA / VISIT ══════════════ -->
+  <section class="visit" id="visit" aria-label="Come meet them">
+    <div class="visit-inner">
+      <div class="pos-tag reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">Come Meet Them</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">Jevika and Joy are<br>waiting for your child.</h2>
+      <p class="visit-sub reveal reveal-delay-2">Walk in any weekend and you'll find them.<br>Book a party and they'll make it unforgettable.</p>
+
+      <div class="visit-actions reveal reveal-delay-3">
+        <a href="birthdayParties.html#book" class="btn-primary" style="padding: 16px 34px;">Book a Character Party <span class="btn-arrow">→</span></a>
+        <a href="planYourVisit.html" class="btn-secondary--ink btn-secondary" style="color: var(--ink) !important; border-color: rgba(10,10,10,0.22) !important;">Plan a Visit <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="info-rows reveal reveal-delay-4" aria-label="Visit information">
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">📍</div>
+          <div>
+            <div class="info-label">Location</div>
+            <div class="info-val">Sector 60, Gurugram — Near Paras Trinity</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">🕐</div>
+          <div>
+            <div class="info-label">Hours</div>
+            <div class="info-val">Open Daily — Mon–Fri 10am–8pm, Sat–Sun 9am–9pm</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">📞</div>
+          <div>
+            <div class="info-label">Phone</div>
+            <div class="info-val"><a href="tel:+918047095095">080 4709 5095</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER (same as homepage) ══════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand reveal">
+          <img src="images/Botfit-logo.webp" width="140" height="60" alt="Botfit" class="footer-logo" loading="lazy">
+          <div class="jj-mini-badge" aria-label="Jevika and Joy">
+            <div class="jj-mini-img">
+              <img src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika" loading="lazy">
+              <img src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy" loading="lazy">
+            </div>
+            <div class="jj-mini-text">
+              <div class="jj-mini-label">Jevika & Joy</div>
+              <a href="jevikaJoy.html">Explore the Universe <span class="btn-arrow">→</span></a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-line">
+              <span class="footer-contact-label">Phone</span>
+              <a class="footer-link" href="tel:+918047095095">080 4709 5095</a>
+            </div>
+            <div class="footer-contact-line">
+              <span class="footer-contact-label">Email</span>
+              <a class="footer-link" href="mailto:info@botfit.in">info@botfit.in</a>
+            </div>
+          </div>
+          <div class="footer-cta">
+            <a href="tel:+918047095095" class="btn-primary">Call Now <span class="btn-arrow">→</span></a>
+            <a href="https://wa.me/918047095095?text=Hi%2C%20I%27d%20like%20to%20plan%20a%20visit%20at%20Botfit" target="_blank" rel="noopener" class="btn-secondary">WhatsApp <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links reveal reveal-delay-1">
+          <div class="footer-col-title">Quick Links</div>
+          <a href="activities.html">Activities</a>
+          <a href="birthdayParties.html">Birthday Parties</a>
+          <a href="corporateEvents.html">Corporate Events</a>
+          <a href="schoolTrips.html">School Trips</a>
+          <a href="aboutBotfit.html">About Botfit</a>
+          <a href="botcafe.html#menu">Food Menu</a>
+        </div>
+
+        <div class="footer-col footer-location reveal reveal-delay-2">
+          <div class="footer-col-title">Visit Us</div>
+          <div class="footer-address">Near Paras Trinity, CRPF Road, Sector 60,<br>Gurugram, Haryana 122022</div>
+          <a class="footer-link" href="https://www.google.com/maps?q=Paras+Trinity%2C+CRPF+Road%2C+Sector+60%2C+Gurugram" target="_blank" rel="noopener">Get Directions <span class="btn-arrow">→</span></a>
+          <div class="footer-legal">
+            <a href="https://www.botfit.in/privacy-policy">Privacy Policy</a>
+            <a href="https://www.botfit.in/terms-condition">Terms &amp; Condition</a>
+            <a href="https://www.botfit.in/staff-login">Staff Login</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="footerYear">2026</span> Botfit Entertainment Private Limited. All rights reserved.</div>
+        <div>Built for premium parent trust: safe, curated, and movement-first.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE STICKY BAR (same as homepage) ── -->
+  <div class="mobile-sticky" role="navigation" aria-label="Quick actions" data-lenis-prevent>
+    <a href="tel:+918047095095" class="m-btn"><span class="m-icon">📞</span><span class="m-label">Call</span></a>
+    <a href="https://wa.me/918047095095" class="m-btn" target="_blank" rel="noopener"><span class="m-icon">💬</span><span class="m-label">WhatsApp</span></a>
+    <a href="https://www.botfit.in/brochure.pdf" class="m-btn"><span class="m-icon">📄</span><span class="m-label">Brochure</span></a>
+    <a href="birthdayParties.html#book" class="m-btn primary"><span class="m-icon">🎉</span><span class="m-label">Book Party</span></a>
+  </div>
+
+  <script>
+    // ══ 1. NAV SCROLL CLASS ══
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+
+    // ══ 2. ACTIVE NAV on scroll ══
+    (function initActiveNav() {
+      const sections = document.querySelectorAll('section[id]');
+      const links = document.querySelectorAll('.nav-links a, .nav-drawer-links a');
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            links.forEach(l => l.classList.remove('active'));
+            links.forEach(l => { if (l.getAttribute('href') === '#' + e.target.id) l.classList.add('active'); });
+          }
+        });
+      }, { rootMargin: '-40% 0px -50% 0px' });
+      sections.forEach(s => io.observe(s));
+    })();
+
+    // ══ 3. HAMBURGER DRAWER ══
+    const hamburger = document.getElementById('navHamburger');
+    const drawer = document.getElementById('navDrawer');
+    const overlay = document.getElementById('navOverlay');
+    function openDrawer()  { hamburger.classList.add('open'); drawer.classList.add('open'); overlay.classList.add('open'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+    function closeDrawer() { hamburger.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', () => drawer.classList.contains('open') ? closeDrawer() : openDrawer());
+    overlay.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+    // ══ 4. REVEAL OBSERVER ══
+    const reveals = document.querySelectorAll('.reveal');
+    const revealIO = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealIO.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => revealIO.observe(el));
+
+    // ══ 5. FOOTER YEAR ══
+    const fy = document.getElementById('footerYear');
+    if (fy) fy.textContent = new Date().getFullYear();
+
+    // ══ 6. ANIMATED COUNTERS ══
+    function animateCount(el, to) {
+      const duration = 900, t0 = performance.now();
+      function step(t) {
+        const p = Math.min(1, (t - t0) / duration);
+        el.textContent = String(Math.round(to * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    const countIO = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target, to = Number(el.getAttribute('data-count'));
+        if (!Number.isFinite(to)) return;
+        animateCount(el, to); countIO.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('.count-target').forEach(el => countIO.observe(el));
+
+    // ══ 7. LENIS SMOOTH SCROLL ══
+    const lenis = new Lenis({ duration: 1.4, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smooth: true, mouseMultiplier: 0.9, smoothTouch: false });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+
+    // ══ 8. GSAP + SCROLLTRIGGER + LENIS INTEGRATION ══
+    if (window.gsap && window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(time => { lenis.raf(time * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+
+    // ══ 9. GSAP HERO CHARACTER ENTRANCE + PARALLAX ══
+    if (window.gsap) {
+      const isMobile = window.innerWidth < 980;
+      gsap.set('#heroJevika', { opacity: 0, x: isMobile ? 0 : -80, y: isMobile ? 20 : 10 });
+      gsap.set('#heroJoy',    { opacity: 0, x: isMobile ? 0 :  80, y: isMobile ? 20 : 10 });
+      gsap.to('#heroJevika', { opacity: 1, x: 0, y: 0, duration: 1,   ease: 'power3.out' });
+      gsap.to('#heroJoy',    { opacity: 1, x: 0, y: 0, duration: 1,   ease: 'power3.out', delay: 0.2 });
+      if (window.ScrollTrigger) {
+        gsap.to('#heroJevika', { yPercent: -18, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.2 } });
+        gsap.to('#heroJoy',    { yPercent: -12, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.5 } });
+      }
+    }
+
+    // ══ 10. CHARACTER CARDS — bounce-in with ScrollTrigger ══
+    (function initCardEntrance() {
+      const cards = document.querySelectorAll('.char-card');
+      if (!cards.length) return;
+      const cardIO = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add('card-visible'); cardIO.unobserve(e.target); });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      cards.forEach(card => cardIO.observe(card));
+    })();
+
+    // ══ 11. CHARACTER CARD 3D TILT ══
+    (function initCardTilt() {
+      document.querySelectorAll('.char-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const r = card.getBoundingClientRect();
+          const dx = (e.clientX - r.left - r.width  / 2) / (r.width  / 2);
+          const dy = (e.clientY - r.top  - r.height / 2) / (r.height / 2);
+          card.style.transform = `perspective(600px) rotateX(${-dy * 8}deg) rotateY(${dx * 8}deg) scale(1.03)`;
+        });
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; card.style.transition = 'transform 0.55s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s, opacity 0.65s ease'; });
+        card.addEventListener('mouseenter', () => { card.style.transition = 'transform 0.12s ease, box-shadow 0.35s, opacity 0.65s ease'; });
+      });
+    })();
+
+    // ══ 12. FEAT-ROW stagger slide-in ══
+    (function initFeatRows() {
+      const rows = document.querySelectorAll('.feat-row');
+      if (!rows.length) return;
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add('feat-visible'); io.unobserve(e.target); });
+      }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+      rows.forEach((row, i) => {
+        row.style.transitionDelay = (i * 0.11) + 's';
+        io.observe(row);
+      });
+    })();
+
+    // ══ 13. HI-CARD staggered bounce-in ══
+    (function initHiCards() {
+      const cards = document.querySelectorAll('.hi-card');
+      if (!cards.length) return;
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add('hi-visible'); io.unobserve(e.target); });
+      }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+      cards.forEach((card, i) => {
+        card.style.transitionDelay = (i * 0.14) + 's';
+        io.observe(card);
+      });
+    })();
+
+    // ══ 14. SPLIT SECTION PARALLAX via GSAP ══
+    if (window.gsap && window.ScrollTrigger) {
+      document.querySelectorAll('.split-right').forEach(panel => {
+        const imgs = panel.querySelectorAll('.split-char-img');
+        imgs.forEach((img, i) => {
+          gsap.to(img, {
+            yPercent: i % 2 === 0 ? -10 : -6,
+            ease: 'none',
+            scrollTrigger: { trigger: panel, start: 'top bottom', end: 'bottom top', scrub: 1.4 }
+          });
+        });
+      });
+    }
+
+    // ══ 15. MAGNETIC BUTTON subtle pull ══
+    (function initMagnetic() {
+      if (window.matchMedia('(hover: none)').matches) return;
+      document.querySelectorAll('.btn-primary, .btn-secondary, .btn-outline-green').forEach(btn => {
+        btn.addEventListener('mousemove', e => {
+          const r = btn.getBoundingClientRect();
+          const dx = (e.clientX - r.left - r.width  / 2) * 0.22;
+          const dy = (e.clientY - r.top  - r.height / 2) * 0.22;
+          btn.style.transform = `translate(${dx}px, ${dy}px) translateY(-3px)`;
+        });
+        btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+      });
+    })();
+
+    // ══ 16. CANVAS PARTICLE FIELD in hero ══
+    (function initParticles() {
+      const canvas = document.getElementById('heroCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let W, H, particles = [];
+      function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+      window.addEventListener('resize', resize); resize();
+      function Particle() {
+        this.reset = () => {
+          this.x = Math.random() * W; this.y = Math.random() * H;
+          this.r = Math.random() * 1.4 + 0.3;
+          this.vx = (Math.random() - 0.5) * 0.35; this.vy = (Math.random() - 0.5) * 0.35 - 0.18;
+          this.alpha = Math.random() * 0.45 + 0.08;
+          this.life = 0; this.maxLife = Math.random() * 280 + 120;
+        };
+        this.reset(); this.life = Math.random() * this.maxLife;
+      }
+      for (let i = 0; i < 90; i++) particles.push(new Particle());
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        particles.forEach(p => {
+          p.life++;
+          if (p.life > p.maxLife) p.reset();
+          const a = p.alpha * Math.sin(Math.PI * p.life / p.maxLife);
+          ctx.beginPath(); ctx.arc(p.x += p.vx, p.y += p.vy, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(29,185,84,${a.toFixed(3)})`; ctx.fill();
+        });
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+
+    // ══ 17. Magnetic cursor orb (same as activities) ══
+    (function () {
+      const orb = document.getElementById('cursor-orb');
+      const trail = document.getElementById('cursor-trail');
+      if (!orb || !trail || window.matchMedia('(hover: none)').matches) return;
+      let orbX = 0, orbY = 0, trailX = 0, trailY = 0;
+      let mouseX = 0, mouseY = 0;
+      let orbVisible = false;
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        if (!orbVisible) {
+          orbVisible = true;
+          orb.style.opacity = '0.9';
+          trail.style.opacity = '1';
+        }
+      });
+      document.addEventListener('mouseleave', () => {
+        orb.style.opacity = '0';
+        trail.style.opacity = '0';
+        orbVisible = false;
+      });
+      document.querySelectorAll('a, button, input, select, textarea, .char-card, .hi-card').forEach(el => {
+        el.addEventListener('mouseenter', () => orb.classList.add('expand'));
+        el.addEventListener('mouseleave', () => orb.classList.remove('expand'));
+      });
+      (function animateOrb() {
+        orbX += (mouseX - orbX) * 0.10;
+        orbY += (mouseY - orbY) * 0.10;
+        trailX += (mouseX - trailX) * 0.22;
+        trailY += (mouseY - trailY) * 0.22;
+        orb.style.transform = `translate(${orbX - 18}px, ${orbY - 18}px)`;
+        trail.style.transform = `translate(${trailX - 4}px, ${trailY - 4}px)`;
+        requestAnimationFrame(animateOrb);
+      })();
+    })();
+
+    // ══ 18. SCRAMBLE TEXT on universe h2 ══
+    (function initScramble() {
+      const el = document.querySelector('.universe h2');
+      if (!el) return;
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#&';
+      const original = el.textContent;
+      let triggered = false;
+      function scramble() {
+        let iterations = 0; const maxIter = original.length * 3;
+        const interval = setInterval(() => {
+          el.textContent = original.split('').map((c, i) => {
+            if (c === '\n' || c === ' ') return c;
+            if (i < iterations / 3) return c;
+            return chars[Math.floor(Math.random() * chars.length)];
+          }).join('');
+          if (++iterations >= maxIter) { clearInterval(interval); el.textContent = original; }
+        }, 28);
+      }
+      const io = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting && !triggered) { triggered = true; scramble(); io.disconnect(); }
+      }, { threshold: 0.5 });
+      io.observe(el);
+    })();
+
+    // ══ 19. GSAP SCAN LINE on universe section ══
+    if (window.gsap && window.ScrollTrigger) {
+      const scanLine = document.createElement('div');
+      Object.assign(scanLine.style, { position: 'absolute', top: '0', left: '-100%', width: '60%', height: '2px', background: 'linear-gradient(90deg, transparent, rgba(29,185,84,0.6), transparent)', pointerEvents: 'none', zIndex: '10' });
+      const universeSection = document.getElementById('universe');
+      if (universeSection) {
+        universeSection.appendChild(scanLine);
+        gsap.to(scanLine, { left: '140%', duration: 1.4, ease: 'power2.inOut', scrollTrigger: { trigger: universeSection, start: 'top 60%', toggleActions: 'play none none reset' } });
+      }
+    }
+  </script>
+</body>
+</html>

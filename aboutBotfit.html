@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNFJF5CC');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11252558517"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11252558517');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Botfit | North India's Largest Indoor FEC | Sector 60, Gurugram</title>
+  <meta name="description" content="Botfit is North India's largest indoor family entertainment centre in Sector 60, Gurugram. Learn our story, philosophy, and the team behind the experience.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root{
+      --green: #1DB954;
+      --green-dark: #14a345;
+      --green-light: #E8F8EE;
+      --black: #0A0A0A;
+      --white: #FFFFFF;
+      --offwhite: #F7F7F5;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3A;
+      --ink-faint: #8A8A85;
+      --border: rgba(10,10,10,0.09);
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.map-wrap iframe {
+  width: 100% !important;
+}
+
+.mobile-sticky {
+  width: 100% !important;
+  max-width: 100vw;
+}
+    html { scroll-behavior: auto; }
+    body { font-family: var(--font-body); background: var(--offwhite); color: var(--ink); overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a, a:hover, a:focus, a:visited { text-decoration: none !important; }
+
+    /* ── NAV (shared pattern) ── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 22px 52px; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.82) 0%, transparent 100%); transition: background 0.4s, padding 0.3s; }
+    nav.scrolled { background: rgba(10, 10, 10, 0.92); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); padding: 14px 52px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .logo-link { display: flex; align-items: center; transition: opacity 0.2s; z-index: 210; position: relative; }
+    .logo-link:hover { opacity: 0.82; }
+    .logo-link img { display: block; height: 38px; width: auto; filter: brightness(0) invert(1); }
+    .nav-links { display: flex; align-items: center; gap: 22px; list-style: none; }
+    .nav-links a { color: rgba(255, 255, 255, 0.7); font-size: 12px; font-weight: 500; transition: color 0.22s; padding-bottom: 3px; position: relative; white-space: nowrap; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 100%; height: 1px; background: var(--green); transition: right 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
+    .nav-links a:hover::after, .nav-links a.active::after { right: 0; }
+    .nav-links a.active { color: var(--green); }
+    .nav-links .nav-cta::after { display: none; }
+    .nav-cta { background: var(--green) !important; color: var(--black) !important; padding: 8px 16px !important; border-radius: 2px; font-weight: 700 !important; font-size: 11px !important; letter-spacing: 0.4px; white-space: nowrap; transition: background 0.2s, transform 0.15s !important; }
+    .nav-cta:hover { background: var(--green-dark) !important; transform: translateY(-1px); }
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 44px; height: 44px; background: none; border: none; cursor: pointer; z-index: 210; position: relative; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; transform-origin: center; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 204; opacity: 0; pointer-events: none; transition: opacity 0.3s; display: block; }
+    .nav-overlay.open { opacity: 1; pointer-events: auto; }
+    .nav-drawer { position: fixed; top: 0; right: 0; width: min(320px, 88vw); height: 100dvh; background: rgba(10,10,10,0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); z-index: 205; transform: translateX(100%); transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1); border-left: 1px solid rgba(255, 255, 255, 0.07); overflow-y: auto; padding: 100px 32px 40px; display: flex; flex-direction: column; }
+    .nav-drawer.open { transform: translateX(0); }
+    .nav-drawer-links { list-style: none; display: flex; flex-direction: column; }
+    .nav-drawer-links li { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .nav-drawer-links a { display: block; color: rgba(255, 255, 255, 0.82); font-size: 18px; font-weight: 600; padding: 18px 0; transition: color 0.2s; font-family: var(--font-display); }
+    .nav-drawer-links a:hover, .nav-drawer-links a.active { color: var(--green); }
+    .nav-drawer-cta { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .nav-drawer-contact { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.07); display: flex; flex-direction: column; gap: 10px; }
+    .nav-drawer-contact a { color: rgba(255,255,255,0.5); font-size: 13px; transition: color 0.2s; }
+    .nav-drawer-contact a:hover { color: var(--green); }
+
+    /* ── BUTTONS ── */
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--green); color: var(--black) !important; font-family: var(--font-body); font-size: 15px; font-weight: 700; padding: 15px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.25s, transform 0.18s, box-shadow 0.2s; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(29, 185, 84, 0.32); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white) !important; font-family: var(--font-body); font-size: 15px; font-weight: 500; padding: 14px 30px; border-radius: 2px; border: 1px solid rgba(255, 255, 255, 0.32); cursor: pointer; transition: border-color 0.25s, transform 0.18s; }
+    .btn-secondary:hover { border-color: var(--green); transform: translateY(-3px); }
+    .btn-secondary--ink { border-color: rgba(10,10,10,0.22) !important; color: var(--ink) !important; }
+    .btn-secondary--ink:hover { border-color: rgba(10,10,10,0.38) !important; }
+    .btn-outline-green { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 30px; border-radius: 2px; border: 1px solid rgba(29,185,84,0.55); color: var(--green) !important; background: transparent; font-weight: 600; transition: transform 0.18s, background 0.18s, border-color 0.18s; }
+    .btn-outline-green:hover { transform: translateY(-3px); background: rgba(29,185,84,0.08); border-color: rgba(29,185,84,0.75); }
+    .btn-arrow { font-size: 16px; display: inline-block; transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .btn-primary:hover .btn-arrow, .btn-secondary:hover .btn-arrow, .btn-outline-green:hover .btn-arrow { transform: translateX(5px); }
+
+    /* ── REVEALS ── */
+    .reveal { opacity:0; transform:translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.10s; }
+    .reveal-delay-2 { transition-delay: 0.20s; }
+    .reveal-delay-3 { transition-delay: 0.30s; }
+    .reveal-delay-4 { transition-delay: 0.40s; }
+    .reveal-delay-5 { transition-delay: 0.50s; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px) } to { opacity: 1; transform: translateY(0) } }
+    @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes bgzoom { from { transform: scale(1.08); } to { transform: scale(1.0); } }
+    @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(29,185,84,0.25) } 50% { box-shadow: 0 0 0 7px rgba(29,185,84,0.10) } }
+    @keyframes scrollLine { 0% { top: -100% } 100% { top: 100% } }
+    @keyframes charFloat { 0%, 100% { transform: translateY(0px) } 50% { transform: translateY(-18px) } }
+    @keyframes charFloat2 { 0%, 100% { transform: translateY(-8px) } 50% { transform: translateY(10px) } }
+    @keyframes particleDrift { 0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.7; } 100% { transform: translateY(-100vh) translateX(var(--dx)) scale(0.2); opacity: 0; } }
+    @keyframes glowPulse { 0%, 100% { opacity: 0.4; transform: scale(1); } 50% { opacity: 0.7; transform: scale(1.08); } }
+    @keyframes textRevealSlide { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0% 0 0); } }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* Floating particles container */
+    .hero-particles { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
+    .particle { position: absolute; border-radius: 50%; background: var(--green); animation: particleDrift linear infinite; }
+
+    /* Character floating animation */
+    .char-stage img:first-child { animation: charFloat 4s ease-in-out infinite; }
+    .char-stage img:last-child { animation: charFloat2 5s ease-in-out infinite; }
+
+    /* Glow orb behind characters */
+    .char-glow { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(29,185,84,0.22) 0%, transparent 70%); bottom: 10%; left: 50%; transform: translateX(-50%); animation: glowPulse 3s ease-in-out infinite; pointer-events: none; }
+
+    /* Green corner accent on hero */
+    .hero-corner-accent { position: absolute; top: 0; right: 0; width: 180px; height: 180px; pointer-events: none; z-index: 2; }
+    .hero-corner-accent svg { width: 100%; height: 100%; }
+
+    /* Spinning badge on hero */
+    .hero-spin-badge { position: absolute; bottom: 100px; right: 72px; width: 90px; height: 90px; z-index: 3; opacity: 0; animation: fadeIn 1s 1.2s ease forwards; }
+    .hero-spin-badge svg { animation: spin 12s linear infinite; }
+    .hero-spin-badge-dot { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+    .hero-spin-badge-dot::after { content: "✦"; color: var(--green); font-size: 22px; }
+
+    /* Magnetic button effect */
+    .btn-primary, .btn-secondary { will-change: transform; }
+    .btn-primary { position: relative; overflow: hidden; }
+    .btn-primary::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.18) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+    .btn-primary:hover::before { opacity: 1; }
+
+    /* ── SHARED TAGS ── */
+    .pos-tag { display: inline-flex; align-items: center; gap: 8px; background: var(--green-light); border: 1px solid rgba(29, 185, 84, 0.2); border-radius: 2px; padding: 6px 14px; margin-bottom: 18px; }
+    .pos-tag-dot { width: 5px; height: 5px; background: var(--green); border-radius: 50%; }
+    .pos-tag-text { font-size: 11px; font-weight: 500; color: var(--green-dark); letter-spacing: 2px; text-transform: uppercase; }
+    .pos-tag--dark { background: rgba(29, 185, 84, 0.1); border-color: rgba(29, 185, 84, 0.25); }
+    .pos-tag--dark .pos-tag-text { color: var(--green); }
+
+    /* ═════════════════════════════════════
+       SECTION 1 — HERO (Story)
+    ═════════════════════════════════════ */
+    .hero { position: relative; min-height: 100vh; background: var(--black); overflow: hidden; display: flex; align-items: flex-end; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('https://lh3.googleusercontent.com/gps-cs-s/AHVAweoAN5t_7Sn8d2fdkAbHoLGjYEbedDtC4J3m6CC3DzupRsDHLuH8XSFRUuqsHVMAAfO7Q3T9aUomSuTYbO0PzQSCtURFtkRA1fIpLCYdoCrgSNID-6dYMmnxG9SlcKm_KP7AiaiuuA=s1360-w1360-h1020-rw'); background-size: cover; background-position: center; transform: scale(1.06); animation: bgzoom 14s ease-out forwards; }
+    .hero-ov { position: absolute; inset: 0; background: rgba(10,10,10,0.52); }
+    .hero-grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,10,0) 40%, rgba(10,10,10,0.95) 100%); }
+    .hero-inner { position: relative; z-index: 2; width: min(1200px, 100%); margin: 0 auto; padding: 100px 52px 72px; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 12px; border-radius: 999px; background: rgba(10,10,10,0.70); border: 1px solid rgba(29,185,84,0.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); width: fit-content; margin-bottom: 18px; opacity: 0; animation: fadeUp 0.7s 0.25s ease forwards; }
+    .hero-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(29,185,84,0.25); animation: pulse 2s ease-in-out infinite; }
+    .hero-eyebrow span { color: rgba(255,255,255,0.92); font-weight: 600; font-size: 12px; letter-spacing: 0.6px; }
+    .hero h1 { font-family: var(--font-display); font-weight: 800; color: var(--white); font-size: clamp(26px, 3.34vw, 51px); line-height: 1.05; letter-spacing: -2px; margin-bottom: 18px; opacity: 0; animation: fadeUp 0.85s 0.40s ease forwards; }
+    .hero h1 em { font-style: normal; color: var(--green); display: inline-block; }
+    .hero-sub { color: rgba(255,255,255,0.62); font-size: clamp(15px, 1.8vw, 18px); line-height: 1.72; max-width: 660px; opacity: 0; animation: fadeUp 0.85s 0.60s ease forwards; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; opacity: 0; animation: fadeUp 0.85s 0.78s ease forwards; }
+    .trustbar { margin-top: 26px; display: flex; align-items: center; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 18px; opacity: 0; animation: fadeUp 0.85s 0.95s ease forwards; }
+    .trust-item { display:flex; align-items: baseline; gap: 8px; padding: 0 18px; border-right: 1px solid rgba(255,255,255,0.12); }
+    .trust-item:first-child { padding-left: 0; }
+    .trust-item:last-child { border-right: 0; }
+    .trust-val { font-family: var(--font-display); font-weight: 800; color: var(--white); font-size: 16px; }
+    .trust-label { color: rgba(255,255,255,0.42); font-size: 12px; }
+
+    .scroll-cue { position: absolute; right: 52px; bottom: 32px; display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeIn 1s 1.05s ease forwards; z-index: 3; }
+    .scroll-cue-text { font-size: 10px; font-weight: 500; color: rgba(255, 255, 255, 0.28); letter-spacing: 2.5px; text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg); }
+    .scroll-line { width: 1px; height: 44px; background: rgba(255, 255, 255, 0.14); position: relative; overflow: hidden; }
+    .scroll-line::after { content: ''; position: absolute; top: -100%; left: 0; right: 0; height: 100%; background: var(--green); animation: scrollLine 2s 1.2s ease-in-out infinite; }
+
+    /* ═════════════════════════════════════
+       SECTION 2 — OUR STORY
+    ═════════════════════════════════════ */
+    .section { width: 100%; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 70vh; }
+    .characters .split { min-height: 650px; }
+    .panel { padding: 72px 60px; }
+    .panel--dark { background: var(--black); color: var(--white); }
+    .panel--off { background: var(--offwhite); }
+    .panel h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(26px, 3.34vw, 49px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 18px; }
+    .panel p { font-size: 15.5px; line-height: 1.75; margin-bottom: 14px; }
+    .panel--off h2 { color: var(--ink); }
+    .panel--off p { color: var(--ink-mid); }
+    .panel--dark h2 { color: var(--white); }
+    .panel--dark p { color: rgba(255,255,255,0.52); }
+
+    .img-panel { position: relative; overflow: hidden; background: var(--black); }
+    .img-panel img { width: 100%; height: 100%; object-fit: cover; }
+
+    .stat-row { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .stat { background: var(--white); border: 1px solid var(--border); padding: 18px 16px; border-left: 3px solid var(--green); }
+    .stat-num { font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.8px; color: var(--ink); }
+    .stat-lbl { color: var(--ink-mid); font-size: 12.5px; margin-top: 4px; line-height: 1.3; }
+
+    /* ═════════════════════════════════════
+       SECTION 3 — PHILOSOPHY
+    ═════════════════════════════════════ */
+    .philosophy { background: var(--black); padding: 96px 52px; color: var(--white); border-top: 1px solid rgba(255,255,255,0.07); }
+    .ph-inner { width: min(1200px, 100%); margin: 0 auto; text-align: center; }
+    .ph-inner h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(34px, 4.6vw, 64px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; }
+    .ph-sub { color: rgba(255,255,255,0.48); line-height: 1.75; max-width: 600px; margin: 0 auto 44px; }
+    .ph-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; text-align: left; }
+    .ph-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); position: relative; padding: 22px 20px; }
+    .ph-card::before { content:""; position:absolute; left:0; right:0; top:0; height: 3px; background: var(--green); opacity: 0.95; }
+    .ph-num { font-family: var(--font-display); font-weight: 800; color: rgba(255,255,255,0.92); font-size: 18px; letter-spacing: -0.5px; margin-bottom: 10px; }
+    .ph-title { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin-bottom: 10px; }
+    .ph-body { color: rgba(255,255,255,0.52); line-height: 1.65; font-size: 13.8px; white-space: pre-line; }
+
+    /* ═════════════════════════════════════
+       SECTION 4 — CHARACTERS (Jevika & Joy)
+    ═════════════════════════════════════ */
+    .characters { border-top: 1px solid var(--border); }
+    .char-panel { background: var(--black); position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; min-height: 600px; }
+    .char-panel::before{ content:""; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 80%, rgba(29,185,84,0.16) 0%, rgba(10,10,10,0.98) 70%); }
+    .char-stage { position: relative; width: 100%; height: 100%; display:flex; align-items:flex-end; justify-content:center; gap: 24px; padding: 44px 34px 0; }
+    .char-stage img { max-height: 520px; width: auto; filter: drop-shadow(0 16px 48px rgba(29,185,84,0.18)) drop-shadow(0 0 36px rgba(29,185,84,0.18)); }
+    .characters .panel--off { display: flex; flex-direction: column; justify-content: center; }
+
+    .char-fun-facts { display:flex; gap: 14px; flex-wrap:wrap; }
+    .char-fact { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 14px 16px; flex: 1; min-width: 100px; }
+    .char-fact-icon { font-size: 22px; margin-bottom: 8px; }
+    .char-fact-label { font-size: 12.5px; color: var(--ink-mid); line-height: 1.4; font-weight: 500; }
+
+    /* ═════════════════════════════════════
+       SECTION 5 — IMPACT (1% commitment)
+    ═════════════════════════════════════ */
+    .impact { background: var(--black); padding: 96px 52px; color: var(--white); border-top: 1px solid rgba(255,255,255,0.07); }
+    .impact-inner { width: min(900px, 100%); margin: 0 auto; text-align: center; }
+    .impact-inner h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(34px, 4.6vw, 64px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; }
+    .impact-sub { color: rgba(255,255,255,0.48); line-height: 1.75; margin: 0 auto 38px; max-width: 760px; }
+    .impact-stats { display:flex; align-items: stretch; justify-content:center; gap: 0; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.10); border-bottom: 1px solid rgba(255,255,255,0.10); }
+    .impact-stat { padding: 18px 22px; display:flex; flex-direction: column; gap: 6px; min-width: 220px; border-right: 1px solid rgba(255,255,255,0.10); }
+    .impact-stat:last-child { border-right: 0; }
+    .impact-num { font-family: var(--font-display); font-weight: 800; color: var(--green); font-size: 22px; letter-spacing: -0.8px; }
+    .impact-lbl { color: rgba(255,255,255,0.52); font-size: 12.5px; letter-spacing: 0.2px; }
+
+    /* ═════════════════════════════════════
+       SECTION 6 — BOTCAFE
+    ═════════════════════════════════════ */
+    .botcafe { border-top: 1px solid var(--border); }
+    .botcafe .img-panel { background: var(--offwhite); }
+
+    .feat-rows { margin-top: 18px; display:flex; flex-direction: column; gap: 12px; }
+    .feat-row { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 16px 18px; display:flex; gap: 14px; align-items:flex-start; }
+    .feat-ico { font-size: 18px; line-height: 1; margin-top: 1px; }
+    .feat-title { font-family: var(--font-display); font-weight: 800; color: var(--ink); font-size: 14px; margin-bottom: 4px; }
+    .feat-desc { color: var(--ink-mid); font-size: 13.2px; line-height: 1.55; }
+
+    /* ═════════════════════════════════════
+       SECTION 7 — TEAM
+    ═════════════════════════════════════ */
+    .team { background: var(--black); padding: 96px 52px; color: var(--white); border-top: 1px solid rgba(255,255,255,0.07); }
+    .team-inner { width: min(1100px, 100%); margin: 0 auto; text-align: center; }
+    .team-inner h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(34px, 4.2vw, 60px); letter-spacing: -2px; line-height: 1.02; margin-bottom: 14px; }
+    .team-sub { color: rgba(255,255,255,0.48); line-height: 1.75; max-width: 560px; margin: 0 auto 44px; }
+    .team-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; text-align: left; }
+    .team-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); position: relative; overflow:hidden; }
+    .team-card::before { content:""; position:absolute; left:0; right:0; top:0; height: 3px; background: var(--green); opacity: 0.95; }
+    .team-media { height: 170px; background: rgba(29,185,84,0.18); display:flex; align-items:center; justify-content:center; }
+    .team-initials { width: 74px; height: 74px; border: 1px solid rgba(255,255,255,0.18); display:flex; align-items:center; justify-content:center; font-family: var(--font-display); font-weight: 800; font-size: 26px; color: var(--white); }
+    .team-body { padding: 18px; }
+    .team-name { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin-bottom: 6px; }
+    .team-role { color: rgba(255,255,255,0.48); font-size: 12.5px; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 10px; }
+    .team-line { color: rgba(255,255,255,0.52); font-size: 13.5px; line-height: 1.55; }
+
+    /* ═════════════════════════════════════
+       SECTION 8 — VISIT (split + map)
+    ═════════════════════════════════════ */
+    .visit { border-top: 1px solid var(--border); background: var(--offwhite); }
+    .visit .panel { padding: 72px 60px; }
+    .visit h2 { margin-bottom: 14px; }
+    .visit-sub { color: var(--ink-mid); line-height: 1.7; font-size: 15px; margin-bottom: 20px; }
+    .contact-list { display: flex; flex-direction: column; gap: 12px; margin-top: 22px; }
+    .book-contact-item { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 16px 18px; display: flex; align-items: flex-start; gap: 14px; }
+    .book-contact-icon { font-size: 20px; line-height: 1; margin-top: 2px; }
+    .book-contact-title { font-family: var(--font-display); font-weight: 800; color: var(--ink); }
+    .book-contact-sub { color: var(--ink-mid); font-size: 13px; margin-top: 3px; line-height: 1.5; }
+    .book-contact-item a { color: var(--ink) !important; }
+    .book-contact-item a:hover { color: var(--green-dark) !important; }
+    .map-wrap { background: var(--offwhite); border-left: 1px solid var(--border); display:flex; align-items: stretch; justify-content: stretch; padding: 0; }
+    .map-wrap iframe { width: 100%; height: 100%; min-height: 400px; border: 0; display:block; }
+
+    /* ── FOOTER (same as homepage) ── */
+    .site-footer { background: var(--black); color: rgba(255,255,255,0.72); padding: 72px 52px 42px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 26px; align-items: start; }
+    .footer-col-title { font-family: var(--font-display); font-weight: 800; color: var(--white); letter-spacing: -0.4px; font-size: 16px; margin-bottom: 12px; }
+    .footer-logo { filter: brightness(0) invert(1); display: block; height: auto; }
+    .jj-mini-badge { margin-top: 18px; display: flex; gap: 14px; padding: 14px; border-radius: 3px; border: 1px solid rgba(29,185,84,0.28); background: rgba(29,185,84,0.10); align-items: center; }
+    .jj-mini-img { display: flex; gap: 0; align-items: center; }
+    .jj-mini-img img { width: 34px; height: 34px; object-fit: contain; background: transparent; border: none; display: block; }
+    .jj-mini-img img + img { margin-left: -10px; }
+    .jj-mini-label { font-family: var(--font-display); font-weight: 800; color: var(--white); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .jj-mini-text a { color: var(--green); font-weight: 700; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
+    .footer-contact { margin-top: 16px; display: grid; gap: 10px; }
+    .footer-contact-line { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .footer-contact-label { color: rgba(255,255,255,0.48); font-size: 12px; font-weight: 700; letter-spacing: 0.2px; }
+    .footer-link { color: rgba(255,255,255,0.86); text-decoration: none; font-weight: 700; }
+    .footer-link:hover { color: var(--green); }
+    .footer-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .site-footer .btn-primary, .site-footer .btn-secondary { padding: 12px 16px; font-size: 13px; }
+    .site-footer a.btn-secondary {
+      color: #21b179 !important;
+    }
+    .site-footer a.btn-secondary:hover {
+      color: #2dd68f !important;
+    }
+    .footer-col a { display: block; text-decoration: none; color: rgba(255,255,255,0.72); font-weight: 650; margin: 10px 0; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-address { color: rgba(255,255,255,0.74); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
+    .footer-legal { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 14px; }
+    .footer-legal a { margin: 0; font-size: 13px; }
+    .footer-bottom { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,0.55); }
+
+    @media (max-width: 1024px) {
+      .site-footer { padding: 60px 32px 42px; }
+    }
+
+    /* ── MOBILE STICKY BAR ── */
+    .mobile-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--black); z-index: 100; border-top: 1px solid rgba(255,255,255,0.1); padding-bottom: env(safe-area-inset-bottom); }
+    .m-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px 8px 12px; color: rgba(255,255,255,0.7) !important; gap: 6px; font-size: 11px; }
+    .m-icon { font-size: 18px; line-height: 1; }
+    .m-label { font-weight: 700; letter-spacing: 0.3px; }
+    .m-btn.primary { background: rgba(29,185,84,0.16); color: var(--white) !important; border-left: 1px solid rgba(255,255,255,0.08); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 980px){
+      nav { padding: 18px 32px; }
+      nav.scrolled { padding: 12px 32px; }
+      .hero-inner { padding: 0 32px 60px; }
+      .scroll-cue { right: 32px; }
+      .split { grid-template-columns: 1fr; }
+      .map-wrap { border-left: 0; border-top: 1px solid var(--border); }
+      .panel { padding: 56px 20px; }
+      .philosophy, .impact, .team { padding: 72px 20px; }
+      .ph-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
+      .stat-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .mobile-sticky { display: flex; }
+      .site-footer { padding: 52px 20px 100px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; font-size: 12px; margin-bottom: 60px; }
+      .footer-contact-line { flex-direction: column; gap: 2px; }
+      .footer-cta .btn-primary, .footer-cta .btn-secondary { font-size: 13px; padding: 12px 18px; }
+      .hero-spin-badge{ display: none;}
+      .body {overflow-x: hidden;}
+    }
+    @media (max-width: 520px){
+      .trust-item { padding: 0 12px; }
+      .impact-stat { min-width: 100%; border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.10); }
+      .impact-stat:last-child { border-bottom: 0; }
+      .hero-spin-badge{ display: none;}
+    }
+    @media (prefers-reduced-motion: reduce){
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+
+    /* About page booking form (#book) */
+    .about-book { background: var(--offwhite); padding: 88px 52px; border-top: 1px solid var(--border); }
+    .about-book-inner { max-width: 520px; margin: 0 auto; }
+    .about-book h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(21px, 2.64vw, 33px); color: var(--ink); letter-spacing: -1px; margin-bottom: 8px; text-align: center; }
+    .about-book > .about-book-inner > p { text-align: center; color: var(--ink-mid); font-size: 14px; margin-bottom: 22px; line-height: 1.6; }
+    .about-book-form { display: flex; flex-direction: column; gap: 10px; }
+    .about-book-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .about-book-form input, .about-book-form select { width: 100%; height: 48px; border: 1px solid var(--border); border-radius: 2px; padding: 0 14px; font-size: 14px; color: var(--ink); background: var(--white); }
+    .about-book-form input:focus, .about-book-form select:focus { border-color: var(--green); outline: none; }
+    .about-book-form .btn-primary { justify-content: center; margin-top: 6px; }
+    .about-book-success { display: none; padding: 16px; background: var(--green-light); border: 1px solid rgba(29,185,84,0.25); border-radius: 2px; color: var(--ink); font-weight: 600; text-align: center; }
+    .about-book-success.visible { display: block; }
+    @media (max-width: 600px) {.hero-spin-badge{ display: none;} .about-book-row { grid-template-columns: 1fr; } .about-book { padding: 64px 20px; } }
+
+    /* Magnetic cursor orb (same as activities) */
+    #cursor-orb {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(29,185,84,0.55) 0%, rgba(29,185,84,0.08) 60%, transparent 100%);
+      transform: translate(-50%, -50%);
+      transition: width 0.3s, height 0.3s, opacity 0.3s;
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    #cursor-orb.expand { width: 90px; height: 90px; }
+    #cursor-trail {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9998;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 0 12px 3px rgba(29,185,84,0.6);
+    }
+    @media (hover: none) {
+      #cursor-orb, #cursor-trail { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNFJF5CC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- ── NAV OVERLAY ── -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ── NAV DRAWER ── -->
+  <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul class="nav-drawer-links">
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="birthdayParties.html">Birthday Parties</a></li>
+      <li><a href="corporateEvents.html">Corporate Events</a></li>
+      <li><a href="schoolTrips.html">School Trips</a></li>
+      <li><a href="jevikaJoy.html">Jevika &amp; Joy</a></li>
+      <li><a href="aboutBotfit.html">About</a></li>
+    </ul>
+    <div class="nav-drawer-cta">
+      <a href="index.html#book" class="btn-primary" style="justify-content:center;padding:16px 24px;font-size:15px;">Book a Party <span class="btn-arrow">→</span></a>
+      <a href="https://wa.me/918047095095" class="btn-secondary" target="_blank" rel="noopener">WhatsApp Us <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="nav-drawer-contact">
+      <a href="tel:+918047095095">📞 080 4709 5095</a>
+      <a href="mailto:info@botfit.in">✉ info@botfit.in</a>
+      <a href="https://www.google.com/maps?q=Paras+Trinity,+Sector+60,+Gurugram" target="_blank" rel="noopener">📍 Sector 60, Gurugram</a>
+    </div>
+  </div>
+
+  <!-- WOW: Cursor orb -->
+  <div id="cursor-orb"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="logo-link" aria-label="Botfit home">
+      <img src="images/Botfit-logo.webp" width="95" height="40" alt="Botfit" loading="lazy">
+    </a>
+    <ul class="nav-links">
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="birthdayParties.html">Birthday Parties</a></li>
+      <li><a href="corporateEvents.html">Corporate Events</a></li>
+      <li><a href="schoolTrips.html">School Trips</a></li>
+      <li><a href="jevikaJoy.html">Jevika &amp; Joy</a></li>
+      <li><a href="aboutBotfit.html">About</a></li>
+      <li><a href="index.html#book" class="nav-cta">Book a Party</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════ SECTION 1 — HERO ══════════════ -->
+  <section class="hero" id="story" aria-label="Botfit story hero">
+    <div class="hero-bg" role="img" aria-label="Botfit venue ambience"></div>
+    <div class="hero-ov"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+
+    <!-- Spinning badge -->
+    <div class="hero-spin-badge" aria-hidden="true">
+      <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="45" cy="45" r="44" stroke="rgba(29,185,84,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
+        <text font-family="'Syne', sans-serif" font-size="9" font-weight="700" fill="rgba(29,185,84,0.85)" letter-spacing="3.5">
+          <textPath href="#spinPath">BOTFIT • GURUGRAM • 2022 • PLAY •</textPath>
+        </text>
+        <defs><path id="spinPath" d="M45,5 A40,40 0 1,1 44.99,5Z"/></defs>
+      </svg>
+      <div class="hero-spin-badge-dot"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="hero-dot" aria-hidden="true"></span>
+        <span>Our Story</span>
+      </div>
+
+      <h1>
+        Built for Indian kids.<br>
+        Built in Gurugram.<br>
+        <em>Built to last.</em>
+      </h1>
+
+      <p class="hero-sub">
+        Botfit started with one question — why<br>
+        does every birthday party end with tired<br>
+        parents and overstimulated kids? We built<br>
+        the answer. 15,000 sq ft of movement-first,<br>
+        screen-free joy in Sector 60, Gurugram.
+      </p>
+
+      <div class="hero-actions">
+        <a href="activities.html" class="btn-primary">Explore Activities <span class="btn-arrow">→</span></a>
+        <a href="planYourVisit.html" class="btn-secondary">Plan a Visit <span class="btn-arrow">→</span></a>
+      </div>
+
+      <div class="trustbar" aria-label="Trust bar">
+        <div class="trust-item"><span class="trust-val">Est. <span class="count-target" data-count="2022">2022</span></span><span class="trust-label"></span></div>
+        <div class="trust-item"><span class="trust-val"><span class="count-target" data-count="15000">15000</span></span><span class="trust-label">Sq Ft</span></div>
+        <div class="trust-item"><span class="trust-val"><span class="count-target" data-count="20">20</span>+</span><span class="trust-label">Activities</span></div>
+        <div class="trust-item"><span class="trust-val"><span class="count-target" data-count="10000">10000</span>+</span><span class="trust-label">Families</span></div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="scroll-cue-text">Scroll</div>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 2 — OUR STORY ══════════════ -->
+  <section class="section" id="our-story" aria-label="Our story">
+    <div class="split">
+      <div class="img-panel" aria-label="Botfit venue photo">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMlWh7iqs4zSL7i4nzLd6yyOnvOtndH5ZJsD1FR=s1360-w1360-h1020-rw" alt="Botfit venue interior" loading="lazy">
+      </div>
+
+      <div class="panel panel--off">
+        <div class="pos-tag reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">The Beginning</span></div>
+        <h2 class="reveal reveal-delay-1">A city that needed<br>something different.</h2>
+        <p class="reveal reveal-delay-2">Gurugram had malls, screens, and<br>soft play corners. What it didn't have was a<br>serious, premium space where children could<br>move, compete, and grow — and where parents<br>could actually relax.</p>
+        <p class="reveal reveal-delay-2">Botfit was founded to fill that gap.<br>We built North India's largest indoor family<br>entertainment centre with real activities,<br>real supervision, and a real philosophy —<br>movement first, screens never.</p>
+        <p class="reveal reveal-delay-2">Today, over 10,000 families call<br>Botfit their go-to for birthdays, school<br>trips, team outings, and weekend adventures.<br>We're just getting started.</p>
+
+        <div class="stat-row reveal reveal-delay-3" aria-label="Story stats">
+          <div class="stat">
+            <div class="stat-num count-target" data-count="2022">2022</div>
+            <div class="stat-lbl">Founded</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="count-target" data-count="10000">10000</span>+</div>
+            <div class="stat-lbl">Families Served</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4.9★</div>
+            <div class="stat-lbl">Google Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 3 — PHILOSOPHY ══════════════ -->
+  <section class="philosophy" id="philosophy" aria-label="Our philosophy">
+    <div class="ph-inner">
+      <div class="pos-tag pos-tag--dark reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">Our Philosophy</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">Screen-free.<br>Movement-first.<br>Emotionally safe.</h2>
+      <p class="ph-sub reveal reveal-delay-2">
+        Every decision at Botfit — from activity<br>
+        design to staff training — comes back to<br>
+        three principles.
+      </p>
+
+      <div class="ph-grid reveal reveal-delay-3" aria-label="Philosophy cards">
+        <article class="ph-card">
+          <div class="ph-num">01</div>
+          <div class="ph-title">Screen-Free</div>
+          <div class="ph-body">No tablets. No screens. No passive
+entertainment. Every activity at Botfit
+requires your child to move, think,
+and engage with other humans.</div>
+        </article>
+        <article class="ph-card">
+          <div class="ph-num">02</div>
+          <div class="ph-title">Movement-First</div>
+          <div class="ph-body">Physical activity is not a reward —
+it's the entire point. We designed 20+
+activities that build strength, coordination,
+confidence, and team spirit.</div>
+        </article>
+        <article class="ph-card">
+          <div class="ph-num">03</div>
+          <div class="ph-title">Emotionally Safe</div>
+          <div class="ph-body">Our staff are trained to include
+every child — the shy one, the nervous one,
+the one who needs a moment. No child
+is left on the sidelines at Botfit.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 4 — CHARACTERS ══════════════ -->
+  <section class="section characters" id="characters" aria-label="Jevika and Joy at Botfit">
+    <div class="split">
+      <div class="char-panel" aria-label="Jevika and Joy">
+        <div class="char-glow" aria-hidden="true"></div>
+        <div class="char-stage">
+          <img src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika character" loading="lazy">
+          <img src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy character" loading="lazy">
+        </div>
+      </div>
+
+      <div class="panel panel--off" style="display:flex; flex-direction:column; justify-content:center; padding: 72px 60px;">
+        <div class="pos-tag reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">Jevika &amp; Joy</span></div>
+        <h2 class="reveal reveal-delay-1">India's own heroes.<br>Live at Botfit.</h2>
+        <p class="reveal reveal-delay-2">Most venues have generic mascots. Botfit<br>created Jevika and Joy — India's first<br>physical activity heroes, designed for<br>Indian children, with Indian values.</p>
+        <p class="reveal reveal-delay-2">They're not decorations. They lead<br>activity sessions, host birthday ceremonies,<br>and give every child a reason to push harder,<br>jump higher, and cheer louder.</p>
+
+        <div class="reveal reveal-delay-3" style="display:flex; gap: 14px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="jevikaJoy.html" class="btn-primary">Meet Jevika &amp; Joy <span class="btn-arrow">→</span></a>
+          <a href="birthdayParties.html" class="btn-secondary btn-secondary--ink" style="color: var(--ink) !important; border-color: rgba(10,10,10,0.22) !important;">Book a Character Party <span class="btn-arrow">→</span></a>
+        </div>
+
+        <div class="char-fun-facts reveal reveal-delay-4" style="margin-top: 40px; display:flex; gap: 14px; flex-wrap:wrap;">
+          <div class="char-fact">
+            <div class="char-fact-icon">🏃‍♀️</div>
+            <div class="char-fact-label">Jevika leads<br>every session</div>
+          </div>
+          <div class="char-fact">
+            <div class="char-fact-icon">🏆</div>
+            <div class="char-fact-label">Joy hosts<br>birthday ceremonies</div>
+          </div>
+          <div class="char-fact">
+            <div class="char-fact-icon">🇮🇳</div>
+            <div class="char-fact-label">India's first activity<br>hero duo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 5 — IMPACT ══════════════ -->
+  <section class="impact" id="impact" aria-label="Our impact">
+    <div class="impact-inner">
+      <div class="pos-tag pos-tag--dark reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">Our Impact</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">We give 1% of every booking<br>to children who can't afford<br>to play.</h2>
+      <p class="impact-sub reveal reveal-delay-2">
+        Since 2022, Botfit has partnered with<br>
+        local NGOs to sponsor free activity days<br>
+        for underprivileged children across<br>
+        Gurugram. Every booking you make<br>
+        contributes directly.
+      </p>
+
+      <div class="impact-stats reveal reveal-delay-3" aria-label="Impact stats">
+        <div class="impact-stat">
+          <div class="impact-num"><span class="count-target" data-count="500">500</span>+</div>
+          <div class="impact-lbl">Children Sponsored</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num"><span class="count-target" data-count="12">12</span></div>
+          <div class="impact-lbl">NGO Partners</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num">Every</div>
+          <div class="impact-lbl">Booking Counts</div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-4" style="margin-top: 26px;">
+        <a href="aboutBotfit.html#impact" class="btn-outline-green">Learn About Our Mission <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 6 — BOTCAFE ══════════════ -->
+  <section class="section botcafe" id="botcafe" aria-label="BotCafe">
+    <div class="split">
+      <div class="panel panel--off">
+        <div class="pos-tag reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">BotCafe</span></div>
+        <h2 class="reveal reveal-delay-1">Fuel for champions.<br>Zero junk allowed.</h2>
+        <p class="reveal reveal-delay-2">BotCafe was built on one rule — if we<br>wouldn't serve it to our own kids, it<br>doesn't go on the menu.</p>
+        <p class="reveal reveal-delay-2">No artificial colours. No processed snacks.<br>Just nutritionist-approved, kid-friendly<br>food that tastes good and fuels movement.</p>
+
+        <div class="feat-rows reveal reveal-delay-3" aria-label="BotCafe features">
+          <div class="feat-row">
+            <div class="feat-ico" aria-hidden="true">🥗</div>
+            <div>
+              <div class="feat-title">No Artificial Colours</div>
+              <div class="feat-desc">All food is free from artificial dyes and preservatives.</div>
+            </div>
+          </div>
+          <div class="feat-row">
+            <div class="feat-ico" aria-hidden="true">🏃</div>
+            <div>
+              <div class="feat-title">Designed for Active Kids</div>
+              <div class="feat-desc">High-protein, low-sugar options to keep energy levels steady.</div>
+            </div>
+          </div>
+          <div class="feat-row">
+            <div class="feat-ico" aria-hidden="true">🎂</div>
+            <div>
+              <div class="feat-title">Party Catering Available</div>
+              <div class="feat-desc">Full catering add-on for birthday parties and corporate events.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-4" style="margin-top: 22px;">
+          <a href="botcafe.html" class="btn-primary">View the Menu <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="img-panel" aria-label="BotCafe image">
+        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" alt="BotCafe food and seating at Botfit" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 7 — TEAM ══════════════ -->
+  <section class="team" id="team" aria-label="Our team">
+    <div class="team-inner">
+      <div class="pos-tag pos-tag--dark reveal" style="margin: 0 auto 16px; display:inline-flex;">
+        <span class="pos-tag-dot"></span><span class="pos-tag-text">Our Team</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">The people behind the play.</h2>
+      <p class="team-sub reveal reveal-delay-2">Certified, passionate, and genuinely<br>good with kids.</p>
+
+      <div class="team-grid reveal reveal-delay-3" aria-label="Team cards">
+        <article class="team-card">
+          <div class="team-media" aria-label="Founder and CEO placeholder">
+            <div class="team-initials" aria-hidden="true">FC</div>
+          </div>
+          <div class="team-body">
+            <div class="team-name">Founder &amp; CEO</div>
+            <div class="team-role">Botfit HQ</div>
+            <div class="team-line">The vision behind the venue.</div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media" aria-label="Head of Activities placeholder">
+            <div class="team-initials" aria-hidden="true">HA</div>
+          </div>
+          <div class="team-body">
+            <div class="team-name">Head of Activities</div>
+            <div class="team-role">Arena Operations</div>
+            <div class="team-line">Designs every session, trains every coach.</div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media" aria-label="School Trips Coordinator placeholder">
+            <div class="team-initials" aria-hidden="true">ST</div>
+          </div>
+          <div class="team-body">
+            <div class="team-name">School Trips Coordinator</div>
+            <div class="team-role">Group Bookings</div>
+            <div class="team-line">200+ school trips and counting.</div>
+          </div>
+        </article>
+        <article class="team-card">
+          <div class="team-media" aria-label="BotCafe Head placeholder">
+            <div class="team-initials" aria-hidden="true">BH</div>
+          </div>
+          <div class="team-body">
+            <div class="team-name">BotCafe Head</div>
+            <div class="team-role">Food &amp; Nutrition</div>
+            <div class="team-line">Every menu item is parent-approved.</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SECTION 8 — VISIT US ══════════════ -->
+  <section class="section visit" id="visit" aria-label="Visit Botfit">
+    <div class="split">
+      <div class="panel panel--off">
+        <div class="pos-tag reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">Find Us</span></div>
+        <h2 class="reveal reveal-delay-1">Come see it for yourself.</h2>
+        <p class="visit-sub reveal reveal-delay-2">Walk-ins welcome. Book ahead<br>for parties, school trips, and<br>corporate events.</p>
+
+        <div class="contact-list reveal reveal-delay-3" aria-label="Visit details">
+          <div class="book-contact-item">
+            <span class="book-contact-icon" aria-hidden="true">📍</span>
+            <div>
+              <div class="book-contact-title">Near Paras Trinity, CRPF Road, Sector 60, Gurugram 122022</div>
+              <div class="book-contact-sub"><a href="https://www.google.com/maps?q=Paras+Trinity%2C+CRPF+Road%2C+Sector+60%2C+Gurugram" target="_blank" rel="noopener">Open in Google Maps →</a></div>
+            </div>
+          </div>
+          <div class="book-contact-item">
+            <span class="book-contact-icon" aria-hidden="true">🕐</span>
+            <div>
+              <div class="book-contact-title">Open Daily</div>
+              <div class="book-contact-sub">Mon–Fri: 10am–8pm<br>Sat–Sun: 9am–9pm</div>
+            </div>
+          </div>
+          <div class="book-contact-item">
+            <span class="book-contact-icon" aria-hidden="true">📞</span>
+            <div>
+              <div class="book-contact-title">Get in Touch</div>
+              <div class="book-contact-sub"><a href="tel:+918047095095">080 4709 5095</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrap" aria-label="Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.942557907127!2d77.09343167508202!3d28.39080287579764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23b134f29705%3A0xc131fccce0b003cc!2sBOTFIT%20Family%20Entertainment%20Center!5e0!3m2!1sen!2sin!4v1777896122496!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="about-book reveal" id="book" aria-label="Book with Botfit">
+    <div class="about-book-inner">
+      <h2>Plan your visit or event</h2>
+      <p>Leave your details — our team will reach out within 2 hours.</p>
+      <form class="about-book-form" id="aboutBookForm" novalidate>
+        <div class="about-book-row">
+          <input type="text" id="aboutBookName" placeholder="Your name" autocomplete="name" required>
+          <input type="tel" id="aboutBookPhone" placeholder="WhatsApp (10 digits)" maxlength="10" autocomplete="tel" required>
+        </div>
+        <select id="aboutBookType" required aria-label="Enquiry type">
+          <option value="">Enquiry type…</option>
+          <option value="visit">General visit</option>
+          <option value="birthday">Birthday party</option>
+          <option value="corporate">Corporate</option>
+          <option value="school">School trip</option>
+        </select>
+        <button type="submit" class="btn-primary">Request a callback <span class="btn-arrow">→</span></button>
+      </form>
+      <div class="about-book-success" id="aboutBookSuccess" role="status">Thanks! We'll be in touch soon.</div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER (same as homepage) ══════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand reveal">
+          <img src="images/Botfit-logo.webp" width="140" height="60" alt="Botfit" class="footer-logo" loading="lazy">
+          <div class="jj-mini-badge" aria-label="Jevika and Joy">
+            <div class="jj-mini-img">
+              <img src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika" loading="lazy">
+              <img src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy" loading="lazy">
+            </div>
+            <div class="jj-mini-text">
+              <div class="jj-mini-label">Jevika & Joy</div>
+              <a href="jevikaJoy.html">Explore the Universe <span class="btn-arrow">→</span></a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-line">
+              <span class="footer-contact-label">Phone</span>
+              <a class="footer-link" href="tel:+918047095095">080 4709 5095</a>
+            </div>
+            <div class="footer-contact-line">
+              <span class="footer-contact-label">Email</span>
+              <a class="footer-link" href="mailto:info@botfit.in">info@botfit.in</a>
+            </div>
+          </div>
+          <div class="footer-cta">
+            <a href="tel:+918047095095" class="btn-primary">Call Now <span class="btn-arrow">→</span></a>
+            <a href="https://wa.me/918047095095?text=Hi%2C%20I%27d%20like%20to%20plan%20a%20visit%20at%20Botfit" target="_blank" rel="noopener" class="btn-secondary">WhatsApp <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links reveal reveal-delay-1">
+          <div class="footer-col-title">Quick Links</div>
+          <a href="activities.html">Activities</a>
+          <a href="birthdayParties.html">Birthday Parties</a>
+          <a href="corporateEvents.html">Corporate Events</a>
+          <a href="schoolTrips.html">School Trips</a>
+          <a href="aboutBotfit.html">About Botfit</a>
+          <a href="botcafe.html#menu">Food Menu</a>
+        </div>
+
+        <div class="footer-col footer-location reveal reveal-delay-2">
+          <div class="footer-col-title">Visit Us</div>
+          <div class="footer-address">Near Paras Trinity, CRPF Road, Sector 60,<br>Gurugram, Haryana 122022</div>
+          <a class="footer-link" href="https://www.google.com/maps?q=Paras+Trinity%2C+CRPF+Road%2C+Sector+60%2C+Gurugram" target="_blank" rel="noopener">Get Directions <span class="btn-arrow">→</span></a>
+          <div class="footer-legal">
+            <a href="https://www.botfit.in/privacy-policy">Privacy Policy</a>
+            <a href="https://www.botfit.in/terms-condition">Terms &amp; Condition</a>
+            <a href="https://www.botfit.in/staff-login">Staff Login</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="footerYear">2026</span> Botfit Entertainment Private Limited. All rights reserved.</div>
+        <div>Built for premium parent trust: safe, curated, and movement-first.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE STICKY BAR (same as homepage) ── -->
+  <div class="mobile-sticky" role="navigation" aria-label="Quick actions">
+    <a href="tel:+918047095095" class="m-btn"><span class="m-icon">📞</span><span class="m-label">Call</span></a>
+    <a href="https://wa.me/918047095095" class="m-btn" target="_blank" rel="noopener"><span class="m-icon">💬</span><span class="m-label">WhatsApp</span></a>
+    <a href="https://www.botfit.in/brochure.pdf" class="m-btn"><span class="m-icon">📄</span><span class="m-label">Brochure</span></a>
+    <a href="#book" class="m-btn primary"><span class="m-icon">🎉</span><span class="m-label">Book Party</span></a>
+  </div>
+
+  <script>
+    // 1. Nav scroll class
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+
+    // 2. Hamburger drawer
+    const hamburger = document.getElementById('navHamburger');
+    const drawer = document.getElementById('navDrawer');
+    const overlay = document.getElementById('navOverlay');
+    function openDrawer() { hamburger.classList.add('open'); drawer.classList.add('open'); overlay.classList.add('open'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+    function closeDrawer() { hamburger.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', () => drawer.classList.contains('open') ? closeDrawer() : openDrawer());
+    overlay.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+    // 3. IntersectionObserver for .reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+
+    // 4. Footer year
+    const fy = document.getElementById('footerYear');
+    if (fy) fy.textContent = new Date().getFullYear();
+
+    // 5. Animated counters on trust-val and stat numbers
+    function animateCount(el, to) {
+      const start = 0;
+      const duration = 900;
+      const t0 = performance.now();
+      function step(t) {
+        const p = Math.min(1, (t - t0) / duration);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = Math.round(start + (to - start) * eased);
+        el.textContent = String(val);
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    const countObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const to = Number(el.getAttribute('data-count'));
+        if (!Number.isFinite(to)) return;
+        animateCount(el, to);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('.count-target').forEach(el => countObserver.observe(el));
+
+    // 6. Lenis smooth scroll
+    const lenis = new Lenis({
+      duration: 1.4,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      mouseMultiplier: 0.9,
+      smoothTouch: false,
+    });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+
+    // 7. GSAP + ScrollTrigger connection to Lenis
+    if (window.gsap && window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+    // 8. Hero particles
+    (function() {
+      const container = document.getElementById('heroParticles');
+      if (!container) return;
+      const count = 22;
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = Math.random() * 5 + 2;
+        const left = Math.random() * 100;
+        const delay = Math.random() * 8;
+        const duration = Math.random() * 10 + 8;
+        const dx = (Math.random() - 0.5) * 200 + 'px';
+        p.style.cssText = `width:${size}px;height:${size}px;left:${left}%;bottom:-10px;animation-delay:${delay}s;animation-duration:${duration}s;opacity:${Math.random()*0.5+0.2};--dx:${dx};`;
+        container.appendChild(p);
+      }
+    })();
+
+    // 9. Magnetic button shimmer effect
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width * 100) + '%';
+        const y = ((e.clientY - r.top) / r.height * 100) + '%';
+        btn.style.setProperty('--mx', x);
+        btn.style.setProperty('--my', y);
+      });
+    });
+
+    // 10. Tilt effect on team cards
+    document.querySelectorAll('.team-card, .ph-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(600px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateZ(4px)`;
+        card.style.transition = 'transform 0.1s ease';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.transition = 'transform 0.4s ease';
+      });
+    });
+
+    (function () {
+      var f = document.getElementById('aboutBookForm');
+      var ok = document.getElementById('aboutBookSuccess');
+      if (!f) return;
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var n = document.getElementById('aboutBookName').value.trim();
+        var p = document.getElementById('aboutBookPhone').value.trim();
+        var t = document.getElementById('aboutBookType').value;
+        if (!n || p.length < 10 || !t) return;
+        f.style.display = 'none';
+        if (ok) ok.classList.add('visible');
+      });
+      document.getElementById('aboutBookPhone').addEventListener('input', function () { this.value = this.value.replace(/\D/g, '').slice(0, 10); });
+    })();
+
+    // ── Magnetic cursor orb (same as activities) ──
+    (function () {
+      const orb = document.getElementById('cursor-orb');
+      const trail = document.getElementById('cursor-trail');
+      if (!orb || !trail || window.matchMedia('(hover: none)').matches) return;
+      let orbX = 0, orbY = 0, trailX = 0, trailY = 0;
+      let mouseX = 0, mouseY = 0;
+      let orbVisible = false;
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        if (!orbVisible) {
+          orbVisible = true;
+          orb.style.opacity = '0.9';
+          trail.style.opacity = '1';
+        }
+      });
+      document.addEventListener('mouseleave', () => {
+        orb.style.opacity = '0';
+        trail.style.opacity = '0';
+        orbVisible = false;
+      });
+      document.querySelectorAll('a, button, input, select, textarea').forEach(el => {
+        el.addEventListener('mouseenter', () => orb.classList.add('expand'));
+        el.addEventListener('mouseleave', () => orb.classList.remove('expand'));
+      });
+      (function animateOrb() {
+        orbX += (mouseX - orbX) * 0.10;
+        orbY += (mouseY - orbY) * 0.10;
+        trailX += (mouseX - trailX) * 0.22;
+        trailY += (mouseY - trailY) * 0.22;
+        orb.style.transform = `translate(${orbX - 18}px, ${orbY - 18}px)`;
+        trail.style.transform = `translate(${trailX - 4}px, ${trailY - 4}px)`;
+        requestAnimationFrame(animateOrb);
+      })();
+    })();
+  </script>
+</body>
+</html>

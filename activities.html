@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNFJF5CC');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11252558517"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11252558517');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20+ Activities for Kids & Teams | Botfit — Gurugram's Largest Indoor FEC</title>
+  <meta name="description" content="Explore 20+ physical activities at Botfit — Antigravity, Ninja Course, Laser Tag, Rock Climbing and more. For kids aged 3–15, birthday parties, corporate teams, and school trips in Sector 60, Gurugram.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <style>
+    /* ── RESET & TOKENS ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --green: #1DB954; --green-dark: #14a345; --green-light: #E8F8EE;
+      --black: #0A0A0A; --white: #FFFFFF; --offwhite: #F7F7F5;
+      --ink: #1A1A1A; --ink-mid: #3D3D3A; --ink-faint: #8A8A85;
+      --border: rgba(10, 10, 10, 0.09);
+      --font-display: 'Syne', sans-serif; --font-body: 'DM Sans', sans-serif;
+    }
+    html { scroll-behavior: auto; }
+    body { font-family: var(--font-body); background: var(--offwhite); color: var(--ink); overflow-x: hidden; }
+    a, a:hover, a:focus, a:visited { text-decoration: none !important; }
+
+    /* ── NAV ── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 22px 52px; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.82) 0%, transparent 100%); transition: background 0.4s, padding 0.3s; }
+    nav.scrolled { background: rgba(10, 10, 10, 0.92); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); padding: 14px 52px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .logo-link { display: flex; align-items: center; text-decoration: none; transition: opacity 0.2s; z-index: 210; position: relative; }
+    .logo-link:hover { opacity: 0.82; }
+    .logo-link img { display: block; height: 38px; width: auto; filter: brightness(0) invert(1); }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; flex-wrap: nowrap; }
+    .nav-links a { color: rgba(255, 255, 255, 0.7); font-size: 12px; font-weight: 500; transition: color 0.22s; padding-bottom: 3px; position: relative; white-space: nowrap; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 100%; height: 1px; background: var(--green); transition: right 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
+    .nav-links a:hover::after, .nav-links a.active::after { right: 0; }
+    .nav-links a.active { color: var(--green); }
+    .nav-links .nav-cta::after { display: none; }
+    .nav-cta { background: var(--green) !important; color: var(--black) !important; padding: 8px 16px !important; border-radius: 2px; font-weight: 700 !important; font-size: 11px !important; letter-spacing: 0.4px; white-space: nowrap; transition: background 0.2s, transform 0.15s !important; }
+    .nav-cta:hover { background: var(--green-dark) !important; transform: translateY(-1px); }
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 44px; height: 44px; background: none; border: none; cursor: pointer; z-index: 210; position: relative; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; transform-origin: center; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 204; opacity: 0; pointer-events: none; transition: opacity 0.3s; display: block; }
+    .nav-overlay.open { opacity: 1; pointer-events: auto; }
+    .nav-drawer { position: fixed; top: 0; right: 0; width: min(320px, 88vw); height: 100dvh; background: rgba(10,10,10,0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); z-index: 205; transform: translateX(100%); transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1); border-left: 1px solid rgba(255, 255, 255, 0.07); overflow-y: auto; padding: 100px 32px 40px; display: flex; flex-direction: column; gap: 0; }
+    .nav-drawer.open { transform: translateX(0); }
+    .nav-drawer-links { list-style: none; display: flex; flex-direction: column; }
+    .nav-drawer-links li { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .nav-drawer-links a { display: block; color: rgba(255, 255, 255, 0.82); font-size: 18px; font-weight: 600; padding: 18px 0; transition: color 0.2s; font-family: var(--font-display); }
+    .nav-drawer-links a:hover, .nav-drawer-links a.active { color: var(--green); }
+    .nav-drawer-cta { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .nav-drawer-contact { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.07); display: flex; flex-direction: column; gap: 10px; }
+    .nav-drawer-contact a { color: rgba(255,255,255,0.5); font-size: 13px; transition: color 0.2s; }
+    .nav-drawer-contact a:hover { color: var(--green); }
+
+    /* ── BUTTONS ── */
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--green); color: var(--black) !important; font-family: var(--font-body); font-size: 15px; font-weight: 700; padding: 15px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.25s, transform 0.18s, box-shadow 0.2s; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(29, 185, 84, 0.32); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white) !important; font-family: var(--font-body); font-size: 15px; font-weight: 500; padding: 14px 30px; border-radius: 2px; border: 1px solid rgba(255, 255, 255, 0.32); cursor: pointer; transition: border-color 0.25s, transform 0.18s; }
+    .btn-secondary:hover { border-color: var(--green); transform: translateY(-3px); }
+    .btn-arrow { font-size: 16px; display: inline-block; transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .btn-primary:hover .btn-arrow, .btn-secondary:hover .btn-arrow { transform: translateX(5px); }
+
+    /* ── REVEALS ── */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; } .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; } .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ── SHARED TAGS ── */
+    .pos-tag { display: inline-flex; align-items: center; gap: 8px; background: var(--green-light); border: 1px solid rgba(29, 185, 84, 0.2); border-radius: 2px; padding: 6px 14px; margin-bottom: 24px; }
+    .pos-tag-dot { width: 5px; height: 5px; background: var(--green); border-radius: 50%; }
+    .pos-tag-text { font-size: 11px; font-weight: 500; color: var(--green-dark); letter-spacing: 2px; text-transform: uppercase; }
+    .pos-tag--dark { background: rgba(29, 185, 84, 0.1); border-color: rgba(29, 185, 84, 0.25); }
+    .pos-tag--dark .pos-tag-text { color: var(--green); }
+
+    /* ══════════════ WOW ANIMATIONS ══════════════ */
+
+    /* 1. Magnetic cursor orb */
+    #cursor-orb {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(29,185,84,0.55) 0%, rgba(29,185,84,0.08) 60%, transparent 100%);
+      transform: translate(-50%, -50%);
+      transition: width 0.3s, height 0.3s, opacity 0.3s;
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    #cursor-orb.expand { width: 90px; height: 90px; }
+    #cursor-trail {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9998;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 0 12px 3px rgba(29,185,84,0.6);
+    }
+    @media (hover: none) {
+      #cursor-orb, #cursor-trail { display: none !important; }
+    }
+
+    /* 2. Animated stat counters */
+    .trust-val { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--white); }
+    .count-target { display: inline-block; }
+
+    /* 3. Activity cards — tilt + glow on hover (CSS part) */
+    .act-card {
+      transition: transform 0.15s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .act-card-shine {
+      position: absolute; inset: 0; pointer-events: none; z-index: 5;
+      background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.12) 0%, transparent 60%);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .act-card:hover .act-card-shine { opacity: 1; }
+
+    /* 4. Stagger-in for activity grid cards */
+    .act-card { opacity: 0; transform: translateY(36px) scale(0.95); }
+    .act-card.card-visible { opacity: 1 !important; transform: translateY(0) scale(1) !important; }
+
+    /* 5. Section headline text-reveal (clip) */
+    .headline-reveal { overflow: hidden; }
+    .headline-reveal .hr-inner {
+      display: block;
+      transform: translateY(100%);
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .headline-reveal.hr-done .hr-inner { transform: translateY(0); }
+
+    /* 6. Safety cards pop */
+    .safety-card { opacity: 0; transform: translateY(30px); transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.34,1.3,0.64,1); }
+    .safety-card.sc-visible { opacity: 1; transform: translateY(0); }
+
+    /* ══════════════ SECTION 1 . HERO ══════════════ */
+    .bday-hero { position: relative; width: 100%; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
+    .bday-hero-bg { position: absolute; inset: 0; background-image: url('images/activities-hero.jpeg'); background-size: cover; background-position: center; transform: scale(1.05); animation: bgzoom 14s ease-out forwards; }
+    @keyframes bgzoom { from { transform: scale(1.09); } to { transform: scale(1.0); } }
+    .bday-hero-ov-base { position: absolute; inset: 0; background: rgba(10, 10, 10, 0.38); }
+    .bday-hero-ov-gradient { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 10, 10, 0.22) 0%, rgba(10, 10, 10, 0) 28%, rgba(10, 10, 10, 0) 40%, rgba(10, 10, 10, 0.65) 68%, rgba(10, 10, 10, 0.97) 100%); }
+    .bday-hero-ov-tint { position: absolute; inset: 0; background: radial-gradient(ellipse 55% 50% at 0% 100%, rgba(29, 185, 84, 0.16) 0%, transparent 65%); }
+    .bday-hero-content { position: relative; z-index: 10; padding: 0 52px 72px; max-width: 900px; }
+    .bday-hero-eyebrow { display: inline-flex; align-items: center; gap: 7px; background: rgba(10, 10, 10, 0.75); border: 1px solid rgba(29, 185, 84, 0.35); border-radius: 20px; padding: 6px 14px 6px 10px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); margin-bottom: 22px; opacity: 0; animation: fadeUp 0.7s 0.4s ease forwards; }
+    .eyebrow-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; box-shadow: 0 0 0 3px rgba(29, 185, 84, 0.25); animation: pulse 2s ease-in-out infinite; flex-shrink: 0; }
+    @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(29,185,84,0.25) } 50% { box-shadow: 0 0 0 6px rgba(29,185,84,0.1) } }
+    .eyebrow-text { font-size: 12px; font-weight: 600; color: rgba(255, 255, 255, 0.92); letter-spacing: 0.5px; white-space: nowrap; }
+    .bday-hero-headline { font-family: var(--font-display); font-size: clamp(30px, 4.58vw, 60px); font-weight: 800; line-height: 1.02; color: var(--white); letter-spacing: -2px; margin-bottom: 26px; opacity: 0; animation: fadeUp 0.85s 0.6s ease forwards; }
+    .bday-hero-headline em { font-style: normal; color: var(--green); display: block; }
+    .bday-hero-sub { font-size: clamp(15px, 2vw, 18px); color: rgba(255, 255, 255, 0.62); line-height: 1.65; max-width: 600px; margin-bottom: 42px; opacity: 0; animation: fadeUp 0.85s 0.8s ease forwards; }
+    .bday-hero-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.85s 1.0s ease forwards; }
+    .bday-hero-trust { position: absolute; bottom: 28px; left: 52px; display: flex; align-items: center; opacity: 0; animation: fadeUp 0.7s 1.3s ease forwards; z-index: 10; }
+    .trust-item { display: flex; align-items: baseline; gap: 6px; padding: 0 20px; border-right: 1px solid rgba(255, 255, 255, 0.13); }
+    .trust-item:first-child { padding-left: 0; } .trust-item:last-child { border-right: none; }
+    .trust-val { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--white); }
+    .trust-label { font-size: 12px; color: rgba(255, 255, 255, 0.46); white-space: nowrap; }
+    .scroll-cue { position: absolute; right: 52px; bottom: 32px; display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeIn 1s 1.8s ease forwards; z-index: 10; }
+    .scroll-cue-text { font-size: 10px; font-weight: 500; color: rgba(255, 255, 255, 0.28); letter-spacing: 2.5px; text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg); }
+    .scroll-line { width: 1px; height: 44px; background: rgba(255, 255, 255, 0.14); position: relative; overflow: hidden; }
+    .scroll-line::after { content: ''; position: absolute; top: -100%; left: 0; right: 0; height: 100%; background: var(--green); animation: scrollLine 2s 2.2s ease-in-out infinite; }
+    @keyframes scrollLine { 0% { top: -100% } 100% { top: 100% } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px) } to { opacity: 1; transform: translateY(0) } }
+    @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+
+ /* ── SECTION ── */
+  .bfact { background: #F7F7F5; padding: 88px 52px 96px; }
+
+  /* ── HEADER ── */
+  .bfact-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #E8F8EE; border: 1px solid rgba(29,185,84,0.2);
+    border-radius: 2px; padding: 6px 14px; margin-bottom: 20px;
+  }
+  .bfact-eyebrow-dot { width: 5px; height: 5px; background: #1DB954; border-radius: 50%; }
+  .bfact-eyebrow-txt {
+    font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500;
+    color: #14a345; letter-spacing: 2px; text-transform: uppercase;
+  }
+  .bfact-hdr-row {
+    display: flex; align-items: flex-end;
+    justify-content: space-between; gap: 32px; margin-bottom: 32px;
+  }
+  .bfact-headline {
+    font-family: 'Syne', sans-serif; font-size: clamp(28px,3.52vw,50px);
+    font-weight: 800; color: #1A1A1A; line-height: 1.0; letter-spacing: -2.2px;
+  }
+  .bfact-headline strong { color: #1DB954; }
+  .bfact-sub {
+    font-family: 'DM Sans', sans-serif; font-size: 16px; color: #8A8A85;
+    line-height: 1.65; max-width: 340px; text-align: right;
+  }
+
+  /* ── FILTERS ── */
+  .bfact-filters {
+    display: flex; align-items: center; gap: 8px;
+    flex-wrap: wrap; margin-bottom: 36px;
+  }
+  .bfact-filter-lbl {
+    font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 600;
+    color: #8A8A85; letter-spacing: 2px; text-transform: uppercase;
+    margin-right: 4px; white-space: nowrap;
+  }
+  .bfact-fbtn {
+    font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
+    color: #3D3D3A; background: #FFFFFF;
+    border: 1px solid rgba(10,10,10,0.09); border-radius: 2px;
+    padding: 7px 14px; cursor: pointer; white-space: nowrap;
+    transition: background .18s, color .18s, border-color .18s;
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  .bfact-fbtn:hover { border-color: #1DB954; color: #14a345; }
+  .bfact-fbtn.on { background: #0A0A0A; color: #FFFFFF; border-color: #0A0A0A; }
+  .bfact-fbtn-ct {
+    font-size: 10px; font-weight: 700; padding: 1px 5px;
+    border-radius: 2px; background: rgba(29,185,84,0.15); color: #14a345;
+  }
+  .bfact-fbtn.on .bfact-fbtn-ct { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.7); }
+
+  /* ── GRID ── */
+  .bfact-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+
+  /* ── CARD ── */
+  .bfact-card {
+    background: #0A0A0A; border-radius: 5px; overflow: hidden;
+    display: flex; flex-direction: column; position: relative;
+    transition: transform .3s cubic-bezier(.25,.46,.45,.94), box-shadow .3s ease;
+  }
+  .bfact-card:hover {
+    transform: translateY(-7px) scale(1.012);
+    box-shadow: 0 20px 56px rgba(29,185,84,0.16), 0 6px 18px rgba(0,0,0,0.28);
+  }
+  .bfact-card[data-hide="1"] { display: none; }
+  .bfact-card::after {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 2px; background: #1DB954; opacity: 0; transition: opacity .25s;
+  }
+  .bfact-card:hover::after { opacity: 1; }
+
+  .bfact-card-img { position: relative; height: 180px; overflow: hidden; flex-shrink: 0; }
+  .bfact-card-img-bg {
+    position: absolute; inset: 0; background-size: cover; background-position: center;
+    transition: transform .55s cubic-bezier(.25,.46,.45,.94);
+  }
+  .bfact-card:hover .bfact-card-img-bg { transform: scale(1.08); }
+  .bfact-card-img-ov {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg,rgba(10,10,10,0.08) 0%,rgba(10,10,10,0.62) 100%);
+  }
+  .bfact-card-badge {
+    position: absolute; top: 12px; left: 12px; z-index: 2;
+    font-family: 'DM Sans', sans-serif; font-size: 9px; font-weight: 700;
+    letter-spacing: 1.8px; text-transform: uppercase;
+    color: #0A0A0A; background: #1DB954; padding: 4px 10px; border-radius: 2px;
+  }
+  .bfact-card-num {
+    position: absolute; bottom: 12px; right: 14px; z-index: 2;
+    font-family: 'Syne', sans-serif; font-size: 30px; font-weight: 800;
+    color: rgba(255,255,255,0.11); line-height: 1; letter-spacing: -1px; user-select: none;
+  }
+
+  .bfact-card-body { padding: 18px 18px 0; flex: 1; }
+  .bfact-card-name {
+    font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 800;
+    color: #FFFFFF; letter-spacing: -0.4px; line-height: 1.15; margin-bottom: 7px;
+  }
+  .bfact-card-desc {
+    font-family: 'DM Sans', sans-serif; font-size: 13px;
+    color: rgba(255,255,255,0.46); line-height: 1.62;
+  }
+
+  .bfact-card-ft {
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    padding: 12px 18px 16px; border-top: 1px solid rgba(255,255,255,0.07); margin-top: 14px;
+  }
+  .bfact-tag {
+    font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 600;
+    border-radius: 2px; padding: 4px 8px; white-space: nowrap;
+  }
+  .bfact-tag--time { background: rgba(29,185,84,0.12); color: #1DB954; border: 1px solid rgba(29,185,84,0.22); }
+  .bfact-tag--age  { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.52); border: 1px solid rgba(255,255,255,0.09); }
+  .bfact-tag--type { margin-left: auto; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; background: transparent; color: rgba(255,255,255,0.28); border: 1px solid rgba(255,255,255,0.07); }
+
+  .bfact-nores { grid-column:1/-1; display:none; padding:56px 20px; text-align:center; }
+  .bfact-nores.show { display:block; }
+  .bfact-nores p { font-family:'DM Sans', sans-serif; font-size:15px; color:#8A8A85; }
+
+  /* ── BOTTOM CTA ── */
+  .bfact-cta {
+    margin-top: 64px; background: #0A0A0A; border-radius: 5px;
+    overflow: hidden; position: relative;
+    display: grid; grid-template-columns: 1fr 1fr; min-height: 360px;
+  }
+  .bfact-cta::before {
+    content: ''; position: absolute; bottom: -80px; left: -60px;
+    width: 500px; height: 500px;
+    background: radial-gradient(ellipse, rgba(29,185,84,0.10) 0%, transparent 68%);
+    pointer-events: none; z-index: 0;
+  }
+  .bfact-cta::after {
+    content: ''; position: absolute; top: -40px; right: -40px;
+    width: 320px; height: 320px;
+    background: radial-gradient(ellipse, rgba(29,185,84,0.055) 0%, transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+  .bfact-cta-grid-tex {
+    position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bfact-cta-left {
+    padding: 56px 52px; display: flex; flex-direction: column; justify-content: center;
+    border-right: 1px solid rgba(255,255,255,0.055); position: relative; z-index: 1;
+  }
+  .bfact-cta-ey { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+  .bfact-cta-ey-dot { width: 6px; height: 6px; background: #1DB954; border-radius: 50%; flex-shrink:0; }
+  .bfact-cta-ey-txt {
+    font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500;
+    color: rgba(255,255,255,0.36); letter-spacing: 2.2px; text-transform: uppercase;
+  }
+  .bfact-cta-h {
+    font-family: 'Syne', sans-serif; font-size: clamp(22px,2.64vw,38px);
+    font-weight: 800; color: #FFFFFF; line-height: 1.05; letter-spacing: -1.8px; margin-bottom: 16px;
+  }
+  .bfact-cta-h em { font-style: normal; color: #1DB954; }
+  .bfact-cta-p {
+    font-family: 'DM Sans', sans-serif; font-size: 15px;
+    color: rgba(255,255,255,0.46); line-height: 1.72; max-width: 380px; margin-bottom: 28px;
+  }
+  .bfact-cta-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .bfact-cta-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500;
+    color: rgba(255,255,255,0.4); border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 2px; padding: 5px 12px;
+  }
+  .bfact-cta-pill-dot { width: 5px; height: 5px; background: #1DB954; border-radius: 50%; flex-shrink:0; }
+
+  .bfact-cta-right {
+    padding: 52px 52px; display: flex; flex-direction: column; justify-content: center;
+    background: rgba(255,255,255,0.022); position: relative; z-index: 1;
+  }
+  .bfact-cta-r-lbl {
+    font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700;
+    color: rgba(255,255,255,0.26); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .bfact-cta-acts { display: flex; flex-direction: column; gap: 10px; }
+  .bfact-cta-act {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 20px 24px; border-radius: 5px; text-decoration: none;
+    transition: transform .2s ease, background .2s, box-shadow .2s;
+  }
+  .bfact-cta-act--call { background: #1DB954; border: none; }
+  .bfact-cta-act--call:hover {
+    background: #14a345; transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(29,185,84,0.38);
+  }
+  .bfact-cta-act--wa { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.11); }
+  .bfact-cta-act--wa:hover {
+    background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.22); transform: translateY(-2px);
+  }
+  .bfact-cta-act-l { display: flex; flex-direction: column; gap: 2px; }
+  .bfact-cta-act-title { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 800; letter-spacing: -0.3px; }
+  .bfact-cta-act--call .bfact-cta-act-title { color: #0A0A0A; }
+  .bfact-cta-act--wa  .bfact-cta-act-title { color: #FFFFFF; }
+  .bfact-cta-act-sub { font-family: 'DM Sans', sans-serif; font-size: 12px; }
+  .bfact-cta-act--call .bfact-cta-act-sub { color: rgba(0,0,0,0.5); }
+  .bfact-cta-act--wa  .bfact-cta-act-sub { color: rgba(255,255,255,0.38); }
+  .bfact-cta-act-arr {
+    font-size: 18px; flex-shrink: 0;
+    transition: transform .25s cubic-bezier(.34,1.56,.64,1);
+  }
+  .bfact-cta-act--call .bfact-cta-act-arr { color: #0A0A0A; }
+  .bfact-cta-act--wa  .bfact-cta-act-arr { color: rgba(255,255,255,0.45); }
+  .bfact-cta-act:hover .bfact-cta-act-arr { transform: translateX(5px); }
+
+  .bfact-cta-stats {
+    display: flex; align-items: center; gap: 0;
+    margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.055);
+  }
+  .bfact-cta-stat { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+  .bfact-cta-stat + .bfact-cta-stat { padding-left: 20px; border-left: 1px solid rgba(255,255,255,0.07); }
+  .bfact-cta-stat-v {
+    font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800;
+    color: #FFFFFF; line-height: 1; letter-spacing: -0.8px;
+  }
+  .bfact-cta-stat-l {
+    font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500;
+    color: rgba(255,255,255,0.3); letter-spacing: 1.2px; text-transform: uppercase;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .bfact { padding: 72px 32px 80px; }
+    .bfact-grid { grid-template-columns: repeat(2,1fr); gap: 14px; }
+    .bfact-cta { grid-template-columns: 1fr; min-height: auto; }
+    .bfact-cta-left { padding: 44px 40px 36px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.055); }
+    .bfact-cta-right { padding: 36px 40px 44px; }
+  }
+  @media (max-width: 768px) {
+    .bfact { padding: 56px 20px 72px; }
+    .bfact-hdr-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .bfact-sub { text-align: left; max-width: 100%; font-size: 14px; }
+    .bfact-grid { grid-template-columns: 1fr; gap: 12px; }
+    .bfact-cta { margin-top: 44px; }
+    .bfact-cta-left { padding: 36px 24px 28px; }
+    .bfact-cta-right { padding: 28px 24px 36px; }
+    .bfact-cta-act { padding: 16px 18px; }
+    .bfact-cta-stat + .bfact-cta-stat { padding-left: 14px; }
+  }
+    
+    /* ══════════════ SECTION 3 . FEATURED ACTIVITY ══════════════ */
+    .feat-spotlight { background: var(--black); padding: 96px 52px; position: relative; overflow: hidden; }
+    .feat-spotlight::before { content: ''; position: absolute; top: -100px; right: -80px; width: 520px; height: 520px; background: radial-gradient(ellipse, rgba(29, 185, 84, 0.09) 0%, transparent 68%); pointer-events: none; }
+    .pkg-bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px); background-size: 72px 72px; pointer-events: none; }
+    .feat-inner { display: grid; grid-template-columns: 1fr 1fr; position: relative; z-index: 2; border: 1px solid rgba(255,255,255,0.07); min-height: 540px; }
+    .feat-left { position: relative; background: #0a0a0a; overflow: hidden; }
+    .feat-img { position: absolute; inset: 0; background-image: url('https://medkon.in/wp-content/uploads/2026/04/Featured-activity-1.png'); background-size: cover; background-position: center; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .feat-left:hover .feat-img { transform: scale(1.03); }
+    .feat-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.72) 100%); }
+    .feat-stats { position: absolute; bottom: 32px; left: 32px; display: flex; flex-direction: column; gap: 10px; }
+    .feat-chip { background: rgba(10,10,10,0.82); border: 1px solid rgba(29,185,84,0.35); border-radius: 20px; padding: 6px 14px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.9); letter-spacing: 0.5px; width: fit-content; text-transform: uppercase; }
+    .feat-right { background: rgba(255,255,255,0.02); padding: 56px; display: flex; flex-direction: column; justify-content: center; }
+    .feat-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; color: var(--green); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
+    .feat-headline { font-family: var(--font-display); font-size: clamp(30px, 3.52vw, 48px); font-weight: 800; color: var(--white); line-height: 1; letter-spacing: -1.5px; margin-bottom: 24px; }
+    .feat-headline strong { color: var(--green); }
+    .feat-sub { font-size: 14.5px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 36px; }
+    .jj-feat-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 42px; }
+    .jj-feat { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255,255,255,0.06); border-left: 2px solid var(--green); padding: 20px; display: flex; gap: 16px; align-items: flex-start; transition: border-color 0.2s, background 0.2s; }
+    .jj-feat:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255,255,255,0.1); }
+    .jj-feat-icon { font-size: 24px; line-height: 1; flex-shrink: 0; }
+    .jj-feat-title { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .jj-feat-desc { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.5; }
+    .feat-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+    /* ══════════════ SECTION 4 . SAFETY STRIP ══════════════ */
+    .safety-section { background: var(--offwhite); padding: 96px 52px; border-top: 1px solid var(--border); }
+    .safety-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+    .safety-card { background: var(--white); border: 1px solid var(--border); padding: 36px 30px; display: flex; flex-direction: column; align-items: flex-start; transition: border-color 0.25s, transform 0.3s; }
+    .safety-card:hover { border-color: rgba(29, 185, 84, 0.4); transform: translateY(-6px); }
+    .safety-icon-wrap { width: 64px; height: 64px; background: var(--green-light); display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 24px; border-radius: 2px; }
+    .why-card-title { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--ink); letter-spacing: -0.3px; margin-bottom: 8px; transition: color 0.25s; }
+    .safety-card:hover .why-card-title { color: var(--green-dark); }
+    .why-card-desc { font-size: 13.5px; color: var(--ink-faint); line-height: 1.62; flex: 1; }
+
+    /* ══════════════ SECTION 5 . CROSS LINK ══════════════ */
+    .cross-section { background: var(--black); position: relative; overflow: hidden; padding: 0; border-top: 1px solid rgba(255,255,255,0.07); }
+    .cross-inner { display: grid; grid-template-columns: 1fr 1fr; position: relative; z-index: 2; }
+    .cross-half { padding: 96px 72px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+    .cross-left { border-right: 1px solid rgba(255,255,255,0.07); }
+    .cross-eyebrow { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.3); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+    .cross-headline { font-family: var(--font-display); font-size: clamp(28px, 3.08vw, 42px); font-weight: 800; color: var(--white); line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 20px; }
+    .cross-headline strong { color: var(--green); }
+    .cross-body { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.65; margin-bottom: 36px; max-width: 440px; }
+
+    /* ══════════════ SECTION 6 . FAQ ══════════════ */
+    .faq-section { background: var(--black); padding: 96px 52px; border-top: 1px solid rgba(255,255,255,0.05); }
+    .faq-inner { max-width: 860px; margin: 0 auto; }
+    .faq-headline { font-family: var(--font-display); font-size: clamp(25px, 3.34vw, 44px); font-weight: 800; color: var(--white); letter-spacing: -1.8px; line-height: 1.02; margin-top: 16px; margin-bottom: 52px; }
+    .faq-headline strong { color: var(--green); }
+    .faq-item { border-top: 1px solid rgba(255, 255, 255, 0.08); }
+    .faq-item:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+    .faq-q { width: 100%; background: none; border: none; text-align: left; cursor: pointer; padding: 24px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .faq-q-text { font-family: var(--font-display); font-size: clamp(15px, 1.5vw, 18px); font-weight: 700; color: rgba(255, 255, 255, 0.82); transition: color 0.22s; line-height: 1.3; }
+    .faq-item.open .faq-q-text { color: var(--green); }
+    .faq-icon { width: 28px; height: 28px; border-radius: 2px; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.22s, transform 0.32s; }
+    .faq-item.open .faq-icon { background: var(--green); transform: rotate(45deg); border-color: var(--green); }
+    .faq-icon svg { width: 12px; height: 12px; stroke: rgba(255, 255, 255, 0.6); stroke-width: 2.5; transition: stroke 0.22s; }
+    .faq-item.open .faq-icon svg { stroke: var(--black); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.2, 1); }
+    .faq-a-inner { padding: 0 0 24px; font-size: 14.5px; color: rgba(255, 255, 255, 0.45); line-height: 1.75; max-width: 700px; }
+    .faq-item.open .faq-a { max-height: 300px; }
+
+    /* ══════════════ FOOTER (aligned with homepage) ══════════════ */
+    .site-footer { background: var(--black); color: rgba(255,255,255,0.72); padding: 72px 52px 42px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 26px; align-items: start; }
+    .footer-col-title { font-family: var(--font-display); font-weight: 800; color: var(--white); letter-spacing: -0.4px; font-size: 16px; margin-bottom: 12px; }
+    .footer-logo { filter: brightness(0) invert(1); display: block; height: auto; }
+    .jj-mini-badge { margin-top: 18px; display: flex; gap: 14px; padding: 14px; border-radius: 3px; border: 1px solid rgba(29,185,84,0.28); background: rgba(29,185,84,0.10); align-items: center; }
+    .jj-mini-img { display: flex; gap: 0; align-items: center; }
+    .jj-mini-img img { width: 34px; height: 34px; object-fit: contain; background: transparent; border: none; display: block; }
+    .jj-mini-img img + img { margin-left: -10px; }
+    .jj-mini-label { font-family: var(--font-display); font-weight: 800; color: var(--white); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .jj-mini-text a { color: var(--green); font-weight: 700; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
+    .footer-contact { margin-top: 16px; display: grid; gap: 10px; }
+    .footer-contact-line { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .footer-contact-label { color: rgba(255,255,255,0.48); font-size: 12px; font-weight: 700; letter-spacing: 0.2px; }
+    .footer-link { color: rgba(255,255,255,0.86); text-decoration: none; font-weight: 700; }
+    .footer-link:hover { color: var(--green); }
+    .footer-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .site-footer .btn-primary, .site-footer .btn-secondary { padding: 12px 16px; font-size: 13px; }
+    .site-footer a.btn-secondary {
+      color: #21b179 !important;
+    }
+    .site-footer a.btn-secondary:hover {
+      color: #2dd68f !important;
+    }
+    .footer-col a { display: block; text-decoration: none; color: rgba(255,255,255,0.72); font-weight: 650; margin: 10px 0; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-address { color: rgba(255,255,255,0.74); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
+    .footer-legal { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 14px; }
+    .footer-legal a { margin: 0; font-size: 13px; }
+    .footer-bottom { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,0.55); }
+
+    /* ── MOBILE STICKY ── */
+    .mobile-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--black); z-index: 100; border-top: 1px solid rgba(255,255,255,0.1); padding-bottom: env(safe-area-inset-bottom); }
+    .m-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 12px 4px; color: var(--white) !important; text-decoration: none; border-right: 1px solid rgba(255,255,255,0.07); }
+    .m-btn:last-child { border-right: none; }
+    .m-btn.primary { background: var(--green); color: var(--black) !important; font-weight: 700; }
+    .m-icon { font-size: 18px; }
+    .m-label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width: 1200px) {
+      nav { padding: 16px 32px; }
+      nav.scrolled { padding: 12px 32px; }
+      .bday-hero-content, .filter-section, .safety-section, .feat-spotlight, .faq-section { padding-left: 32px; padding-right: 32px; }
+      .site-footer { padding: 72px 32px 42px; }
+      .cross-half { padding: 72px 48px; }
+      .act-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media(max-width: 1024px) {
+      .why-header { grid-template-columns: 1fr; gap: 24px; text-align: left; }
+      .why-header > div:last-child { align-items: flex-start; }
+      .act-grid { grid-template-columns: repeat(3, 1fr); }
+      .safety-grid { grid-template-columns: 1fr 1fr; }
+      .feat-inner, .cross-inner { grid-template-columns: 1fr; }
+      .cross-left { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+      .site-footer { padding: 60px 32px 42px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    }
+    @media(max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .mobile-sticky { display: flex; }
+      .bday-hero-content, .filter-section, .safety-section, .feat-spotlight, .faq-section { padding: 56px 20px; }
+      .site-footer { padding: 52px 20px 100px; }
+      .cross-half { padding: 56px 20px; }
+      .bday-hero-trust { display: none; }
+      .feat-left { min-height: 480px; }
+      .feat-right { padding: 40px 20px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; font-size: 12px; margin-bottom: 60px; }
+      .footer-contact-line { flex-direction: column; gap: 2px; }
+      .footer-cta .btn-primary, .footer-cta .btn-secondary { font-size: 13px; padding: 12px 18px; }
+      /* Grid: 2 columns on tablet/mobile so all images are visible */
+      .act-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+      .safety-grid { grid-template-columns: repeat(2, 1fr); }
+      /* Filter bar: scrollable on small screens */
+      .filter-bar { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 12px; padding: 12px 0; scrollbar-width: none; }
+      .filter-bar::-webkit-scrollbar { display: none; }
+      .filter-group { flex-wrap: nowrap; flex-shrink: 0; }
+      .filter-pill { white-space: nowrap; font-size: 11px; padding: 6px 12px; }
+      /* Overlay always visible on mobile cards */
+      .act-card-overlay { transform: translateY(0); opacity: 1; }
+      .act-card-name { font-size: 15px; }
+      .act-card-desc { display: none; }
+    }
+    @media(max-width: 480px) {
+      /* Keep 2 columns even on small phones — shows all cards */
+      .act-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+      .safety-grid { grid-template-columns: repeat(2, 1fr); }
+      .bday-hero-headline { font-size: 34px; }
+      .act-card-img { aspect-ratio: 3/4; }
+      .act-card-name { font-size: 13px; letter-spacing: -0.3px; }
+      .act-card-age { font-size: 9px; padding: 2px 6px; }
+      .act-card-overlay { padding: 14px 12px; }
+      .act-card-link { font-size: 11px; }
+      /* Filter bar horizontal scroll */
+      .filter-section { padding-left: 16px; padding-right: 16px; }
+      .filter-bar { gap: 10px; }
+      .filter-label { font-size: 10px; margin-right: 4px; }
+    }
+    @media(max-width: 360px) {
+      .act-card-name { font-size: 12px; }
+      .act-card-overlay { padding: 10px 10px; }
+    }
+
+    /* Page booking form (#book) */
+    .page-book-section { background: var(--black); padding: 96px 52px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .page-book-inner { max-width: 560px; margin: 0 auto; }
+    .page-book-headline { font-family: var(--font-display); font-size: clamp(21px, 2.82vw, 35px); font-weight: 800; color: var(--white); letter-spacing: -1px; margin-bottom: 10px; text-align: center; }
+    .page-book-sub { font-size: 14px; color: rgba(255,255,255,0.45); text-align: center; margin-bottom: 24px; line-height: 1.6; }
+    .page-book-form { display: flex; flex-direction: column; gap: 12px; }
+    .page-book-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .page-book-form input, .page-book-form select { width: 100%; height: 48px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; padding: 0 16px; font-size: 14px; color: var(--white); outline: none; }
+    .page-book-form input::placeholder { color: rgba(255,255,255,0.28); }
+    .page-book-form input:focus, .page-book-form select:focus { border-color: var(--green); }
+    .page-book-form select { cursor: pointer; -webkit-appearance: none; appearance: none; }
+    .page-book-form select option { background: #1a1a1a; }
+    .page-book-form .btn-primary { justify-content: center; margin-top: 4px; }
+    .page-book-success { display: none; padding: 18px; background: rgba(29,185,84,0.12); border: 1px solid rgba(29,185,84,0.28); border-radius: 2px; color: var(--white); text-align: center; font-weight: 600; }
+    .page-book-success.visible { display: block; }
+    @media (max-width: 600px) { .page-book-row { grid-template-columns: 1fr; } .page-book-section { padding: 72px 20px; } }
+
+  </style>
+</head>
+<body>
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNFJF5CC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- ── NAV OVERLAY ── -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ── NAV DRAWER ── -->
+  <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul class="nav-drawer-links">
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="birthdayParties.html">Birthday Parties</a></li>
+      <li><a href="corporateEvents.html">Corporate Events</a></li>
+      <li><a href="schoolTrips.html">School Trips</a></li>
+      <li><a href="jevikaJoy.html">Jevika &amp; Joy</a></li>
+      <li><a href="aboutBotfit.html">About</a></li>
+    </ul>
+    <div class="nav-drawer-cta">
+      <a href="index.html#book" class="btn-primary" style="justify-content:center;padding:16px 24px;font-size:15px;">Book a Party <span class="btn-arrow">→</span></a>
+      <a href="https://wa.me/918047095095" class="btn-secondary" target="_blank" rel="noopener">WhatsApp Us <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="nav-drawer-contact">
+      <a href="tel:+918047095095">📞 080 4709 5095</a>
+      <a href="mailto:info@botfit.in">✉ info@botfit.in</a>
+      <a href="https://www.google.com/maps?q=Paras+Trinity,+Sector+60,+Gurugram" target="_blank" rel="noopener">📍 Sector 60, Gurugram</a>
+    </div>
+  </div>
+
+  <!-- WOW: Cursor orb -->
+  <div id="cursor-orb"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="index.html" class="logo-link" aria-label="Botfit home">
+      <img src="images/Botfit-logo.webp" width="95" height="40" alt="Botfit" loading="lazy">
+    </a>
+    <ul class="nav-links">
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="birthdayParties.html">Birthday Parties</a></li>
+      <li><a href="corporateEvents.html">Corporate Events</a></li>
+      <li><a href="schoolTrips.html">School Trips</a></li>
+      <li><a href="jevikaJoy.html">Jevika &amp; Joy</a></li>
+      <li><a href="aboutBotfit.html">About</a></li>
+      <li><a href="index.html#book" class="nav-cta">Book a Party</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- SECTION 1 · Hero -->
+  <section class="bday-hero" aria-label="Activities hero">
+    <div class="bday-hero-bg" role="img" aria-label="Activities at Botfit"></div>
+    <div class="bday-hero-ov-base"></div>
+    <div class="bday-hero-ov-gradient"></div>
+    <div class="bday-hero-ov-tint"></div>
+
+    <div class="bday-hero-content">
+      <div class="bday-hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-text">Activities & Experiences</span>
+      </div>
+      <h1 class="bday-hero-headline">
+        Games for every age<br>
+        <em>Every party</em>
+      </h1>
+      <p class="bday-hero-sub">
+        Pick your child’s age group and explore activities designed for maximum fun, safety, and engagement.
+      </p>
+      <div class="bday-hero-actions">
+        <a href="#activities" class="btn-primary">Explore Activities <span class="btn-arrow">↓</span></a>
+        <a href="#book" class="btn-secondary">Plan My Activities <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="bday-hero-trust" aria-label="Key stats">
+      <div class="trust-item"><span class="trust-val">20+</span><span class="trust-label">Activities</span></div>
+      <div class="trust-item"><span class="trust-val">Ages 3–15+</span><span class="trust-label">All Ages</span></div>
+      <div class="trust-item"><span class="trust-val">10,000+</span><span class="trust-label">Families</span></div>
+      <div class="trust-item"><span class="trust-val">Sector 60</span><span class="trust-label">Gurugram</span></div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span class="scroll-cue-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 · Filter Bar + Activity Grid -->
+  <!-- ══ SECTION ══ -->
+<section class="bfact" id="activities" aria-label="All activities at Botfit">
+ 
+  <!-- Header -->
+  <div class="reveal">
+    <div class="bfact-eyebrow">
+      <span class="bfact-eyebrow-dot"></span>
+      <span class="bfact-eyebrow-txt">What We Offer</span>
+    </div>
+    <div class="bfact-hdr-row">
+      <h2 class="bfact-headline">23 games.<br><strong>Zero boredom.</strong></h2>
+      <p class="bfact-sub">Physical, team, skill &amp; party games — curated for every age group and event type.</p>
+    </div>
+ 
+    <!-- Filters -->
+    <div class="bfact-filters" id="bfFilters" role="group" aria-label="Filter activities">
+      <span class="bfact-filter-lbl">Filter:</span>
+      <button class="bfact-fbtn on" data-f="All"       type="button">All        <span class="bfact-fbtn-ct">23</span></button>
+      <button class="bfact-fbtn"    data-f="Active"    type="button">Active     <span class="bfact-fbtn-ct">3</span></button>
+      <button class="bfact-fbtn"    data-f="Fun"       type="button">Fun        <span class="bfact-fbtn-ct">3</span></button>
+      <button class="bfact-fbtn"    data-f="Party"     type="button">Party      <span class="bfact-fbtn-ct">3</span></button>
+      <button class="bfact-fbtn"    data-f="Team"      type="button">Team       <span class="bfact-fbtn-ct">5</span></button>
+      <button class="bfact-fbtn"    data-f="Skill"     type="button">Skill      <span class="bfact-fbtn-ct">7</span></button>
+      <button class="bfact-fbtn"    data-f="Challenge" type="button">Challenge  <span class="bfact-fbtn-ct">1</span></button>
+    </div>
+  </div>
+ 
+  <!-- Cards -->
+  <div class="bfact-grid" id="bfGrid">
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Active">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80')" role="img" aria-label="Obstacle course"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Active</span><span class="bfact-card-num">01</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Obstacle Course</div><p class="bfact-card-desc">Run, jump, and balance through a fun mini obstacle setup designed for all energy levels.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 15 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Active</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Fun">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80')" role="img" aria-label="Treasure hunt"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Fun</span><span class="bfact-card-num">02</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Thematic Treasure Hunt</div><p class="bfact-card-desc">Kids follow clues and answer questions to find hidden treasures and win rewards.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 15 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Fun</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Party">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=80')" role="img" aria-label="Musical hoops"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Party</span><span class="bfact-card-num">03</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Musical Hoops</div><p class="bfact-card-desc">Move around hoops while music plays — grab your spot before it stops.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Party</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Team">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://ichef.bbci.co.uk/ace/standard/1920/cpsprodpb/f399/live/fb181440-88db-11f0-8f4e-291f1d7fdc56.jpg')" role="img" aria-label="Tug of war"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Team</span><span class="bfact-card-num">04</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Tug of War</div><p class="bfact-card-desc">A classic team battle of strength, coordination, and teamwork.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+ · Adults</span><span class="bfact-tag bfact-tag--type">Team</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Fun">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80')" role="img" aria-label="Balloon pop relay"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Fun</span><span class="bfact-card-num">05</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Balloon Pop Relay</div><p class="bfact-card-desc">Teams race to pop balloons using fun and creative methods.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 8+ · Adults</span><span class="bfact-tag bfact-tag--type">Fun</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Party">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80')" role="img" aria-label="Freeze dance"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Party</span><span class="bfact-card-num">06</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Freeze Dance</div><p class="bfact-card-desc">Dance freely and freeze instantly when music stops — last mover is out.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 yrs</span><span class="bfact-tag bfact-tag--type">Party</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Fun">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80')" role="img" aria-label="Duck walk race"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Fun</span><span class="bfact-card-num">07</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Duck Walk Race</div><p class="bfact-card-desc">Walk like a duck and race to the finish — funny and engaging for younger kids.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 yrs</span><span class="bfact-tag bfact-tag--type">Fun</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80')" role="img" aria-label="Hula hoop challenge"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">08</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Hula Hoop Challenge</div><p class="bfact-card-desc">Rotate the hoop as long as possible — individual or team challenge.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Party">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&q=80')" role="img" aria-label="Pin the tail game"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Party</span><span class="bfact-card-num">09</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Pin the Tail</div><p class="bfact-card-desc">Blindfolded players try to place the tail correctly — laughter guaranteed.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Party</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1560969184-10fe8719e047?w=600&q=80')" role="img" aria-label="Ball bounce race"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">10</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Ball Bounce Race</div><p class="bfact-card-desc">Control the ball while racing to the finish line — focus + fun.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 yrs</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Team">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80')" role="img" aria-label="Balloon volleyball"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Team</span><span class="bfact-card-num">11</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Balloon Volleyball</div><p class="bfact-card-desc">Keep the balloon in the air and compete across teams.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Team</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Active">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=600&q=80')" role="img" aria-label="Sack race"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Active</span><span class="bfact-card-num">12</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Sack Race</div><p class="bfact-card-desc">Hop your way to victory inside a sack — classic race with fun twists.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Active</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Team">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&q=80')" role="img" aria-label="Action charades"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Team</span><span class="bfact-card-num">13</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Action Charades</div><p class="bfact-card-desc">Act out funny prompts while your team guesses — high engagement game.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+ · Adults</span><span class="bfact-tag bfact-tag--type">Team</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Team">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&q=80')" role="img" aria-label="Three legged race"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Team</span><span class="bfact-card-num">14</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Three-Legged Race</div><p class="bfact-card-desc">Two players tied together race to the finish with coordination.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 8+ · Adults</span><span class="bfact-tag bfact-tag--type">Team</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&q=80')" role="img" aria-label="Marble and spoon race"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">15</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Marble &amp; Spoon Race</div><p class="bfact-card-desc">Balance and walk carefully without dropping the marble.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?w=600&q=80')" role="img" aria-label="Ring toss"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">16</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Ring Toss</div><p class="bfact-card-desc">Aim and throw rings onto targets — simple but addictive.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?w=600&q=80')" role="img" aria-label="Cup stacking"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">17</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Cup Stacking</div><p class="bfact-card-desc">Stack and unstack cups in pyramid form as fast as possible.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Team">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80')" role="img" aria-label="Pass the balloon"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Team</span><span class="bfact-card-num">18</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Pass the Balloon</div><p class="bfact-card-desc">Pass the balloon between players without dropping it.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Team</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Active">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80')" role="img" aria-label="Snatch the cone"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Active</span><span class="bfact-card-num">19</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Snatch the Cone</div><p class="bfact-card-desc">Quick reflex game — grab the cone before your opponent.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 yrs</span><span class="bfact-tag bfact-tag--type">Active</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')" role="img" aria-label="Paper cup pyramid"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">20</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Paper Cup Pyramid</div><p class="bfact-card-desc">Build the fastest pyramid using paper cups in teams.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-3" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?w=600&q=80')" role="img" aria-label="Bean bag toss"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">21</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Bean Bag Toss</div><p class="bfact-card-desc">Throw bean bags into targets — accuracy-based fun game.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-1" data-type="Challenge">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80')" role="img" aria-label="Blindfolded obstacle"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Challenge</span><span class="bfact-card-num">22</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Blindfolded Obstacle</div><p class="bfact-card-desc">Navigate using guidance while blindfolded — trust + coordination game.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 6–8 · 8+ · Adults</span><span class="bfact-tag bfact-tag--type">Challenge</span></div>
+    </div>
+ 
+    <div class="bfact-card reveal reveal-delay-2" data-type="Skill">
+      <div class="bfact-card-img"><div class="bfact-card-img-bg" style="background-image:url('https://images.unsplash.com/photo-1509255929945-586a420363cf?w=600&q=80')" role="img" aria-label="Cone walk balance game"></div><div class="bfact-card-img-ov"></div><span class="bfact-card-badge">Skill</span><span class="bfact-card-num">23</span></div>
+      <div class="bfact-card-body"><div class="bfact-card-name">Cone Walk</div><p class="bfact-card-desc">Walk while balancing a cone on your head — control + focus game.</p></div>
+      <div class="bfact-card-ft"><span class="bfact-tag bfact-tag--time">⏱ 10 min</span><span class="bfact-tag bfact-tag--age">🎯 3–6 · 6–8 · 8+</span><span class="bfact-tag bfact-tag--type">Skill</span></div>
+    </div>
+ 
+    <div class="bfact-nores" id="bfNoRes" aria-live="polite">
+      <p>No activities match this filter — try another category.</p>
+    </div>
+ 
+  </div><!-- /grid -->
+ 
+  <!-- ══ CTA ══ -->
+  <div class="bfact-cta reveal">
+    <div class="bfact-cta-grid-tex"></div>
+ 
+    <div class="bfact-cta-left">
+      <div class="bfact-cta-ey">
+        <span class="bfact-cta-ey-dot"></span>
+        <span class="bfact-cta-ey-txt">We'll help you choose</span>
+      </div>
+      <h3 class="bfact-cta-h">Not sure which<br>games to <em>choose?</em></h3>
+      <p class="bfact-cta-p">We help you pick the perfect 4–5 activities based on age group, party size, and event type — zero guesswork, maximum fun.</p>
+      <div class="bfact-cta-pills">
+        <span class="bfact-cta-pill"><span class="bfact-cta-pill-dot"></span>Free consultation</span>
+        <span class="bfact-cta-pill"><span class="bfact-cta-pill-dot"></span>Same-day callback</span>
+        <span class="bfact-cta-pill"><span class="bfact-cta-pill-dot"></span>Age-tailored picks</span>
+      </div>
+    </div>
+ 
+    <div class="bfact-cta-right">
+      <div class="bfact-cta-r-lbl">Get in touch</div>
+      <div class="bfact-cta-acts">
+        <a href="tel:+918047095095" class="bfact-cta-act bfact-cta-act--call">
+          <div class="bfact-cta-act-l">
+            <span class="bfact-cta-act-title">📞 Call Now</span>
+            <span class="bfact-cta-act-sub">080 4709 5095 · Mon–Sun, 10am–8pm</span>
+          </div>
+          <span class="bfact-cta-act-arr">→</span>
+        </a>
+        <a href="https://wa.me/918047095095?text=Hi%2C%20I%20need%20help%20choosing%20games%20for%20my%20event%20at%20Botfit" target="_blank" rel="noopener" class="bfact-cta-act bfact-cta-act--wa">
+          <div class="bfact-cta-act-l">
+            <span class="bfact-cta-act-title">💬 Chat on WhatsApp</span>
+            <span class="bfact-cta-act-sub">Typical reply in under 10 minutes</span>
+          </div>
+          <span class="bfact-cta-act-arr">→</span>
+        </a>
+      </div>
+      <div class="bfact-cta-stats">
+        <div class="bfact-cta-stat">
+          <div class="bfact-cta-stat-v">23</div>
+          <div class="bfact-cta-stat-l">Games</div>
+        </div>
+        <div class="bfact-cta-stat">
+          <div class="bfact-cta-stat-v">3–60+</div>
+          <div class="bfact-cta-stat-l">Age Range</div>
+        </div>
+        <div class="bfact-cta-stat">
+          <div class="bfact-cta-stat-v">10 min</div>
+          <div class="bfact-cta-stat-l">Per Game</div>
+        </div>
+      </div>
+    </div>
+ 
+  </div><!-- /cta -->
+ 
+</section>
+
+  <!-- SECTION 3 · Featured Activity Spotlight - Antigravity -->
+  <section class="feat-spotlight" aria-label="Featured activity spotlight">
+    <div class="pkg-bg-grid"></div>
+    <div class="feat-inner reveal">
+      <div class="feat-left">
+        <div class="feat-img"></div>
+        <div class="feat-overlay"></div>
+        <div class="feat-stats">
+          <span class="feat-chip">● SAFE LANDINGS</span>
+          <span class="feat-chip">● AGES 3–15+</span>
+          <span class="feat-chip">● STAFF SUPERVISED</span>
+        </div>
+      </div>
+      <div class="feat-right">
+        <div class="feat-eyebrow">⭐ SIGNATURE ACTIVITY</div>
+        <h2 class="feat-headline">Jump Bold.<br><strong>Land Safe.</strong></h2>
+        <p class="feat-sub">
+          The Foam Pit is the most loved zone at BotFit — a high-energy jump area where kids can leap, flip, and land safely into soft foam blocks.
+Designed for confidence-building, thrill, and safe exploration, it’s where first jumps turn into fearless fun.
+        </p>
+        <div class="jj-feat-list">
+          <div class="jj-feat">
+            <span class="jj-feat-icon">🪂</span>
+            <div>
+              <div class="jj-feat-title">Safe Foam Landing Zone</div>
+              <div class="jj-feat-desc">Soft foam blocks designed to absorb impact and ensure safe landings every time.</div>
+            </div>
+          </div>
+          <div class="jj-feat">
+            <span class="jj-feat-icon">🧒</span>
+            <div>
+              <div class="jj-feat-title">Jump & Flip Experience</div>
+              <div class="jj-feat-desc">Perfect space for kids to try jumps, flips, and new moves without fear.</div>
+            </div>
+          </div>
+          <div class="jj-feat">
+            <span class="jj-feat-icon">🏋️</span>
+            <div>
+              <div class="jj-feat-title">Confidence Building Play</div>
+              <div class="jj-feat-desc">Encourages kids to overcome hesitation and try something new in a safe setup.</div>
+            </div>
+          </div>
+          <div class="jj-feat">
+            <span class="jj-feat-icon">🛡️</span>
+            <div>
+              <div class="jj-feat-title">Fully Supervised Zone</div>
+              <div class="jj-feat-desc">Trained staff always present to guide and ensure safety during play.</div>
+            </div>
+          </div>
+        </div>
+        <div class="feat-actions">
+          <a href="#book" class="btn-primary" style="font-weight:700;">Book a Foam Pit Session <span class="btn-arrow">→</span></a>
+          <a href="#activities" class="btn-secondary">Explore Activities <span class="btn-arrow">↑</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 · Safety Strip -->
+  <section class="safety-section">
+    <div class="why-header">
+      <div>
+        <div class="pos-tag reveal">
+          <span class="pos-tag-dot"></span>
+          <span class="pos-tag-text">SAFETY FIRST</span>
+        </div>
+        <h2 class="why-headline reveal reveal-delay-1">
+          Every activity. <strong>Every supervision.</strong>
+        </h2>
+      </div>
+      <div class="reveal reveal-delay-2" style="display:flex;align-items:flex-end;padding-bottom:6px;">
+        <p class="why-body">
+          All Botfit activities are run by trained staff, age-verified at check-in, and equipped with certified safety gear. Parents can relax. Kids can push limits.
+        </p>
+      </div>
+    </div>
+    <div class="safety-grid">
+      <div class="safety-card reveal reveal-delay-1">
+        <div class="safety-icon-wrap">🧑‍🏫</div>
+        <h3 class="why-card-title">Certified Staff</h3>
+        <p class="why-card-desc">Every activity marshal is trained in first aid and child safety protocols.</p>
+      </div>
+      <div class="safety-card reveal reveal-delay-2">
+        <div class="safety-icon-wrap">🦺</div>
+        <h3 class="why-card-title">Equipment Checked Daily</h3>
+        <p class="why-card-desc">All gear inspected every morning before doors open.</p>
+      </div>
+      <div class="safety-card reveal reveal-delay-3">
+        <div class="safety-icon-wrap">👁️</div>
+        <h3 class="why-card-title">On-Floor Supervision</h3>
+        <p class="why-card-desc">Staff physically present in every activity zone, always.</p>
+      </div>
+      <div class="safety-card reveal reveal-delay-4">
+        <div class="safety-icon-wrap">🚨</div>
+        <h3 class="why-card-title">First Aid On-Site</h3>
+        <p class="why-card-desc">Qualified first aider on duty every session, every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 · Cross-Link CTA Block -->
+  <section class="cross-section">
+    <div class="pkg-bg-grid"></div>
+    <div class="cross-inner reveal">
+      <div class="cross-half cross-left">
+        <div class="cross-eyebrow">FOR BIRTHDAYS</div>
+        <h2 class="cross-headline">Want a<br><strong>Private Arena?</strong></h2>
+        <p class="cross-body">Book the whole venue or a dedicated zone for your child's birthday party. 20+ activities, dedicated host, themed packages.</p>
+        <a href="birthdayParties.html" class="btn-primary" style="font-weight:700;">See Birthday Packages <span class="btn-arrow">→</span></a>
+      </div>
+      <div class="cross-half cross-right">
+        <div class="cross-eyebrow">FOR TEAMS</div>
+        <h2 class="cross-headline">Team Building<br><strong>That Actually Works.</strong></h2>
+        <p class="cross-body">Corporate bookings get dedicated coordinators, group activity scheduling, and the full venue during off-peak windows.</p>
+        <a href="corporateEvents.html" class="btn-secondary" style="border-width:2px;">Get a Corporate Proposal <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 · FAQ -->
+  <section class="faq-section" aria-label="Frequently asked questions">
+    <div class="faq-inner">
+      <div class="pos-tag pos-tag--dark reveal"><span class="pos-tag-dot"></span><span class="pos-tag-text">FAQS</span></div>
+      <h2 class="faq-headline reveal reveal-delay-1">Everything you<br><strong>need to know.</strong></h2>
+      
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">What age groups are the activities suitable for?</span>
+          <span class="faq-icon"><svg viewBox="0 0 16 16"><line x1="8" y1="2" x2="8" y2="14" /><line x1="2" y1="8" x2="14" y2="8" /></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Botfit has activities for every age from 3 years to adults. Each activity card on this page shows its recommended age range. Our staff will guide your child to the right zones at check-in.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">Do I need to book in advance or can I walk in?</span>
+          <span class="faq-icon"><svg viewBox="0 0 16 16"><line x1="8" y1="2" x2="8" y2="14" /><line x1="2" y1="8" x2="14" y2="8" /></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Walk-ins are welcome during general opening hours. For birthday parties, corporate events, or private group bookings, advance booking is strongly recommended to guarantee zone availability.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">Are parents allowed inside the activity areas?</span>
+          <span class="faq-icon"><svg viewBox="0 0 16 16"><line x1="8" y1="2" x2="8" y2="14" /><line x1="2" y1="8" x2="14" y2="8" /></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Parents are welcome to accompany children in the younger activity zones. For most activities, children are supervised by our staff so parents can relax in the café or viewing areas.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">What should my child wear?</span>
+          <span class="faq-icon"><svg viewBox="0 0 16 16"><line x1="8" y1="2" x2="8" y2="14" /><line x1="2" y1="8" x2="14" y2="8" /></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Comfortable sports clothing is recommended. Grip socks are mandatory for trampoline and climbing activities — available for purchase at the venue if needed. No open footwear.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">Can I book a specific activity for a group or school trip?</span>
+          <span class="faq-icon"><svg viewBox="0 0 16 16"><line x1="8" y1="2" x2="8" y2="14" /><line x1="2" y1="8" x2="14" y2="8" /></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes — we offer tailored group packages for school trips, corporate teams, and private groups. Visit our School Trips or Corporate Events pages, or call us directly for a custom quote.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="page-book-section reveal" id="book" aria-label="Book activities at Botfit">
+    <div class="page-book-inner">
+      <div class="pos-tag pos-tag--dark" style="margin:0 auto 14px;display:flex;justify-content:center;"><span class="pos-tag-dot"></span><span class="pos-tag-text">Book Now</span></div>
+      <h2 class="page-book-headline">Book your Botfit session</h2>
+      <p class="page-book-sub">Share your details and we'll confirm availability and pricing for your group.</p>
+      <form class="page-book-form" id="activitiesBookForm" novalidate>
+        <div class="page-book-row">
+          <input type="text" id="actBookName" placeholder="Your name" autocomplete="name" required>
+          <input type="tel" id="actBookPhone" placeholder="WhatsApp (10 digits)" maxlength="10" autocomplete="tel" required>
+        </div>
+        <select id="actBookType" required aria-label="Visit type">
+          <option value="">Visit type…</option>
+          <option value="family">Family / walk-in</option>
+          <option value="birthday">Birthday party</option>
+          <option value="group">Group / school</option>
+          <option value="corporate">Corporate</option>
+        </select>
+        <button type="submit" class="btn-primary">Send request <span class="btn-arrow">→</span></button>
+      </form>
+      <div class="page-book-success" id="activitiesBookSuccess" role="status">Thanks! We'll contact you shortly.</div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 · Footer (same as homepage) -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand reveal">
+          <img src="images/Botfit-logo.webp" width="140" height="60" alt="Botfit" class="footer-logo" loading="lazy">
+          <div class="jj-mini-badge" aria-label="Jevika and Joy">
+            <div class="jj-mini-img">
+              <img src="https://medkon.in/wp-content/uploads/2026/03/jevika.png" alt="Jevika" loading="lazy">
+              <img src="https://medkon.in/wp-content/uploads/2026/03/joy.png" alt="Joy" loading="lazy">
+            </div>
+            <div class="jj-mini-text">
+              <div class="jj-mini-label">Jevika & Joy</div>
+              <a href="jevikaJoy.html">Explore the Universe <span class="btn-arrow">→</span></a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-line">
+              <span class="footer-contact-label">Phone</span>
+              <a class="footer-link" href="tel:+918047095095">080 4709 5095</a>
+            </div>
+            <div class="footer-contact-line">
+              <span class="footer-contact-label">Email</span>
+              <a class="footer-link" href="mailto:info@botfit.in">info@botfit.in</a>
+            </div>
+          </div>
+          <div class="footer-cta">
+            <a href="tel:+918047095095" class="btn-primary">Call Now <span class="btn-arrow">→</span></a>
+            <a href="https://wa.me/918047095095?text=Hi%2C%20I%27d%20like%20to%20plan%20a%20visit%20at%20Botfit" target="_blank" rel="noopener" class="btn-secondary">WhatsApp <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links reveal reveal-delay-1">
+          <div class="footer-col-title">Quick Links</div>
+          <a href="activities.html">Activities</a>
+          <a href="birthdayParties.html">Birthday Parties</a>
+          <a href="corporateEvents.html">Corporate Events</a>
+          <a href="schoolTrips.html">School Trips</a>
+          <a href="aboutBotfit.html">About Botfit</a>
+          <a href="botcafe.html#menu">Food Menu</a>
+        </div>
+
+        <div class="footer-col footer-location reveal reveal-delay-2">
+          <div class="footer-col-title">Visit Us</div>
+          <div class="footer-address">Near Paras Trinity, CRPF Road, Sector 60,<br>Gurugram, Haryana 122022</div>
+          <a class="footer-link" href="https://www.google.com/maps?q=Paras+Trinity%2C+CRPF+Road%2C+Sector+60%2C+Gurugram" target="_blank" rel="noopener">Get Directions <span class="btn-arrow">→</span></a>
+          <div class="footer-legal">
+            <a href="https://www.botfit.in/privacy-policy">Privacy Policy</a>
+            <a href="https://www.botfit.in/terms-condition">Terms &amp; Condition</a>
+            <a href="https://www.botfit.in/staff-login">Staff Login</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="footerYear">2026</span> Botfit Entertainment Private Limited. All rights reserved.</div>
+        <div>Built for premium parent trust: safe, curated, and movement-first.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE STICKY BAR (same as homepage) ── -->
+  <div class="mobile-sticky" role="navigation" aria-label="Quick actions">
+    <a href="tel:+918047095095" class="m-btn"><span class="m-icon">📞</span><span class="m-label">Call</span></a>
+    <a href="https://wa.me/918047095095" class="m-btn" target="_blank" rel="noopener"><span class="m-icon">💬</span><span class="m-label">WhatsApp</span></a>
+    <a href="https://www.botfit.in/brochure.pdf" class="m-btn"><span class="m-icon">📄</span><span class="m-label">Brochure</span></a>
+    <a href="#book" class="m-btn primary"><span class="m-icon">🎉</span><span class="m-label">Book Party</span></a>
+  </div>
+
+  <script>
+    // ── Nav scroll ──
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+
+    // ── Hamburger / Drawer ──
+    const hamburger = document.getElementById('navHamburger');
+    const drawer = document.getElementById('navDrawer');
+    const overlay = document.getElementById('navOverlay');
+    function openDrawer() { hamburger.classList.add('open'); drawer.classList.add('open'); overlay.classList.add('open'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+    function closeDrawer() { hamburger.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', () => drawer.classList.contains('open') ? closeDrawer() : openDrawer());
+    overlay.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+    // ── Scroll reveals ──
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+
+    // ── FAQ accordion ──
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded', 'false'); });
+        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+
+    // ── Footer year ──
+    const fy = document.getElementById('footerYear');
+    if (fy) fy.textContent = new Date().getFullYear();
+
+    // ── Lenis smooth scroll ──
+    const lenis = new Lenis({
+      duration: 1.4,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      mouseMultiplier: 0.9,
+      smoothTouch: false,
+    });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+    if (window.gsap && window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+
+    // ── Button Scroll to Grid ──
+    document.querySelectorAll('.btn-scroll-activities').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        lenis.scrollTo('#activities-grid', { offset: -60 });
+      });
+    });
+
+    // ── Activity Filter ──
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const actCards = document.querySelectorAll('.act-card');
+
+    function applyFilters() {
+      const activeAge = document.querySelector('.filter-pill[data-group="age"].active')?.dataset.value || 'all';
+      const activeType = document.querySelector('.filter-pill[data-group="type"].active')?.dataset.value || 'all';
+      
+      actCards.forEach(card => {
+        // use .includes for age mapping, strict match for type
+        const ageMatch = activeAge === 'all' || card.dataset.age.includes(activeAge);
+        const typeMatch = activeType === 'all' || card.dataset.type === activeType;
+        const visible = ageMatch && typeMatch;
+        card.style.opacity = visible ? '1' : '0.2';
+        card.style.transform = visible ? 'scale(1)' : 'scale(0.97)';
+        card.style.pointerEvents = visible ? 'auto' : 'none';
+        card.style.transition = 'opacity 0.3s, transform 0.3s';
+      });
+    }
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const group = pill.dataset.group;
+        const pills = document.querySelectorAll(`.filter-pill[data-group="${group}"]`);
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        applyFilters();
+      });
+    });
+
+    /* ═══════════════════════════════════════
+       WOW ANIMATIONS
+    ═══════════════════════════════════════ */
+
+    // ── 1. Magnetic cursor orb ──
+    const orb = document.getElementById('cursor-orb');
+    const trail = document.getElementById('cursor-trail');
+    if (!orb || !trail || window.matchMedia('(hover: none)').matches) {
+      /* skip cursor init */
+    } else {
+    let orbX = 0, orbY = 0, trailX = 0, trailY = 0;
+    let mouseX = 0, mouseY = 0;
+    let orbVisible = false;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      if (!orbVisible) {
+        orbVisible = true;
+        orb.style.opacity = '0.9';
+        trail.style.opacity = '1';
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      orb.style.opacity = '0';
+      trail.style.opacity = '0';
+      orbVisible = false;
+    });
+
+    // Expand orb over interactive elements
+    document.querySelectorAll('a, button, .act-card, .filter-pill, .safety-card').forEach(el => {
+      el.addEventListener('mouseenter', () => orb.classList.add('expand'));
+      el.addEventListener('mouseleave', () => orb.classList.remove('expand'));
+    });
+
+    (function animateOrb() {
+      // Smooth lag for orb
+      orbX += (mouseX - orbX) * 0.10;
+      orbY += (mouseY - orbY) * 0.10;
+      // Tighter lag for dot trail
+      trailX += (mouseX - trailX) * 0.22;
+      trailY += (mouseY - trailY) * 0.22;
+
+      orb.style.transform = `translate(${orbX - 18}px, ${orbY - 18}px)`;
+      trail.style.transform = `translate(${trailX - 4}px, ${trailY - 4}px)`;
+      requestAnimationFrame(animateOrb);
+    })();
+    }
+
+    // ── 2. Activity card 3D tilt + shine ──
+    document.querySelectorAll('.act-card').forEach(card => {
+      const shine = card.querySelector('.act-card-shine');
+
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const cx = r.left + r.width / 2;
+        const cy = r.top + r.height / 2;
+        const dx = (e.clientX - cx) / (r.width / 2);   // -1 to 1
+        const dy = (e.clientY - cy) / (r.height / 2);  // -1 to 1
+        const rotX = -dy * 10;
+        const rotY = dx * 10;
+        card.style.transform = `perspective(700px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
+        card.style.boxShadow = `0 20px 60px rgba(29,185,84,0.22)`;
+        // Shine follows mouse
+        const mx = ((e.clientX - r.left) / r.width * 100).toFixed(1);
+        const my = ((e.clientY - r.top) / r.height * 100).toFixed(1);
+        if (shine) { shine.style.setProperty('--mx', mx + '%'); shine.style.setProperty('--my', my + '%'); }
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.boxShadow = '';
+      });
+    });
+
+    // ── 3. Staggered card entrance via IntersectionObserver ──
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const index = parseInt(card.dataset.cardIndex || 0);
+          setTimeout(() => card.classList.add('card-visible'), index * 80);
+          cardObserver.unobserve(card);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.act-card').forEach((card, i) => {
+      card.dataset.cardIndex = i;
+      cardObserver.observe(card);
+    });
+
+    // ── 4. Safety cards stagger entrance ──
+    const safetyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const index = parseInt(card.dataset.safetyIndex || 0);
+          setTimeout(() => card.classList.add('sc-visible'), index * 100);
+          safetyObserver.unobserve(card);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.safety-card').forEach((card, i) => {
+      card.dataset.safetyIndex = i;
+      safetyObserver.observe(card);
+    });
+
+    // ── 5. Animated stat counters ──
+    function animateCount(el, target, suffix, duration) {
+      let start = null;
+      const isDecimal = String(target).includes('.');
+      function step(ts) {
+        if (!start) start = ts;
+        const progress = Math.min((ts - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const val = isDecimal ? (eased * target).toFixed(1) : Math.floor(eased * target);
+        el.textContent = val + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const raw = el.dataset.count;
+          const suffix = el.dataset.suffix || '';
+          animateCount(el, parseFloat(raw), suffix, 1600);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    // Apply to trust items in hero
+    document.querySelectorAll('.trust-val').forEach(el => {
+      const txt = el.textContent.trim();
+      const match = txt.match(/^(\d[\d,]*\.?\d*)/);
+      if (match) {
+        const num = parseFloat(match[1].replace(/,/g, ''));
+        const suffix = txt.replace(match[1], '');
+        el.dataset.count = num;
+        el.dataset.suffix = suffix;
+        el.textContent = '0' + suffix;
+        counterObserver.observe(el);
+      }
+    });
+
+    // ── FILTER LOGIC ──
+    (function() {
+      let activeAge = 'all';
+      let activeType = 'all';
+
+      function applyFilters() {
+        const cards = document.querySelectorAll('#actGrid .act-card');
+        let visibleIndex = 0;
+
+        cards.forEach(card => {
+          const cardAges = card.dataset.age ? card.dataset.age.split(' ') : [];
+          const cardType = card.dataset.type || '';
+
+          const ageMatch = activeAge === 'all' || cardAges.includes(activeAge);
+          const typeMatch = activeType === 'all' || cardType === activeType;
+
+          if (ageMatch && typeMatch) {
+            card.style.display = '';
+            // Re-stagger the visible cards
+            card.classList.remove('card-visible');
+            setTimeout(() => card.classList.add('card-visible'), visibleIndex * 60);
+            visibleIndex++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show "no results" message if nothing matches
+        let noResults = document.getElementById('filter-no-results');
+        if (visibleIndex === 0) {
+          if (!noResults) {
+            noResults = document.createElement('p');
+            noResults.id = 'filter-no-results';
+            noResults.style.cssText = 'grid-column:1/-1;text-align:center;padding:48px 0;font-size:16px;color:var(--ink-faint);';
+            noResults.textContent = 'No activities match your selected filters.';
+            document.getElementById('actGrid').appendChild(noResults);
+          }
+          noResults.style.display = '';
+        } else if (noResults) {
+          noResults.style.display = 'none';
+        }
+      }
+
+      document.querySelectorAll('.filter-pill').forEach(pill => {
+        pill.addEventListener('click', function() {
+          const group = this.dataset.group;
+          const value = this.dataset.value;
+
+          // Update active pill within this group
+          document.querySelectorAll(`.filter-pill[data-group="${group}"]`).forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+
+          if (group === 'age') activeAge = value;
+          if (group === 'type') activeType = value;
+
+          applyFilters();
+        });
+      });
+    })();
+
+    // ── 6. Headline clip reveal ──
+    document.querySelectorAll('.why-headline, .feat-headline, .cross-headline, .faq-headline').forEach(el => {
+      el.classList.add('headline-reveal');
+      el.innerHTML = `<span class="hr-inner">${el.innerHTML}</span>`;
+    });
+
+    const hrObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('hr-done');
+          hrObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.headline-reveal').forEach(el => hrObserver.observe(el));
+
+    // ── #book form ──
+    var activitiesBookForm = document.getElementById('activitiesBookForm');
+    var activitiesBookSuccess = document.getElementById('activitiesBookSuccess');
+    if (activitiesBookForm) {
+      activitiesBookForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var n = document.getElementById('actBookName').value.trim();
+        var p = document.getElementById('actBookPhone').value.trim();
+        var t = document.getElementById('actBookType').value;
+        if (!n || p.length < 10 || !t) return;
+        activitiesBookForm.style.display = 'none';
+        if (activitiesBookSuccess) activitiesBookSuccess.classList.add('visible');
+      });
+      document.getElementById('actBookPhone').addEventListener('input', function () { this.value = this.value.replace(/\D/g, '').slice(0, 10); });
+    }
+
+  </script>
+</body>
+</html>
